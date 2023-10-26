@@ -16,7 +16,13 @@
       }
     ],
     "paths": {
-      "@/components": ["src/components/index.ts"],
+      "@/components": ["src/components/"],
+      "@/components/*": ["src/components/*"],
+      "@/pages/*": ["pages/*"],
+      "@/root/*": ["./*"],
+      "@/src/*": ["src/*"],
+      "@/types": ["types/"],
+      "@/types/*": ["types/*"],
       "test-utils": ["./utils/test-utils"]
     },
     "resolveJsonModule": true,
