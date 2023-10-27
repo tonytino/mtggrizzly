@@ -1,24 +1,19 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
 import type { Set } from '@/types';
-import sets from '@/pages/api/sets.json';
+import sets from './sets.json';
 
 /**
  * Returns a collection of sets per the specified parameters
  */
-export default async function getSets(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
+export async function GET(request: Request) {
   try {
-    const {
-      orderBy = 'asc',
-      sortBy = 'released_at',
-      type = 'expansion',
-    } = req.query;
+    const { searchParams } = new URL(request.url);
+    const orderBy = searchParams.get('orderBy') ?? 'asc';
+    const sortBy = searchParams.get('sortBy') ?? 'released_at';
+    const types = searchParams.get('types') ?? ['core', 'expansion', 'masters'];
 
     // We'll filter the sets first
     const filteredSets = sets.reduce((sets, set) => {
-      if (set.set_type === type) {
+      if (types.includes(set.set_type)) {
         sets.push(set as Set);
       }
 
@@ -36,12 +31,14 @@ export default async function getSets(
       });
     }
 
-    res.status(200).json({
+    return Response.json({
       count: filteredSets.length,
-      type,
+      types,
       sets: filteredSets,
     });
   } catch (err) {
-    res.status(500).send({ error: 'Something went wrong, sorry!' });
+    return Response.json({
+      error: 'Something went wrong, sorry.',
+    });
   }
 }
