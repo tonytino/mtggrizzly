@@ -1,8 +1,12 @@
+import { headers } from 'next/headers';
 import * as React from 'react';
 import { SetSelect } from '@/components';
 
 async function getSets() {
-  const res = await fetch('http://localhost:3000/api/sets');
+  const reqHeaders = headers();
+  const host = reqHeaders.get('host') ?? 'localhost:3000';
+  const securityProtocol = host.includes('localhost') ? 'http' : 'https';
+  const res = await fetch(`${securityProtocol}://${host}/api/sets`);
 
   if (!res.ok) {
     throw new Error('Failed to fetch data');
