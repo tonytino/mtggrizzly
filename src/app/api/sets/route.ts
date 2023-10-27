@@ -1,3 +1,4 @@
+import { NextResponse } from 'next/server';
 import type { Set } from '@/types';
 import sets from './sets.json';
 
@@ -37,8 +38,9 @@ export async function GET(request: Request) {
       sets: filteredSets,
     });
   } catch (err) {
-    return Response.json({
-      error: 'Something went wrong, sorry.',
-    });
+    return NextResponse.json(
+      { error: 'Internal Server Error', message: err },
+      { status: 500 }
+    );
   }
 }
