@@ -28,10 +28,7 @@ type SetSelectProps = {
 export function SetSelect(props: SetSelectProps) {
   const { sets = [] } = props;
   const router = useRouter();
-  const [selectedSet, setSelectedSet] = React.useState({
-    code: '',
-    name: '',
-  });
+  const [selectedSetCode, setSelectedSetCode] = React.useState('');
 
   return (
     <React.Fragment>
@@ -42,15 +39,13 @@ export function SetSelect(props: SetSelectProps) {
           className='p-2 text-black'
           name='sets'
           id='set-select'
-          value={selectedSet.code}
+          value={selectedSetCode}
           onChange={(event) => {
-            setSelectedSet({
-              code: event.target.value,
-              name: event.target.name,
-            });
+            setSelectedSetCode(event.target.value);
           }}
         >
           <option value=''>Select A Set</option>
+
           {sets.map(({ code, name }) => {
             return (
               <option
@@ -65,9 +60,7 @@ export function SetSelect(props: SetSelectProps) {
 
         <button
           className='rounded border-2 border-solid border-indigo-600 p-2'
-          onClick={() =>
-            router.push(`/sets/${selectedSet.code}?name=${selectedSet.name}`)
-          }
+          onClick={() => router.push(`/sets/${selectedSetCode}`)}
         >
           Go
         </button>
@@ -80,7 +73,7 @@ export function SetSelect(props: SetSelectProps) {
             <button
               className={`flex h-44 w-72 cursor-pointer flex-col items-center justify-between rounded border-2 p-4 text-center shadow-md hover:border-teal-400 ${buttonColors}`}
               tabIndex={0}
-              onClick={() => router.push(`/sets/${code}?name=${name}`)}
+              onClick={() => router.push(`/sets/${code}`)}
               key={code}
             >
               <div className='relative mx-auto my-2 h-14 w-14 flex-col items-center justify-center'>

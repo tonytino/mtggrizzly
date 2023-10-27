@@ -1,12 +1,13 @@
 import { headers } from 'next/headers';
 import * as React from 'react';
 import { SetSelect } from '@/components';
+import type { SetsResponse } from '@/types';
 
-async function getSets() {
+async function getSets(): Promise<SetsResponse> {
   const reqHeaders = headers();
   const host = reqHeaders.get('host') ?? 'localhost:3000';
-  const securityProtocol = host.includes('localhost') ? 'http' : 'https';
-  const res = await fetch(`${securityProtocol}://${host}/api/sets`);
+  const protocol = host.includes('localhost') ? 'http' : 'https';
+  const res = await fetch(`${protocol}://${host}/api/sets`);
 
   if (!res.ok) {
     throw new Error('Failed to fetch data');
@@ -18,7 +19,7 @@ async function getSets() {
 /**
  * The Home Page
  */
-async function Home() {
+async function HomePage() {
   const { sets } = await getSets();
 
   return (
@@ -32,4 +33,4 @@ async function Home() {
   );
 }
 
-export default Home;
+export default HomePage;
