@@ -36,7 +36,7 @@ export function SetSelect(props: SetSelectProps) {
         <label htmlFor='set-select'>Choose a set:</label>
 
         <select
-          className='p-2 text-black'
+          className='cursor-pointer p-2 text-black'
           name='sets'
           id='set-select'
           value={selectedSetCode}
@@ -59,7 +59,11 @@ export function SetSelect(props: SetSelectProps) {
         </select>
 
         <button
-          className='rounded border-2 border-solid border-indigo-600 p-2'
+          aria-disabled={!selectedSetCode}
+          className={`cursor-pointer rounded border-2 border-solid border-indigo-600 p-2 ${
+            !selectedSetCode && 'cursor-not-allowed'
+          }`}
+          disabled={!selectedSetCode}
           onClick={() => router.push(`/sets/${selectedSetCode}`)}
         >
           Go
