@@ -15,11 +15,31 @@ const scryfallSvgsApi = {
   hostname: 'svgs.scryfall.io',
 };
 
+const scryfallCardsApi = {
+  protocol: 'https',
+  hostname: 'cards.scryfall.io',
+};
+
 const nextConfig = {
   images: {
     ...dangerouslyAllowSvg,
-    remotePatterns: [scryfallSvgsApi],
+    remotePatterns: [scryfallCardsApi, scryfallSvgsApi],
   },
+  // Use the following to define custom headers for specific requests
+  // https://nextjs.org/docs/app/api-reference/next-config-js/headers
+  // async headers() {
+  //   return [
+  //     {
+  //       source: '*svgs.scryfall.io*',
+  //       headers: [
+  //         {
+  //           key: 'x-hello',
+  //           value: 'there',
+  //         },
+  //       ],
+  //     },
+  //   ];
+  // },
 };
 
 module.exports = nextConfig;
