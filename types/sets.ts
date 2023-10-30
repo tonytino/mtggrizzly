@@ -1,3 +1,6 @@
+/**
+ * Customized response based on https://scryfall.com/docs/api/sets response
+ */
 export type SetsResponse = {
   /**
    * Number of Sets present
