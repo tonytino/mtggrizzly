@@ -21,7 +21,7 @@ export async function GET(_: Request, { params }: { params: { set: string } }) {
 
     const query = `set:${set}+is:booster`;
 
-    let requestUrl = `${SEARCH_API}?q=${query}`;
+    let requestUrl = `${SEARCH_API}?order=review&q=${query}`;
     let hasMore = true;
     const cards: Card[] = [];
 
