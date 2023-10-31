@@ -102,7 +102,7 @@ export type Card = {
   id: string;
   illustration_id: string;
   image_status: string;
-  image_uris: Image_uri;
+  image_uris: ImageURI;
   keywords: unknown[];
   lang: string;
   layout: string;
