@@ -3,7 +3,7 @@ import { SetSelect } from './SetSelect';
 
 describe('<SetSelect />', () => {
   test('test', () => {
-    render(<SetSelect />);
+    render(<SetSelect sets={[]} />);
 
     expect(screen.getByTestId('test')).toBeInTheDocument();
   });
