@@ -10,7 +10,7 @@ export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
     const orderBy = searchParams.get('orderBy') ?? 'asc';
     const sortBy = searchParams.get('sortBy') ?? 'released_at';
-    const types = searchParams.get('types') ?? ['core', 'expansion', 'masters'];
+    const types = searchParams.get('types') ?? ['core', 'expansion']; //, 'masters'];
 
     // We'll filter the sets first
     const filteredSets = sets.reduce((sets, set) => {
