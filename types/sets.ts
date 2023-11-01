@@ -58,6 +58,11 @@ export type Set = {
    */
   parent_set_code?: string;
   /**
+   * Link to preview art for the set (random card's art)
+   * "https://cards.scryfall.io/art_crop/front/4/0/409f9b88-f03e-40b6-9883-68c14c37c0de.jpg"
+   */
+  preview_art: string;
+  /**
    * "2023-11-17"
    */
   released_at: string;
