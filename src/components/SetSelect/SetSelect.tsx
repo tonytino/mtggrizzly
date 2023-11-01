@@ -71,25 +71,35 @@ export function SetSelect(props: SetSelectProps) {
       </section>
 
       <section className='m-auto grid h-min w-full grid-cols-1 place-content-center gap-8 md:grid-cols-2 lg:grid-cols-3'>
-        {sets.map(({ code, icon_svg_uri, name }, index) => {
+        {sets.map(({ code, icon_svg_uri, name, preview_art }, index) => {
           const buttonColors = MAGIC_COLORS[index % 5];
           return (
             <button
-              className={`flex h-44 w-72 cursor-pointer flex-col items-center justify-between rounded border-2 p-4 text-center shadow-md hover:border-teal-400 ${buttonColors}`}
-              tabIndex={0}
-              onClick={() => router.push(`/sets/${code}`)}
+              className={`flex h-44 w-72 cursor-pointer flex-col items-end justify-between rounded border-transparent text-center shadow-md hover:border-teal-400 ${buttonColors} bg-cover bg-clip-border bg-center`}
               key={code}
+              onClick={() => router.push(`/sets/${code}`)}
+              style={{
+                backgroundImage: `url(${preview_art})`,
+              }}
+              tabIndex={0}
             >
-              <div className='relative mx-auto my-2 h-14 w-14 flex-col items-center justify-center'>
+              <div className='relative my-2 ml-auto mr-2 h-1/4 w-14 flex-col items-center justify-center'>
                 <Image
                   alt='Set Icon'
-                  src={icon_svg_uri}
                   fill
                   sizes='100%'
+                  src={icon_svg_uri}
+                  style={{
+                    filter:
+                      'invert(100%) sepia(0%) saturate(2%) hue-rotate(54deg) brightness(105%) contrast(101%)',
+                  }}
                 />
               </div>
 
-              <p className='my-auto text-lg font-medium text-slate-800'>
+              <p
+                className='mb-0 mt-auto h-1/3 w-full bg-black  bg-opacity-50 text-lg font-medium text-slate-100'
+                style={{ padding: '2px' }}
+              >
                 {name}
               </p>
             </button>
