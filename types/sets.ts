@@ -63,6 +63,11 @@ export type Set = {
    */
   preview_art: string;
   /**
+   * Query to fetch a random card from the set
+   * "https://api.scryfall.com/cards/random?q=set:woe"
+   */
+  random_card_query: string;
+  /**
    * "2023-11-17"
    */
   released_at: string;
