@@ -70,7 +70,7 @@ export function SetSelect(props: SetSelectProps) {
         </button>
       </section>
 
-      <section className='m-auto grid h-min w-full grid-cols-1 place-content-center gap-8 md:grid-cols-2 lg:grid-cols-3'>
+      <section className='m-auto grid h-min grid-cols-1 place-content-center gap-8 md:grid-cols-2 lg:grid-cols-3'>
         {sets.map(({ code, icon_svg_uri, name, preview_art }, index) => {
           const buttonColors = MAGIC_COLORS[index % 5];
           return (
