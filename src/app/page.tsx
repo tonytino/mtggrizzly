@@ -24,10 +24,6 @@ async function HomePage() {
 
   return (
     <React.Fragment>
-      <h1 className='text-3xl font-bold'>MTG Grizzly</h1>
-
-      <h2 className='text-3xl font-semibold'>Select a set to get started:</h2>
-
       <SetSelect sets={sets ?? []} />
     </React.Fragment>
   );

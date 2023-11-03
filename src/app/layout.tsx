@@ -21,11 +21,13 @@ export default function RootLayout({
       lang='en'
     >
       <body className={inter.className}>
-        <main className='flex min-h-screen flex-col items-center justify-between p-4 lg:p-24'>
-          <div className='w-full max-w-5xl text-sm'>
-            <div className='fixed left-0 flex h-full w-full flex-col items-center justify-start gap-4 overflow-y-auto bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none'>
-              {children}
-            </div>
+        <main className='flex min-h-screen w-full flex-col items-center justify-between px-4 pb-10'>
+          <div className='fixed left-0 top-0 z-50 h-16 w-full bg-slate-800 shadow-lg	'>
+            <h1 className='p-4 pl-8 text-3xl font-bold'>MTG Grizzly</h1>
+          </div>
+
+          <div className='left-0 mt-20 flex h-full w-full flex-col items-center justify-start gap-4 overflow-y-auto from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto'>
+            {children}
           </div>
         </main>
 
