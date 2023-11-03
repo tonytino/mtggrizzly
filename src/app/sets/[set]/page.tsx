@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import { headers } from 'next/headers';
-import Image from 'next/image';
 import * as React from 'react';
 import type { DraftSet, SetsResponse } from '@/types';
 
