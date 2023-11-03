@@ -23,7 +23,7 @@ export default function RootLayout({
     >
       <body className={inter.className}>
         <main className='flex min-h-screen w-full flex-col items-center justify-between px-4 pb-10'>
-          <div className='fixed left-0 top-0 z-50 h-16 w-full bg-slate-800 shadow-lg	'>
+          <div className='fixed left-0 top-0 z-50 h-16 w-full bg-white shadow-sm dark:bg-slate-800'>
             <h1 className='p-4 pl-8 text-3xl font-bold'>
               <Link href='/'>MTG Grizzly</Link>
             </h1>
