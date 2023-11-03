@@ -56,8 +56,17 @@ async function SetPage({
       </h1>
 
       <section className='m-auto grid h-min w-full grid-cols-1 place-content-center gap-8 md:grid-cols-2 lg:grid-cols-3'>
-        {cards.map(({ image_uris = {}, name }, index) => {
+        {cards.map(({ card_faces = [], image_uris = {}, name }, index) => {
           const { border_crop } = image_uris ?? {};
+
+          const isMultiFaceCard = card_faces.length;
+          let cardImageSrc = border_crop;
+
+          if (isMultiFaceCard) {
+            cardImageSrc =
+              card_faces[0]?.image_uris?.border_crop ?? border_crop;
+          }
+
           return (
             <div
               className='flex cursor-pointer flex-col items-center justify-between text-center'
@@ -67,7 +76,7 @@ async function SetPage({
                 <Image
                   className='rounded-lg border-4 border-black'
                   alt={name}
-                  src={border_crop}
+                  src={cardImageSrc}
                   height={680}
                   width={488}
                   priority={index < 4}
