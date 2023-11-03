@@ -32,7 +32,7 @@ export function SetSelect(props: SetSelectProps) {
 
   return (
     <React.Fragment>
-      <section className='flex w-80 flex-col gap-2 hover:border-teal-400'>
+      <section className='flex flex-col gap-2'>
         <label htmlFor='set-select'>Choose a set:</label>
 
         <select
@@ -70,12 +70,13 @@ export function SetSelect(props: SetSelectProps) {
         </button>
       </section>
 
-      <section className='m-auto grid h-min grid-cols-1 place-content-center gap-8 md:grid-cols-2 lg:grid-cols-3'>
+      <section className='m-auto grid h-min grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3'>
         {sets.map(({ code, icon_svg_uri, name, preview_art }, index) => {
           const buttonColors = MAGIC_COLORS[index % 5];
+          const isSetNameVeryLong = name?.length > 28;
           return (
             <button
-              className={`flex h-44 w-72 cursor-pointer flex-col items-end justify-between rounded border-transparent text-center shadow-md hover:border-teal-400 ${buttonColors} bg-cover bg-clip-border bg-center`}
+              className={`flex h-64 w-80 cursor-pointer flex-col items-end justify-between rounded border-transparent text-center shadow-md lg:h-72 lg:w-96 ${buttonColors} bg-cover bg-clip-border bg-center`}
               key={code}
               onClick={() => router.push(`/sets/${code}`)}
               style={{
@@ -83,7 +84,7 @@ export function SetSelect(props: SetSelectProps) {
               }}
               tabIndex={0}
             >
-              <div className='relative my-2 ml-auto mr-2 h-1/4 w-14 flex-col items-center justify-center'>
+              <div className='relative my-2 ml-auto mr-4 h-1/4 w-14 flex-col items-center justify-center pr-2'>
                 <Image
                   alt='Set Icon'
                   fill
@@ -97,8 +98,10 @@ export function SetSelect(props: SetSelectProps) {
               </div>
 
               <p
-                className='mb-0 mt-auto h-1/3 w-full bg-black  bg-opacity-50 text-lg font-medium text-slate-100'
-                style={{ padding: '2px' }}
+                className={`mb-0 mt-auto h-1/4 w-full bg-black bg-opacity-50 p-2 leading-loose ${
+                  isSetNameVeryLong ? 'text-base' : 'text-lg'
+                } font-medium text-slate-100`}
+                style={isSetNameVeryLong ? { paddingTop: '11.5px' } : {}}
               >
                 {name}
               </p>
