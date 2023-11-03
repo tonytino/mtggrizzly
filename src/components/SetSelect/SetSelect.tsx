@@ -28,11 +28,11 @@ type SetSelectProps = {
 export function SetSelect(props: SetSelectProps) {
   const { sets = [] } = props;
   const router = useRouter();
-  const [selectedSetCode, setSelectedSetCode] = React.useState('');
+  // const [selectedSetCode, setSelectedSetCode] = React.useState('');
 
   return (
     <React.Fragment>
-      <section className='flex flex-col gap-2'>
+      {/* <section className='flex flex-col gap-2'>
         <label htmlFor='set-select'>Choose a set:</label>
 
         <select
@@ -68,7 +68,7 @@ export function SetSelect(props: SetSelectProps) {
         >
           Go
         </button>
-      </section>
+      </section> */}
 
       <section className='m-auto grid h-min grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3'>
         {sets.map(({ code, icon_svg_uri, name, preview_art }, index) => {
