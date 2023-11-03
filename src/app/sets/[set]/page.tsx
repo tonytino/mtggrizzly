@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { headers } from 'next/headers';
 import Image from 'next/image';
 import * as React from 'react';
@@ -72,14 +73,15 @@ async function SetPage({
               className='flex cursor-pointer flex-col items-center justify-between text-center'
               key={name}
             >
-              <div className='relative mx-auto my-2 flex-col items-center justify-center rounded-lg border-2 border-black bg-black shadow-md hover:border-teal-400'>
-                <Image
+              <div className='relative mx-auto my-2 flex-col items-center justify-center rounded-lg border-4 border-black bg-black shadow-md hover:border-lime-600'>
+                <img
                   className='rounded-lg border-4 border-black'
                   alt={name}
                   src={cardImageSrc}
                   height={680}
                   width={488}
-                  priority={index < 4}
+                  // priority={index < 4}
+                  loading={index < 9 ? 'eager' : 'lazy'}
                 />
               </div>
 
