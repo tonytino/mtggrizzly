@@ -1,3 +1,8 @@
+/**
+ * Some helpful resources for testing:
+ * - [Queries](https://testing-library.com/docs/queries/about#types-of-queries)
+ */
+
 import * as React from 'react';
 import { render, RenderOptions } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
