@@ -144,11 +144,12 @@ export function Card(props: CardProps) {
         {isMultiFaceCard && (
           <div
             aria-label='Transform card'
-            className='absolute right-8 top-56 hidden h-16 w-16 items-center justify-center rounded-full bg-black bg-opacity-40 fill-lime-600 group-hover:flex'
+            className='absolute right-8 top-56 hidden h-16 w-16 items-center justify-center rounded-full bg-black bg-opacity-40 group-hover:flex'
           >
             <SymbolIcon
-              width='40px'
+              color='white'
               height='40px'
+              width='40px'
             />
           </div>
         )}
