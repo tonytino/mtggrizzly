@@ -1,12 +1,10 @@
-/* eslint-disable @next/next/no-img-element */
 import { headers } from 'next/headers';
 import * as React from 'react';
 import { Card } from '@/components';
 import type { DraftSet, SetsResponse } from '@/types';
 
 /**
- * @TODO
- * @todo
+ * @todo https://github.com/tonytino/mtggrizzly/issues/6
  * Move this request to /api/set/[set] and include in the response
  */
 async function getSets(): Promise<SetsResponse> {
