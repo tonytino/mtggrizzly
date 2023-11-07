@@ -4,7 +4,56 @@
 
 'use client';
 import * as React from 'react';
+// https://github.com/radix-ui/icons/blob/master/packages/radix-icons/src/SymbolIcon.tsx
+import { SymbolIcon } from '@radix-ui/react-icons';
 import type { Card } from '@/types';
+
+const noop = () => {};
+
+const FALLBACK_IMAGE_SRC = '/grizzly-bears.png';
+
+/**
+ * Cards with these layouts have two card images we need to render individually
+ * https://scryfall.com/docs/api/layouts
+ */
+const MULTI_FACE_CARD_LAYOUTS = [
+  'battle',
+  'double_faced_token',
+  'meld',
+  'reversible_card',
+  'transform',
+];
+
+const defaultState = {
+  error: false,
+  faceName: 'Grizzly Bears',
+  imgSrc: FALLBACK_IMAGE_SRC,
+  isFrontFace: true,
+  isMultiFaceCard: false,
+};
+
+function stateReducer(state, action) {
+  if (action.type === 'error') {
+    return {
+      ...state,
+      error: true,
+      imgSrc: FALLBACK_IMAGE_SRC,
+      faceName: 'Something went wrong, sorry!',
+    };
+  }
+
+  if (action.type === 'swap_face') {
+    const { faceName, imgSrc } = action;
+    return {
+      ...state,
+      isFrontFace: !state.isFrontFace,
+      faceName,
+      imgSrc,
+    };
+  }
+
+  throw Error('Unknown action.');
+}
 
 type CardProps = {
   /**
@@ -28,37 +77,87 @@ type CardProps = {
  */
 export function Card(props: CardProps) {
   const { card, isPriority } = props;
+  const { card_faces = [], image_uris, layout, name: fullName } = card;
+  const isMultiFaceCard = MULTI_FACE_CARD_LAYOUTS.includes(layout);
+  const initialCardImageSrc = isMultiFaceCard
+    ? card_faces[0]?.image_uris?.png
+    : image_uris?.png;
+  const initialFaceName = isMultiFaceCard ? card_faces[0]?.name : fullName;
 
-  const { card_faces = [], image_uris, name } = card;
+  const [state, dispatch] = React.useReducer(stateReducer, {
+    ...defaultState,
+    faceName: initialFaceName,
+    imgSrc: initialCardImageSrc,
+    isMultiFaceCard,
+  });
 
-  const { border_crop } = image_uris ?? { border_crop: '' };
+  const { faceName, imgSrc, isFrontFace } = state;
 
-  const isMultiFaceCard = card_faces?.length;
-  let cardImageSrc = border_crop;
+  const ElementType = isMultiFaceCard ? 'button' : 'div';
 
-  if (isMultiFaceCard) {
-    cardImageSrc = card_faces[0]?.image_uris?.border_crop ?? border_crop;
-  }
+  const handleSwapCardFace = () => {
+    try {
+      dispatch({
+        type: 'swap_face',
+        faceName: card_faces[isFrontFace ? 1 : 0].name,
+        imgSrc: card_faces[isFrontFace ? 1 : 0].image_uris.png,
+      });
+    } catch (error) {
+      dispatch({
+        type: 'error',
+      });
+    }
+  };
+
+  const handleImageSrcError = (error) => {
+    error.stopPropagation();
+
+    dispatch({
+      type: 'error',
+    });
+  };
 
   return (
     <div
-      className='flex cursor-pointer flex-col items-center justify-between text-center'
-      key={name}
+      className='flex flex-col items-center justify-between text-center'
+      key={fullName}
     >
-      <div className='relative mx-auto my-2 rounded-lg border-4 border-black bg-black shadow-md hover:border-lime-600'>
+      <ElementType
+        className={`group relative mx-auto my-2 rounded-lg border-4 border-transparent ${
+          isMultiFaceCard
+            ? 'cursor-pointer hover:border-lime-600'
+            : 'cursor-default'
+        }`}
+        onClick={isMultiFaceCard ? handleSwapCardFace : noop}
+      >
         <img
-          className='rounded-lg border-4 border-black'
-          alt={name}
-          src={cardImageSrc}
+          alt={faceName}
+          className='rounded-lg shadow-lg'
           height={680}
+          loading={isPriority ? 'eager' : 'lazy'}
+          onError={handleImageSrcError}
+          src={imgSrc}
           width={488}
           // priority={isPriority}
-          loading={isPriority ? 'eager' : 'lazy'}
         />
-      </div>
+
+        {isMultiFaceCard && (
+          <div
+            aria-label='Transform card'
+            className='absolute right-8 top-56 hidden h-16 w-16 items-center justify-center rounded-full bg-black bg-opacity-40 fill-lime-600 group-hover:flex'
+          >
+            <SymbolIcon
+              width='40px'
+              height='40px'
+            />
+          </div>
+        )}
+      </ElementType>
 
       <p className='my-auto text-lg font-medium text-slate-800 dark:text-slate-50'>
-        {name}
+        {faceName}
+        {isMultiFaceCard && isFrontFace && ' (Front)'}
+        {isMultiFaceCard && !isFrontFace && ' (Back)'}
       </p>
     </div>
   );
