@@ -1,5 +1,12 @@
 import { NextResponse } from 'next/server';
 import type { Card, ScryfallSearchResponse } from '@/types';
+import type { Set } from '@/types';
+import sets from './../../sets/sets.json';
+
+const knownErrors = {
+  missingSet: 'Set must be specified.',
+  unknownSet: 'Set code supplied is unrecognized.',
+};
 
 /**
  * [Search Syntax](https://scryfall.com/docs/syntax#sets)
@@ -13,13 +20,21 @@ const SEARCH_API = 'https://api.scryfall.com/cards/search';
  */
 export async function GET(_: Request, { params }: { params: { set: string } }) {
   try {
-    const { set } = params;
+    const { set: setCodeReceived } = params;
 
-    if (!set) {
-      throw new Error('Set must be specified.');
+    if (!setCodeReceived) {
+      throw new Error(knownErrors.missingSet);
     }
 
-    const query = `set:${set}+is:booster`;
+    const setObject: Set = (sets as Set[]).find(({ code }) => {
+      return code === setCodeReceived;
+    });
+
+    if (!setObject) {
+      throw new Error(knownErrors.unknownSet);
+    }
+
+    const query = `set:${setCodeReceived}+is:booster`;
 
     let requestUrl = `${SEARCH_API}?order=review&q=${query}`;
     let hasMore = true;
@@ -43,10 +58,18 @@ export async function GET(_: Request, { params }: { params: { set: string } }) {
     return Response.json({
       count: cards.length,
       cards,
+      set: setObject,
     });
-  } catch (err) {
+  } catch ({ message }) {
+    if (Object.values(knownErrors).includes(message)) {
+      return NextResponse.json(
+        { error: 'Bad request', message },
+        { status: 400 }
+      );
+    }
+
     return NextResponse.json(
-      { error: 'Internal Server Error', message: err },
+      { error: 'Internal Server Error', message },
       { status: 500 }
     );
   }
