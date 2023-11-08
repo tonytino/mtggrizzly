@@ -1,4 +1,5 @@
 import type { Card } from './';
+import type { Set } from './sets';
 
 /**
  * Derivative of https://scryfall.com/docs/api/cards/search
@@ -13,4 +14,8 @@ export type DraftSet = {
    * Cards in the set
    */
   cards: Card[];
+  /**
+   * The Set object
+   */
+  set: Set;
 };
