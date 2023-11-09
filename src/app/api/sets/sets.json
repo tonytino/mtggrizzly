@@ -373,7 +373,7 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/afr.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/3/2/32d3f766-4098-4023-9a23-e9ff6722b66d.jpg",
+    "preview_art": "https://cards.scryfall.io/art_crop/front/d/5/d58486dc-3e78-4649-89c7-46f6210ff80f.jpg",
     "random_card_query": "https://api.scryfall.com/cards/random?q=set:afr"
   },
   {
@@ -494,7 +494,7 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/znr.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/b/3/b33b6922-2584-43e1-98d4-e722e7c9393c.jpg",
+    "preview_art": "https://cards.scryfall.io/art_crop/front/1/1/112077b8-1514-4320-a70f-b23f3c7ce18a.jpg",
     "random_card_query": "https://api.scryfall.com/cards/random?q=set:znr"
   },
   {
@@ -801,7 +801,7 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/m19.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/e/c/ecf1f24f-d910-4ec6-95d2-0ecaf9f051aa.jpg",
+    "preview_art": "https://cards.scryfall.io/art_crop/front/e/e/ee338221-ead9-4b89-8b0c-12745c4ca13d.jpg",
     "random_card_query": "https://api.scryfall.com/cards/random?q=set:m19"
   },
   {
@@ -939,7 +939,7 @@
     "block_code": "akh",
     "block": "Amonkhet",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/hou.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/2/0/203011ef-3737-4fd1-bd23-0e531b5a7c32.jpg",
+    "preview_art": "https://cards.scryfall.io/art_crop/front/a/5/a51f8207-485e-4a4e-aa62-8e0e69645a0e.jpg",
     "random_card_query": "https://api.scryfall.com/cards/random?q=set:hou"
   },
   {
@@ -1290,7 +1290,7 @@
     "block_code": "ktk",
     "block": "Khans of Tarkir",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/ktk.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/3/b/3b296781-78ac-411f-88fc-2d924ad22986.jpg",
+    "preview_art": "https://cards.scryfall.io/art_crop/front/c/d/cd8fffd3-81ad-47e3-a27b-d8059f2b506f.jpg",
     "random_card_query": "https://api.scryfall.com/cards/random?q=set:ktk"
   },
   {
@@ -2137,7 +2137,7 @@
     "block_code": "tsp",
     "block": "Time Spiral",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/fut.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/3/d/3dab4f64-2a91-409a-b83b-45b22afd22ff.jpg",
+    "preview_art": "https://cards.scryfall.io/art_crop/front/3/7/3705d3e4-317e-460d-b16e-e57238a19070.jpg",
     "random_card_query": "https://api.scryfall.com/cards/random?q=set:fut"
   },
   {
@@ -2972,7 +2972,7 @@
     "block_code": "mir",
     "block": "Mirage",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/wth.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/0/b/0bf54365-56ae-485d-b931-784a4cf9d8f2.jpg",
+    "preview_art": "https://cards.scryfall.io/art_crop/front/c/8/c857a151-45fe-43af-a9be-a93d26f220f3.jpg",
     "random_card_query": "https://api.scryfall.com/cards/random?q=set:wth"
   },
   {
@@ -3234,7 +3234,7 @@
     "nonfoil_only": true,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/drk.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/b/f/bf2f6936-b50c-4907-9b55-ebf8a3fba8f5.jpg",
+    "preview_art": "https://cards.scryfall.io/art_crop/front/4/e/4eef9bb7-cd3c-422e-a93b-90d98684675a.jpg",
     "random_card_query": "https://api.scryfall.com/cards/random?q=set:drk"
   },
   {
