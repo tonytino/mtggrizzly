@@ -4,6 +4,7 @@
 
 'use client';
 import * as React from 'react';
+// import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import type { Set } from '@/types';
 
@@ -55,16 +56,26 @@ export function Set(props: SetProps) {
       }}
       tabIndex={0}
     >
-      <div className='relative my-2 ml-auto mr-4 flex h-1/4 w-14 flex-col items-center justify-center pr-2'>
+      <div className='relative mr-4 mt-4 flex h-14 w-14 flex-col items-center justify-center'>
         <img
           alt={`${name} Set Icon`}
-          // fill // For <Image />
-          sizes='100%'
+          className='max-w-14 max-h-14'
+          height={56}
+          width={56}
           src={icon_svg_uri}
           style={{
             filter: convertSVGToWhite,
           }}
         />
+        {/* <Image
+          alt={`${name} Set Icon`}
+          fill
+          sizes='100%'
+          src={icon_svg_uri}
+          style={{
+            filter: convertSVGToWhite,
+          }}
+        /> */}
       </div>
 
       <p
