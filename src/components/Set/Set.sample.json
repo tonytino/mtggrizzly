@@ -1,0 +1,21 @@
+{
+  "object": "set",
+  "id": "79139661-13ee-43c4-8bad-a8c069f1a1df",
+  "code": "woe",
+  "mtgo_code": "woe",
+  "arena_code": "woe",
+  "tcgplayer_id": 23163,
+  "name": "Wilds of Eldraine",
+  "uri": "https://api.scryfall.com/sets/79139661-13ee-43c4-8bad-a8c069f1a1df",
+  "scryfall_uri": "https://scryfall.com/sets/woe",
+  "search_uri": "https://api.scryfall.com/cards/search?include_extras=true&include_variations=true&order=set&q=e%3Awoe&unique=prints",
+  "released_at": "2023-09-08",
+  "set_type": "expansion",
+  "card_count": 381,
+  "digital": false,
+  "nonfoil_only": false,
+  "foil_only": false,
+  "icon_svg_uri": "https://svgs.scryfall.io/sets/woe.svg?1698033600",
+  "preview_art": "https://cards.scryfall.io/art_crop/front/b/3/b3d6027c-813f-46df-95b4-e2e305a67620.jpg",
+  "random_card_query": "https://api.scryfall.com/cards/random?q=set:woe"
+}
