@@ -142,6 +142,19 @@ export function Card(props: CardProps) {
         />
 
         {isMultiFaceCard && (
+          // Load the back face so that the image loads immediately when a card
+          // face is swapped. Note that we cannot lazy load as the browser will
+          // not load it until it's close to the viewport
+          // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#lazy
+          // In effect, the image won't be loaded at all until the swap occurs
+          <img
+            alt={card_faces[1].name}
+            className='hidden'
+            src={card_faces[1].image_uris.png}
+          />
+        )}
+
+        {isMultiFaceCard && (
           <div
             aria-label='Transform card'
             className='absolute right-8 top-56 flex h-16 w-16 items-center justify-center rounded-full bg-black bg-opacity-40'

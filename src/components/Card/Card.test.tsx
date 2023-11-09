@@ -1,7 +1,7 @@
 import { React, render, screen } from 'test-utils';
+import type { Card as CardType } from '@/types';
 import { Card } from './Card';
 import SampleCard from './Card.sample.json';
-import type { Card as CardType } from '@/types';
 
 // CardType is still being refined and doesn't accurately reflect what each card
 // object may contain
@@ -17,6 +17,7 @@ describe('<Card />', () => {
 
       expect(cardImage).toBeInTheDocument();
       expect(cardImage).toHaveAttribute('src', card.image_uris.border_crop);
+
       expect(cardName).toBeInTheDocument();
     });
   });
