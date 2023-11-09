@@ -20,7 +20,6 @@ const eslintConfig = {
   root: true,
   rules: {
     '@tanstack/query/exhaustive-deps': 'error',
-    '@tanstack/query/prefer-query-object-syntax': 'error',
     'react/react-in-jsx-scope': 'off',
     'testing-library/prefer-presence-queries': [
       'error',
