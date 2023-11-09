@@ -1,7 +1,8 @@
 import { React, render, screen, userEvent } from 'test-utils';
-import { MAGIC_COLORS, Set } from './Set';
-import SampleSet from './Set.sample.json';
 import type { Set as SetType } from '@/types';
+import { Set } from './Set';
+import SampleSet from './Set.sample.json';
+import { CLASSES_FOR_MAGIC_COLORS } from './constants';
 
 const pushMock = jest.fn();
 
@@ -71,7 +72,7 @@ describe('<Set />', () => {
 
       const setPreviewImage = screen.getByRole('button');
 
-      expect(setPreviewImage).toHaveClass(MAGIC_COLORS[0]);
+      expect(setPreviewImage).toHaveClass(CLASSES_FOR_MAGIC_COLORS[0]);
     });
   });
 });
