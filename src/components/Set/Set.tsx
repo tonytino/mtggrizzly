@@ -1,13 +1,16 @@
+// Disabled this rule as we'd easily blow through the image optimiziation budget
+// https://vercel.com/docs/limits/usage#image-optimization
+/* eslint-disable @next/next/no-img-element */
+
 'use client';
 import * as React from 'react';
-import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import type { Set } from '@/types';
 
 const convertSVGToWhite =
   'invert(100%) sepia(0%) saturate(2%) hue-rotate(54deg) brightness(105%) contrast(101%)';
 
-const MAGIC_COLORS = {
+export const MAGIC_COLORS = {
   0: 'bg-neutral-50 border-neutral-50 dark:bg-white dark:border-white', // white
   1: 'bg-blue-300 border-blue-300', // blue
   2: 'bg-neutral-300 border-neutral-300 dark:bg-neutral-400 dark:border-neutral-400', // black
@@ -27,10 +30,13 @@ type SetProps = {
 };
 
 /**
- * Placeholder
+ * Renders a Set as a button that uses a random (from the set) card's art as its background image, alongside the name of the set and the set's icon. A background color is also applied as a fallback based on the index supplied (will be one of the 5 magic colors)
  *
  * @example
- * <Set />
+ *  <Set
+ *    index={4}
+ *    set={set}
+ *  />
  */
 export function Set(props: SetProps) {
   const router = useRouter();
@@ -49,10 +55,10 @@ export function Set(props: SetProps) {
       }}
       tabIndex={0}
     >
-      <div className='relative my-2 ml-auto mr-4 h-1/4 w-14 flex-col items-center justify-center pr-2'>
-        <Image
-          alt='Set Icon'
-          fill
+      <div className='relative my-2 ml-auto mr-4 flex h-1/4 w-14 flex-col items-center justify-center pr-2'>
+        <img
+          alt={`${name} Set Icon`}
+          // fill // For <Image />
           sizes='100%'
           src={icon_svg_uri}
           style={{
