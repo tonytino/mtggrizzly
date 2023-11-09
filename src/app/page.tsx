@@ -1,6 +1,6 @@
 import { headers } from 'next/headers';
 import * as React from 'react';
-import { SetSelect } from '@/components';
+import { Set } from '@/components';
 import type { SetsResponse } from '@/types';
 
 async function getSets(): Promise<SetsResponse> {
@@ -23,9 +23,17 @@ async function HomePage() {
   const { sets } = await getSets();
 
   return (
-    <React.Fragment>
-      <SetSelect sets={sets ?? []} />
-    </React.Fragment>
+    <section className='m-auto grid h-min grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3'>
+      {sets.map((set, index) => {
+        return (
+          <Set
+            index={index}
+            key={set.code}
+            set={set}
+          />
+        );
+      })}
+    </section>
   );
 }
 
