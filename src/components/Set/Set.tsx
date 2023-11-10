@@ -2,10 +2,9 @@
 // https://vercel.com/docs/limits/usage#image-optimization
 /* eslint-disable @next/next/no-img-element */
 
-'use client';
 import * as React from 'react';
 // import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import type { Set } from '@/types';
 import { CLASSES_FOR_MAGIC_COLORS } from './constants';
 
@@ -33,21 +32,22 @@ type SetProps = {
  *  />
  */
 export function Set(props: SetProps) {
-  const router = useRouter();
   const { index, set } = props;
   const { code, icon_svg_uri, name, preview_art } = set;
 
   const buttonColors = CLASSES_FOR_MAGIC_COLORS[index % 5];
   const isSetNameVeryLong = name?.length > 28;
+
+  const routeForSet = `/sets/${code}`;
+
   return (
-    <button
+    <Link
       className={`flex h-64 w-80 cursor-pointer flex-col items-end justify-between rounded border-transparent text-center shadow-md lg:h-72 lg:w-96 ${buttonColors} bg-cover bg-clip-border bg-center`}
+      href={routeForSet}
       key={code}
-      onClick={() => router.push(`/sets/${code}`)}
       style={{
         backgroundImage: `url(${preview_art})`,
       }}
-      tabIndex={0}
     >
       <div className='relative mr-4 mt-4 flex h-14 w-14 flex-col items-center justify-center'>
         <img
@@ -79,6 +79,6 @@ export function Set(props: SetProps) {
       >
         {name}
       </p>
-    </button>
+    </Link>
   );
 }
