@@ -84,6 +84,11 @@ export type Set = {
    */
   set_type: string;
   /**
+   * Whether to show the set in the list of sets available
+   * true
+   */
+  show: boolean;
+  /**
    * 23337
    */
   tcgplayer_id?: number;
