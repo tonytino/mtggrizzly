@@ -19,7 +19,6 @@ const FALLBACK_IMAGE_SRC = '/grizzly-bears.png';
 const MULTI_FACE_CARD_LAYOUTS = [
   'battle',
   'double_faced_token',
-  'meld',
   'reversible_card',
   'transform',
 ];
