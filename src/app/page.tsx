@@ -1,17 +1,27 @@
 import * as React from 'react';
 import { Set } from '@/components';
 import type { SetsResponse } from '@/types';
+import sets from '@/root/src/app/api/sets/sets.json';
 
 async function getSets(): Promise<SetsResponse> {
-  const host = process.env.HOST ?? '127.0.0.1';
-  const protocol = process.env.PROTOCOL ?? 'https';
-  const res = await fetch(`${protocol}://${host}/api/sets`);
+  try {
+    const host = process.env.HOST ?? 'mtggrizzly.vercel.app';
+    const protocol = process.env.PROTOCOL ?? 'https';
+    const res = await fetch(`${protocol}://${host}/api/sets`);
 
-  if (!res.ok) {
-    throw new Error('Failed to fetch data');
+    if (!res.ok) {
+      throw new Error('Failed to fetch data');
+    }
+
+    return res.json();
+  } catch (_) {
+    return new Promise((resolve) => {
+      resolve({
+        count: sets.length,
+        sets,
+      } as SetsResponse);
+    });
   }
-
-  return res.json();
 }
 
 /**
