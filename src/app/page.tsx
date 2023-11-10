@@ -3,7 +3,7 @@ import { Set } from '@/components';
 import type { SetsResponse } from '@/types';
 
 async function getSets(): Promise<SetsResponse> {
-  const host = process.env.HOST ?? 'mtggrizzly.vercel.app';
+  const host = process.env.HOST ?? '127.0.0.1';
   const protocol = process.env.PROTOCOL ?? 'https';
   const res = await fetch(`${protocol}://${host}/api/sets`);
 
