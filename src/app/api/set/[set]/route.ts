@@ -45,14 +45,24 @@ export async function GET(_: Request, { params }: { params: { set: string } }) {
         throw new Error('Over 999 cards found, please narrow your search');
       }
 
-      const res = await fetch(requestUrl);
-      const data: ScryfallSearchResponse = await res.json();
+      try {
+        const res = await fetch(requestUrl);
 
-      const { data: pageOfCards, has_more, next_page } = data;
+        const data: ScryfallSearchResponse = await res.json();
 
-      cards.push(...pageOfCards);
-      hasMore = has_more;
-      if (hasMore) requestUrl = next_page;
+        if (data.object === 'error') {
+          console.error(data);
+          throw new Error('An error was encountered.');
+        }
+
+        const { data: pageOfCards, has_more, next_page } = data;
+
+        cards.push(...pageOfCards);
+        hasMore = has_more;
+        if (hasMore) requestUrl = next_page;
+      } catch (error) {
+        hasMore = false;
+      }
     }
 
     return Response.json({

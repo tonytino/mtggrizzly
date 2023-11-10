@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Set } from '@/components';
-import type { SetsResponse } from '@/types';
+// import type { SetsResponse } from '@/types';
 import sets from '@/root/src/app/api/sets/sets.json';
 
 // async function getSets(): Promise<SetsResponse> {
@@ -23,7 +23,7 @@ async function HomePage() {
 
   return (
     <section className='m-auto grid h-min grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3'>
-      {sets.map((set, index) => {
+      {setsToShow.map((set, index) => {
         return (
           <Set
             index={index}
