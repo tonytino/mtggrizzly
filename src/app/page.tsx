@@ -3,32 +3,23 @@ import { Set } from '@/components';
 import type { SetsResponse } from '@/types';
 import sets from '@/root/src/app/api/sets/sets.json';
 
-async function getSets(): Promise<SetsResponse> {
-  try {
-    const host = process.env.HOST ?? 'mtggrizzly.vercel.app';
-    const protocol = process.env.PROTOCOL ?? 'https';
-    const res = await fetch(`${protocol}://${host}/api/sets`);
-
-    if (!res.ok) {
-      throw new Error('Failed to fetch data');
-    }
-
-    return res.json();
-  } catch (_) {
-    return new Promise((resolve) => {
-      resolve({
-        count: sets.length,
-        sets,
-      } as SetsResponse);
-    });
-  }
-}
+// async function getSets(): Promise<SetsResponse> {
+//   const setsToShow = sets.filter((set) => set.show);
+//   return new Promise((resolve) => {
+//     resolve({
+//       count: setsToShow.length,
+//       sets: setsToShow,
+//       types: ['core', 'expansion', 'masters'],
+//     } as SetsResponse);
+//   });
+// }
 
 /**
  * The Home Page
  */
 async function HomePage() {
-  const { sets } = await getSets();
+  // const { sets } = await getSets();
+  const setsToShow = sets.filter((set) => set.show);
 
   return (
     <section className='m-auto grid h-min grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3'>
