@@ -33,8 +33,6 @@ async function HomePage() {
   return (
     <section className='m-auto grid h-min grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3'>
       {sets.map((set, index) => {
-        if (index > 8) return null;
-
         return (
           <Set
             index={index}
