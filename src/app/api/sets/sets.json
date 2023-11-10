@@ -1,6 +1,7 @@
 [
   {
     "object": "set",
+    "show": true,
     "id": "fed2c8cd-ab92-44f6-808a-41e7809bcfe2",
     "code": "rvr",
     "tcgplayer_id": 23319,
@@ -20,6 +21,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "70169a6e-89d1-4a3a-aef7-3152958d55ac",
     "code": "lci",
     "mtgo_code": "lci",
@@ -41,6 +43,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "79139661-13ee-43c4-8bad-a8c069f1a1df",
     "code": "woe",
     "mtgo_code": "woe",
@@ -62,6 +65,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "cd05036f-2698-43e6-a48e-5c8d82f0a551",
     "code": "cmm",
     "mtgo_code": "cmm",
@@ -83,6 +87,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "392f7315-dc53-40a3-a2cc-5482dbd498b3",
     "code": "mom",
     "mtgo_code": "mom",
@@ -104,6 +109,7 @@
   },
   {
     "object": "set",
+    "show": false,
     "id": "5b046a48-760d-4192-a8e8-8725c9052a6e",
     "code": "sis",
     "name": "Shadows of the Past",
@@ -122,6 +128,7 @@
   },
   {
     "object": "set",
+    "show": false,
     "id": "c3694ff5-7b12-4f29-8d82-2c9b553ac60e",
     "code": "sir",
     "name": "Shadows over Innistrad Remastered",
@@ -140,6 +147,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "04bef644-343f-4230-95ee-255f29aa67a2",
     "code": "one",
     "mtgo_code": "one",
@@ -162,6 +170,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "ca4c2884-e539-4b7f-980d-5d6a50220f2a",
     "code": "dmr",
     "tcgplayer_id": 17670,
@@ -181,6 +190,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "4219a14e-6701-4ddd-a185-21dc054ab19b",
     "code": "bro",
     "mtgo_code": "bro",
@@ -202,6 +212,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "4e47a6cd-cdeb-4b0f-8f24-cfe1a0127cb3",
     "code": "dmu",
     "mtgo_code": "dmu",
@@ -224,6 +235,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "5a645837-b050-449f-ac90-1e7ccbf45031",
     "code": "2x2",
     "tcgplayer_id": 3070,
@@ -244,6 +256,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "df837242-8c15-42e4-b049-c933a02dc501",
     "code": "snc",
     "mtgo_code": "snc",
@@ -266,6 +279,7 @@
   },
   {
     "object": "set",
+    "show": false,
     "id": "3c318e12-9152-4300-a096-4f58a6438897",
     "code": "slx",
     "tcgplayer_id": 3054,
@@ -286,6 +300,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "59a2059f-5482-433f-8761-eb2e17859b71",
     "code": "neo",
     "mtgo_code": "neo",
@@ -308,6 +323,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "8144b676-569f-4716-8005-bc8f0778f3fa",
     "code": "vow",
     "mtgo_code": "vow",
@@ -332,6 +348,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "44b8eb8f-fa23-401a-98b5-1fbb9871128e",
     "code": "mid",
     "mtgo_code": "mid",
@@ -356,6 +373,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "e1ef87ba-ba92-4573-817f-543b996d2851",
     "code": "afr",
     "mtgo_code": "afr",
@@ -378,6 +396,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "541c3c28-8747-40e5-a231-8e8f33234859",
     "code": "stx",
     "mtgo_code": "stx",
@@ -400,6 +419,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "11e90d1b-0502-43e6-b056-e24836523c13",
     "code": "tsr",
     "tcgplayer_id": 2772,
@@ -419,6 +439,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "43057fad-b1c1-437f-bc48-0045bce6d8c9",
     "code": "khm",
     "mtgo_code": "khm",
@@ -440,6 +461,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "cff93939-c724-4ed0-9367-e1277d39ba70",
     "code": "klr",
     "name": "Kaladesh Remastered",
@@ -458,6 +480,7 @@
   },
   {
     "object": "set",
+    "show": false,
     "id": "67e47ba2-b019-4181-9005-fe9fc021de44",
     "code": "plist",
     "tcgplayer_id": 2715,
@@ -477,6 +500,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "f4e01fa7-b254-42dd-849f-69b58027a8c4",
     "code": "znr",
     "mtgo_code": "znr",
@@ -499,6 +523,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "915dabb1-b82a-432d-939d-d9b128e65582",
     "code": "akr",
     "name": "Amonkhet Remastered",
@@ -517,6 +542,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "372dafe8-b5d1-4b81-998f-3ae96b59498a",
     "code": "2xm",
     "mtgo_code": "2xm",
@@ -539,6 +565,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "bc94aba1-7376-4e02-a12d-3a2efb66ab0f",
     "code": "m21",
     "mtgo_code": "m21",
@@ -563,6 +590,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "19feda43-15ab-427e-a0e4-148a4bf2b03a",
     "code": "iko",
     "mtgo_code": "iko",
@@ -585,6 +613,7 @@
   },
   {
     "object": "set",
+    "show": false,
     "id": "b665b68c-61f6-4f0b-9d2f-8cc28a543be5",
     "code": "fmb1",
     "tcgplayer_id": 2571,
@@ -605,6 +634,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "5f23a78d-cda1-462a-8be3-a62b40c34913",
     "code": "thb",
     "mtgo_code": "thb",
@@ -626,6 +656,7 @@
   },
   {
     "object": "set",
+    "show": false,
     "id": "d13bfc70-6137-4179-aa96-da30fd84de29",
     "code": "mb1",
     "tcgplayer_id": 2572,
@@ -645,6 +676,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "a90a7b2f-9dd8-4fc7-9f7d-8ea2797ec782",
     "code": "eld",
     "mtgo_code": "eld",
@@ -666,6 +698,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "4a787360-9767-4f44-80b1-2405dc5e39c7",
     "code": "m20",
     "mtgo_code": "m20",
@@ -689,6 +722,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "ee044f0b-e101-4ead-8d0e-aa510aad4277",
     "code": "war",
     "mtgo_code": "war",
@@ -712,6 +746,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "97a7fd84-8d89-45a3-b48b-c951f6a3f9f1",
     "code": "rna",
     "mtgo_code": "rna",
@@ -736,6 +771,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "2ec77b94-6d47-4891-a480-5d0b4e5c9372",
     "code": "uma",
     "mtgo_code": "uma",
@@ -758,6 +794,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "597c6d4a-8212-4903-a6af-12c4ae9e13f0",
     "code": "grn",
     "mtgo_code": "grn",
@@ -782,6 +819,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "2f5f2509-56db-414d-9a7e-6e312ec3760c",
     "code": "m19",
     "mtgo_code": "m19",
@@ -806,6 +844,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "be1daba3-51c9-4e7e-9212-36e68addc26c",
     "code": "dom",
     "mtgo_code": "dar",
@@ -828,6 +867,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "41ee6e2f-69b3-4c53-8a8e-960f5e974cfc",
     "code": "a25",
     "mtgo_code": "a25",
@@ -850,6 +890,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "2f7e40fc-772d-4a85-bfdd-01653c41d0fa",
     "code": "rix",
     "mtgo_code": "rix",
@@ -874,6 +915,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "741bcd30-7709-4133-8919-f4b46483bed7",
     "code": "ima",
     "mtgo_code": "ima",
@@ -896,6 +938,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "fe0dad85-54bc-4151-9200-d68da84dd0f2",
     "code": "xln",
     "mtgo_code": "xln",
@@ -920,6 +963,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "65ff168b-bb94-47a5-a8f9-4ec6c213e768",
     "code": "hou",
     "mtgo_code": "hou",
@@ -944,6 +988,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "02d1c536-68bc-4208-9b65-7741ef1f9da8",
     "code": "akh",
     "mtgo_code": "akh",
@@ -968,6 +1013,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "02624962-f727-4c31-bbf2-a94fa6c5b653",
     "code": "mm3",
     "mtgo_code": "mm3",
@@ -990,6 +1036,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "a4a0db50-8826-4e73-833c-3fd934375f96",
     "code": "aer",
     "mtgo_code": "aer",
@@ -1014,6 +1061,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "d667e468-be8f-411f-a030-473d148deb74",
     "code": "kld",
     "mtgo_code": "kld",
@@ -1038,6 +1086,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "5f0e4093-334f-4439-bbb5-a0affafd0ffc",
     "code": "emn",
     "mtgo_code": "emn",
@@ -1062,6 +1111,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "1f29f022-3ace-4c96-85e8-1f7b63aadf7e",
     "code": "ema",
     "mtgo_code": "ema",
@@ -1084,6 +1134,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "5e914d7e-c1e9-446c-a33d-d093c02b2743",
     "code": "soi",
     "mtgo_code": "soi",
@@ -1108,6 +1159,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "cd51d245-8f95-45b0-ab5f-e2b3a3eb5dfe",
     "code": "ogw",
     "mtgo_code": "ogw",
@@ -1132,6 +1184,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "91719374-7ac5-4afa-ada8-5da964dcf1d4",
     "code": "bfz",
     "mtgo_code": "bfz",
@@ -1156,6 +1209,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "0eeb9a9a-20ac-404d-b55f-aeb7a43a7f62",
     "code": "ori",
     "mtgo_code": "ori",
@@ -1180,6 +1234,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "28cac015-43df-4e88-90d0-95dcdd894834",
     "code": "mm2",
     "mtgo_code": "mm2",
@@ -1202,6 +1257,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "41b3e002-ab58-46a0-8024-056ee843e267",
     "code": "tpr",
     "mtgo_code": "tpr",
@@ -1223,6 +1279,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "7e72625f-f320-4552-a719-d11e2f1853bd",
     "code": "dtk",
     "mtgo_code": "dtk",
@@ -1247,6 +1304,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "7bb5cb2b-081a-4c8c-b7e1-494046e6baa1",
     "code": "frf",
     "mtgo_code": "frf",
@@ -1271,6 +1329,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "6c7a715c-ded9-449e-89b0-c665773e9c3c",
     "code": "ktk",
     "mtgo_code": "ktk",
@@ -1295,6 +1354,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "6ce49890-3b37-42a5-8932-dbeef1d7b62c",
     "code": "m15",
     "mtgo_code": "m15",
@@ -1319,6 +1379,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "a944551a-73fa-41cd-9159-e8d0e4674403",
     "code": "vma",
     "mtgo_code": "vma",
@@ -1340,6 +1401,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "204d2dca-1887-4721-9558-164aa7bbeb4f",
     "code": "jou",
     "mtgo_code": "jou",
@@ -1364,6 +1426,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "50a80fe4-a757-408f-ad23-52c5cc5f45cc",
     "code": "bng",
     "mtgo_code": "bng",
@@ -1388,6 +1451,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "69093d6f-e25a-41a4-8cf5-688d7f11c0fb",
     "code": "ths",
     "mtgo_code": "ths",
@@ -1412,6 +1476,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "e03ee1c0-ecd2-4fcc-ac3c-e8fdb103a847",
     "code": "m14",
     "mtgo_code": "m14",
@@ -1436,6 +1501,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "0b7020f2-336d-4706-9ce6-f6710b9ebd5c",
     "code": "mma",
     "mtgo_code": "mma",
@@ -1458,6 +1524,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "c8bd8520-cd98-45cd-b533-8d40c2087426",
     "code": "dgm",
     "mtgo_code": "dgm",
@@ -1482,6 +1549,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "035a05f7-e020-4f50-a141-ed16ba704bd2",
     "code": "gtc",
     "mtgo_code": "gtc",
@@ -1506,6 +1574,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "80b2374d-c5f1-403e-9772-f6c806fd275e",
     "code": "rtr",
     "mtgo_code": "rtr",
@@ -1530,6 +1599,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "f9b0c6f4-8a4f-4f36-ad3c-e1e16fb8535d",
     "code": "m13",
     "mtgo_code": "m13",
@@ -1554,6 +1624,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "039810a9-92d7-4f2d-b2d0-ca661ac586c0",
     "code": "avr",
     "mtgo_code": "avr",
@@ -1578,6 +1649,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "8052750a-aaf2-46fc-b46d-633f14124017",
     "code": "dka",
     "mtgo_code": "dka",
@@ -1602,6 +1674,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "d1026945-2969-42b9-be53-f941405a58cb",
     "code": "isd",
     "mtgo_code": "isd",
@@ -1626,6 +1699,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "5cdd2643-229c-4441-a62a-c34e4b531e1c",
     "code": "m12",
     "mtgo_code": "m12",
@@ -1650,6 +1724,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "e8e356d8-6d01-4dab-aa07-d0999dc9359f",
     "code": "nph",
     "mtgo_code": "nph",
@@ -1674,6 +1749,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "f46c57e3-9301-4006-a6ca-06f3f65961fb",
     "code": "mbs",
     "mtgo_code": "mbs",
@@ -1698,6 +1774,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "d38a13b7-6615-4c89-be7d-3b4eaacf1875",
     "code": "me4",
     "mtgo_code": "me4",
@@ -1719,6 +1796,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "8f403072-9b22-4e69-8d59-22dc4c97fd8d",
     "code": "som",
     "mtgo_code": "som",
@@ -1743,6 +1821,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "485d2468-18c8-42a4-9482-ca1c51e0470e",
     "code": "m11",
     "mtgo_code": "m11",
@@ -1767,6 +1846,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "eadb8a82-ec56-4623-b50e-42e7e60cb535",
     "code": "roe",
     "mtgo_code": "roe",
@@ -1791,6 +1871,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "2f248ce6-c2a5-4c6f-a2be-0c593fbe173c",
     "code": "wwk",
     "mtgo_code": "wwk",
@@ -1815,6 +1896,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "eb16a2bd-a218-4e4e-8339-4aa1afc0c8d2",
     "code": "zen",
     "mtgo_code": "zen",
@@ -1839,6 +1921,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "b65fb1f2-4768-4c70-8fdf-30a069ad592e",
     "code": "me3",
     "mtgo_code": "me3",
@@ -1860,6 +1943,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "0dba38a9-6b9d-4768-9831-4e03e8970a0b",
     "code": "m10",
     "mtgo_code": "m10",
@@ -1884,6 +1968,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "db486ec5-141d-4781-9ee5-5456926934c1",
     "code": "arb",
     "mtgo_code": "arb",
@@ -1908,6 +1993,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "76b2db58-904c-4e49-8580-9f62f7b3cca4",
     "code": "con",
     "mtgo_code": "con",
@@ -1932,6 +2018,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "d667aaec-09b7-4406-b6fa-60795132dc11",
     "code": "ala",
     "mtgo_code": "ala",
@@ -1956,6 +2043,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "7d51a13b-dcd2-4ec2-b3a7-c89288e00b4e",
     "code": "me2",
     "mtgo_code": "me2",
@@ -1977,6 +2065,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "86b4dfef-f2d1-49d6-825d-7df6bda44357",
     "code": "eve",
     "mtgo_code": "eve",
@@ -2001,6 +2090,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "c18c0ba1-2081-4808-9b2e-549bc3a666f3",
     "code": "shm",
     "mtgo_code": "shm",
@@ -2025,6 +2115,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "c41550df-7b41-41a3-85ab-8612eb2f168f",
     "code": "mor",
     "mtgo_code": "mor",
@@ -2049,6 +2140,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "30ec97cb-dca9-4bf4-a98b-310f9d8ceaff",
     "code": "lrw",
     "mtgo_code": "lrw",
@@ -2073,6 +2165,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "407d388d-1abf-4c1d-b0c6-f56280898a1a",
     "code": "me1",
     "mtgo_code": "med",
@@ -2094,6 +2187,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "a66a6124-0d81-488d-b080-91f5ba7fbad0",
     "code": "10e",
     "mtgo_code": "10e",
@@ -2118,6 +2212,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "bf951ddb-4445-4923-87cb-3fe4ac3c6b9a",
     "code": "fut",
     "mtgo_code": "fut",
@@ -2142,6 +2237,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "5a1b571c-73e9-4c14-b9d4-a62507d85789",
     "code": "plc",
     "mtgo_code": "plc",
@@ -2166,6 +2262,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "c1d109bc-ffd8-428f-8d7d-3f8d7e648046",
     "code": "tsp",
     "mtgo_code": "tsp",
@@ -2190,6 +2287,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "1f4f105f-73e4-4f03-849e-82a204807847",
     "code": "csp",
     "mtgo_code": "csp",
@@ -2214,6 +2312,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "fdebeda1-b95f-4343-8a94-d125821e6b5c",
     "code": "dis",
     "mtgo_code": "dis",
@@ -2238,6 +2337,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "594b4d09-8ce1-494d-bdb2-842c124bd087",
     "code": "gpt",
     "mtgo_code": "gpt",
@@ -2262,6 +2362,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "15fccbe8-2825-41ca-9d0a-67aebdf91c4a",
     "code": "rav",
     "mtgo_code": "rav",
@@ -2286,6 +2387,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "e70c8572-4732-4e92-a140-b4e3c1c84c93",
     "code": "9ed",
     "mtgo_code": "9ed",
@@ -2310,6 +2412,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "4db16ad3-2b95-442f-bb6b-e9aa7fe7f769",
     "code": "sok",
     "mtgo_code": "sok",
@@ -2334,6 +2437,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "d4b88587-a1f5-4b47-9e24-78ec9e57bd0e",
     "code": "bok",
     "mtgo_code": "bok",
@@ -2358,6 +2462,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "6183d21f-a0af-4118-ba58-aca1d8719c01",
     "code": "chk",
     "mtgo_code": "chk",
@@ -2382,6 +2487,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "e4bc1b87-5476-463c-8640-4c414ecf1763",
     "code": "5dn",
     "mtgo_code": "5dn",
@@ -2406,6 +2512,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "e29cb2dd-1345-4032-abfe-e52e8c8ce074",
     "code": "dst",
     "mtgo_code": "dst",
@@ -2430,6 +2537,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "1d4f90ba-8d4a-4ee5-bc2f-e2d6bffe4955",
     "code": "mrd",
     "mtgo_code": "mrd",
@@ -2454,6 +2562,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "cae8d29d-5979-4d8f-884d-7f3183bcc886",
     "code": "8ed",
     "mtgo_code": "8ed",
@@ -2478,6 +2587,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "5133c3a1-1412-4ce6-a1f0-73b695966ded",
     "code": "scg",
     "mtgo_code": "scg",
@@ -2502,6 +2612,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "c2d60a18-1a81-4784-8e0c-e1de2f43c5cf",
     "code": "lgn",
     "mtgo_code": "lgn",
@@ -2526,6 +2637,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "914a6c6d-cb3b-45e8-a2db-9978a2339faf",
     "code": "ons",
     "mtgo_code": "ons",
@@ -2550,6 +2662,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "cd82de1a-36fd-4618-bfe8-b45532a582d9",
     "code": "jud",
     "mtgo_code": "jud",
@@ -2574,6 +2687,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "e0b3fda1-a6ca-4996-849b-08b463d39484",
     "code": "tor",
     "mtgo_code": "tor",
@@ -2598,6 +2712,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "b0d90d2d-494a-4224-bfa0-36ce5ee281b1",
     "code": "ody",
     "mtgo_code": "od",
@@ -2622,6 +2737,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "e4e00913-d08d-4899-86ea-5cf631e09ce0",
     "code": "apc",
     "mtgo_code": "ap",
@@ -2646,6 +2762,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "230f38aa-9511-4db8-a3aa-aeddbc3f7bb9",
     "code": "7ed",
     "mtgo_code": "7e",
@@ -2670,6 +2787,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "82dc193b-bd5f-4883-a93f-a4155b467ee0",
     "code": "pls",
     "mtgo_code": "ps",
@@ -2694,6 +2812,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "b9ae5e02-7726-47ca-b5e4-5ec402b41cd1",
     "code": "inv",
     "mtgo_code": "in",
@@ -2718,6 +2837,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "c233bd36-57c0-4aa2-ae6c-7aeabfb4e3ce",
     "code": "pcy",
     "mtgo_code": "pr",
@@ -2742,6 +2862,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "fa5d1fdb-f781-473d-b14d-50396d40d43f",
     "code": "nem",
     "mtgo_code": "ne",
@@ -2766,6 +2887,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "385e11a4-492b-4d07-b4a6-a1409ef829b8",
     "code": "mmq",
     "mtgo_code": "mm",
@@ -2790,6 +2912,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "44f17b37-dcf8-4239-baab-1efc00cd3480",
     "code": "uds",
     "mtgo_code": "ud",
@@ -2814,6 +2937,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "78ee1957-d5d4-4551-acae-b1b418e8a50b",
     "code": "6ed",
     "tcgplayer_id": 23,
@@ -2836,6 +2960,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "78ced61b-4b8a-4b33-b6b2-f5bd66f1a75a",
     "code": "ulg",
     "mtgo_code": "ul",
@@ -2860,6 +2985,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "c330df40-51db-4caf-bde6-48df6c181001",
     "code": "usg",
     "mtgo_code": "uz",
@@ -2884,6 +3010,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "1401f7af-2e71-476d-9813-991084ed0bb9",
     "code": "exo",
     "mtgo_code": "ex",
@@ -2908,6 +3035,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "5c83396a-d386-4367-926b-571a75b086a3",
     "code": "sth",
     "mtgo_code": "st",
@@ -2931,6 +3059,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "10df3a67-178e-4363-8668-34f0e6edf2a7",
     "code": "tmp",
     "mtgo_code": "te",
@@ -2954,6 +3083,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "700997ac-add2-4ce2-992e-5efa0fdfc0e9",
     "code": "wth",
     "mtgo_code": "wl",
@@ -2977,6 +3107,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "5afd2f4b-8309-4f45-a2b2-3785018474cb",
     "code": "5ed",
     "tcgplayer_id": 44,
@@ -2998,6 +3129,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "2c32f1a9-7921-4826-bea0-80bbac70532c",
     "code": "vis",
     "mtgo_code": "vi",
@@ -3021,6 +3153,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "5f06acf3-8123-4a78-b2e7-089b0b775a4a",
     "code": "mir",
     "mtgo_code": "mi",
@@ -3044,6 +3177,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "64987b06-4a5c-443d-b560-ff5691744582",
     "code": "all",
     "tcgplayer_id": 6,
@@ -3065,6 +3199,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "5ac1f606-e682-46e9-ad0f-122a3783581b",
     "code": "hml",
     "tcgplayer_id": 57,
@@ -3084,81 +3219,7 @@
   },
   {
     "object": "set",
-    "id": "bec33d25-cf6f-460f-918d-29b3009686bb",
-    "code": "ren",
-    "tcgplayer_id": 2379,
-    "name": "Renaissance",
-    "uri": "https://api.scryfall.com/sets/bec33d25-cf6f-460f-918d-29b3009686bb",
-    "scryfall_uri": "https://scryfall.com/sets/ren",
-    "search_uri": "https://api.scryfall.com/cards/search?include_extras=true&include_variations=true&order=set&q=e%3Aren&unique=prints",
-    "released_at": "1995-08-01",
-    "set_type": "masters",
-    "card_count": 122,
-    "digital": false,
-    "nonfoil_only": true,
-    "foil_only": false,
-    "icon_svg_uri": "https://svgs.scryfall.io/sets/ren.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/4/d/4dfb9706-8379-48e9-9894-d6b5a574f98c.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ren"
-  },
-  {
-    "object": "set",
-    "id": "4c53f6a5-90a1-44d6-a21b-bfa9dafba9e8",
-    "code": "rin",
-    "name": "Rinascimento",
-    "uri": "https://api.scryfall.com/sets/4c53f6a5-90a1-44d6-a21b-bfa9dafba9e8",
-    "scryfall_uri": "https://scryfall.com/sets/rin",
-    "search_uri": "https://api.scryfall.com/cards/search?include_extras=true&include_variations=true&order=set&q=e%3Arin&unique=prints",
-    "released_at": "1995-08-01",
-    "set_type": "masters",
-    "card_count": 69,
-    "digital": false,
-    "nonfoil_only": true,
-    "foil_only": false,
-    "icon_svg_uri": "https://svgs.scryfall.io/sets/rin.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/7/7/7715d930-6d75-4b28-9e83-ebd0a1d792b8.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:rin"
-  },
-  {
-    "object": "set",
-    "id": "d672ed60-4161-4b21-874a-584b13b2fc35",
-    "code": "bchr",
-    "name": "Chronicles Foreign Black Border",
-    "uri": "https://api.scryfall.com/sets/d672ed60-4161-4b21-874a-584b13b2fc35",
-    "scryfall_uri": "https://scryfall.com/sets/bchr",
-    "search_uri": "https://api.scryfall.com/cards/search?include_extras=true&include_variations=true&order=set&q=e%3Abchr&unique=prints",
-    "released_at": "1995-07-01",
-    "set_type": "masters",
-    "card_count": 125,
-    "parent_set_code": "chr",
-    "digital": false,
-    "nonfoil_only": true,
-    "foil_only": false,
-    "icon_svg_uri": "https://svgs.scryfall.io/sets/chr.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/9/a/9ad08635-0478-41fd-a82e-1e88d82e76ce.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:bchr"
-  },
-  {
-    "object": "set",
-    "id": "985eab7d-655a-4cb0-ba74-d48c8dcfb3d4",
-    "code": "chr",
-    "tcgplayer_id": 22,
-    "name": "Chronicles",
-    "uri": "https://api.scryfall.com/sets/985eab7d-655a-4cb0-ba74-d48c8dcfb3d4",
-    "scryfall_uri": "https://scryfall.com/sets/chr",
-    "search_uri": "https://api.scryfall.com/cards/search?include_extras=true&include_variations=true&order=set&q=e%3Achr&unique=prints",
-    "released_at": "1995-07-01",
-    "set_type": "masters",
-    "card_count": 125,
-    "digital": false,
-    "nonfoil_only": true,
-    "foil_only": false,
-    "icon_svg_uri": "https://svgs.scryfall.io/sets/chr.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/d/2/d282cac6-2cc6-4384-a4b9-06763eb4a706.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:chr"
-  },
-  {
-    "object": "set",
+    "show": true,
     "id": "b0e08eea-5c01-4406-a6e2-dcd09c5e5b67",
     "code": "ice",
     "tcgplayer_id": 58,
@@ -3180,6 +3241,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "2dd259d4-dc13-4956-a2dc-3e1d70b4a743",
     "code": "4ed",
     "tcgplayer_id": 46,
@@ -3201,6 +3263,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "cf7390b1-341a-4ae8-a325-da0f5f322f13",
     "code": "fem",
     "tcgplayer_id": 41,
@@ -3220,6 +3283,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "a21c6836-c435-459a-81e3-22d2da174549",
     "code": "drk",
     "tcgplayer_id": 109,
@@ -3239,6 +3303,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "78c50b4b-b220-455b-a2d5-cee458fa56f3",
     "code": "leg",
     "tcgplayer_id": 65,
@@ -3258,6 +3323,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "45a69797-8adf-468e-a4e1-ba81fd9d66ac",
     "code": "3ed",
     "tcgplayer_id": 97,
@@ -3279,6 +3345,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "819f9678-87dd-4aba-a47b-2d553bfea21f",
     "code": "atq",
     "tcgplayer_id": 8,
@@ -3298,6 +3365,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "856f63eb-e056-43e5-8a56-7a58e1608940",
     "code": "arn",
     "tcgplayer_id": 11,
@@ -3317,6 +3385,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "cd7694b9-339c-405d-a991-14413d4f6d5c",
     "code": "2ed",
     "tcgplayer_id": 115,
@@ -3338,6 +3407,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "5307bd88-637c-4a5c-9801-a0d887715302",
     "code": "leb",
     "tcgplayer_id": 17,
@@ -3359,6 +3429,7 @@
   },
   {
     "object": "set",
+    "show": true,
     "id": "288bd996-960e-448b-a187-9504c1930c2c",
     "code": "lea",
     "tcgplayer_id": 7,
