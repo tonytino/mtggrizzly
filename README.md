@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MTG Grizzly
 
 ## Getting Started
 
-First, run the development server:
+1. Install the dependencies
+
+```bash
+npm install
+```
+
+2. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Visit the site via your browser at [localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Home Page (Set Selection)](http://localhost:3000)
+- [Example Set Page (Lost Caverns of Ixalan)](http://localhost:3000/sets/lci)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Resources
 
-## Learn More
+### MTG Grizzly Specific
 
-To learn more about Next.js, take a look at the following resources:
+- [GitHub Repo]
+- [Project Board]
+- [Vercel Dashboard]
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### General
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [Next.js Documentation]
+- [Learn Next.js Tutorial]
+- [Next.js Deployment Documentation]
+- [Tailwind Documentation]
 
-## Deploy on Vercel
+## Notes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- This project is hosted on [Vercel](https://vercel.com/tonytino/mtggrizzly)
+- This project has [fast refresh](https://nextjs.org/docs/architecture/fast-refresh) enabled
+- This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font
+- This project leverages [Next.js' app router](https://nextjs.org/docs#app-router-vs-pages-router)
+- This project leverages [Tailwind CSS](https://tailwindcss.com)
+- This project leverages the [Scryfall API](https://scryfall.com/docs/api)
+- This project adheres to the [Conventional Commits] specification
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Aliases
+
+The project has [various aliases](https://github.com/tonytino/mtggrizzly/blob/30ad0c687f2011a4dcb007369071a32d89b9d667/tsconfig.json#L19-L25) configured for your importing needs.
+
+```tsx
+import { Card } from '@/components';
+import type { DraftSet } from '@/types';
+```
+
+### READMEs
+
+There are READMEs throughout the codebase to help document important information close to where it matters.
+
+Below are links to all of the READMEs:
+
+1. [Scripts README.md](./scripts/README.md)
+2. [App README.md](./src/app/README.md)
+3. [API README.md](./src/app/api/README.md)
+4. [Components README.md](./src/components/README.md)
+5. [Types README.md](./types/README.md)
+6. [Utils README.md](./utils/README.md)
+
+## Contributing
+
+1. Check out the [Project Board] or [Project Issues] for available tasks
+2. Check out the [Project Notes](https://github.com/tonytino/mtggrizzly#notes)
+3. Open a pull request with your changes and references the issue you're working on (e.g. "Resolves #01234")
+
+<!-- LINK REFERENCES -->
+
+[Conventional Commits]: https://www.conventionalcommits.org/en/v1.0.0/#summary
+[GitHub Repo]: https://github.com/tonytino/mtggrizzly
+[Learn Next.js Tutorial]: https://nextjs.org/learn
+[Next.js Deployment Documentation]: https://nextjs.org/docs/deployment
+[Next.js Documentation]: https://nextjs.org/docs
+[Project Board]: https://github.com/users/tonytino/projects/4/views/1
+[Project Issues]: https://github.com/tonytino/mtggrizzly/issues
+[Tailwind Documentation]: https://tailwindcss.com/docs/installation
+[Vercel Dashboard]: https://vercel.com/tonytino/mtggrizzly
