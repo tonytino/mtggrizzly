@@ -2,6 +2,7 @@ import { headers } from 'next/headers';
 import * as React from 'react';
 import { Card } from '@/components';
 import type { DraftSet } from '@/types';
+import sets from '@/src/app/api/sets/sets.json';
 
 async function getSet(set: string): Promise<DraftSet> {
   const reqHeaders = headers();
@@ -15,6 +16,16 @@ async function getSet(set: string): Promise<DraftSet> {
 
   return res.json();
 }
+
+// https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#generating-static-params
+export async function generateStaticParams() {
+  return sets.map((set) => ({
+    set: set.code,
+  }));
+}
+
+// https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamicparams
+export const dynamicParams = true;
 
 /**
  * The Set Page
