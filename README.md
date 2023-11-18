@@ -51,6 +51,9 @@ The project has [various aliases](https://github.com/tonytino/mtggrizzly/blob/30
 ```tsx
 import { Card } from '@/components';
 import type { DraftSet } from '@/types';
+import sets from '@/root/src/app/api/sets/sets.json';
+import sets from '@/src/app/api/sets/sets.json';
+import { React, render, screen, userEvent } from 'test-utils';
 ```
 
 ### READMEs
