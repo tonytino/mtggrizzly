@@ -46,7 +46,7 @@ export function Set(props: SetProps) {
       href={routeForSet}
       key={code}
       style={{
-        backgroundImage: `url('/set-previews/${code}.png')`,
+        backgroundImage: `url('/set-previews/${code}.jpg')`,
       }}
     >
       <div className='relative mr-4 mt-4 flex h-14 w-14 flex-col items-center justify-center'>
