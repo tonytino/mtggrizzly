@@ -33,7 +33,7 @@ type SetProps = {
  */
 export function Set(props: SetProps) {
   const { index, set } = props;
-  const { code, icon_svg_uri, name, preview_art } = set;
+  const { code, icon_svg_uri, name } = set;
 
   const buttonColors = CLASSES_FOR_MAGIC_COLORS[index % 5];
   const isSetNameVeryLong = name?.length > 28;
@@ -46,7 +46,7 @@ export function Set(props: SetProps) {
       href={routeForSet}
       key={code}
       style={{
-        backgroundImage: `url(${preview_art})`,
+        backgroundImage: `url('/set-previews/${code}.png')`,
       }}
     >
       <div className='relative mr-4 mt-4 flex h-14 w-14 flex-col items-center justify-center'>
