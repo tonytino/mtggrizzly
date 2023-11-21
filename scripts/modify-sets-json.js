@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-
 /**
  * This script is for programmatically modifying sets.json to have preview art
  */

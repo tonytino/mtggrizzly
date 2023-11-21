@@ -25,6 +25,7 @@ const eslintConfig = {
       'error',
       { absence: false, presence: true },
     ],
+    '@typescript-eslint/no-var-requires': 'off',
   },
 };
 

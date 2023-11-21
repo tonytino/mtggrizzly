@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-
 /**
  * Converts jpg set preview images to webp in both 320w and 384w sizes using
  * cwebp: https://developers.google.com/speed/webp/docs/cwebp
