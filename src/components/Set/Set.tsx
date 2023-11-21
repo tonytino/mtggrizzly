@@ -40,13 +40,14 @@ export function Set(props: SetProps) {
 
   const routeForSet = `/sets/${code}`;
 
+  // lg:h-72 lg:w-96
   return (
     <Link
-      className={`flex h-64 w-80 cursor-pointer flex-col items-end justify-between rounded border-transparent text-center shadow-md lg:h-72 lg:w-96 ${buttonColors} bg-cover bg-clip-border bg-center`}
+      className={`flex h-64 w-80 cursor-pointer flex-col items-end justify-between rounded border-transparent text-center shadow-md ${buttonColors} bg-cover bg-clip-border bg-center`}
       href={routeForSet}
       key={code}
       style={{
-        backgroundImage: `url('/set-previews/${code}.jpg')`,
+        backgroundImage: `url('/set-previews/320/${code}.webp')`,
       }}
     >
       <div className='relative mr-4 mt-4 flex h-14 w-14 flex-col items-center justify-center'>
