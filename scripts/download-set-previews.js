@@ -4,12 +4,14 @@
  * This script is for programmatically downloading all set preview images
  */
 
-const { readFileSync, writeFile } = require('fs');
+const { writeFile } = require('fs');
+const { getSetsJSON } = require('./utils');
 const path = require('path');
 
-const SETS_JSON_PATH = `${__dirname}/../src/app/api/sets/sets.json`;
 let promises = [];
 let setsProcessed = 0;
+
+const sets = getSetsJSON();
 
 /**
  * Downloads and saves the preview art for each set in /public/set-previews
@@ -53,15 +55,6 @@ function fetchAndSaveSetPreviewArt({ code, name, preview_art }, index) {
     }
   });
 }
-
-/**
- * Access and parse the Sets JSON
- */
-
-const setsJson = readFileSync(SETS_JSON_PATH);
-const sets = JSON.parse(setsJson);
-
-console.log('Number of sets found:', sets.length);
 
 /**
  * Fetch and save all the set preview arts

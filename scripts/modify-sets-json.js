@@ -4,11 +4,13 @@
  * This script is for programmatically modifying sets.json to have preview art
  */
 
-const { readFileSync, writeFileSync } = require('fs');
+const { writeFileSync } = require('fs');
+const { getSetsJSON, SETS_JSON_PATH } = require('./utils');
 
-const SETS_JSON_PATH = `${__dirname}/../src/app/api/sets/sets.json`;
 let promises = [];
 let setsProcessed = 0;
+
+const sets = getSetsJSON();
 
 /**
  * Takes a given set object from sets.json as well as an index and returns a promise that fetches a random card for that set from scryfall (while avoiding rate limiting)
@@ -53,15 +55,6 @@ function fetchSetPreviewArtAndModifySetObject(set, index) {
     }
   });
 }
-
-/**
- * Access and parse the Sets JSON
- */
-
-const setsJson = readFileSync(SETS_JSON_PATH);
-const sets = JSON.parse(setsJson);
-
-console.log('Number of sets found:', sets.length);
 
 sets.map((set, index) =>
   promises.push(fetchSetPreviewArtAndModifySetObject(set, index))
