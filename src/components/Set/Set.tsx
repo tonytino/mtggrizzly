@@ -46,7 +46,7 @@ export function Set(props: SetProps) {
       href={routeForSet}
       key={code}
       style={{
-        backgroundImage: `url('/sets/${code}/preview/384.webp')`,
+        backgroundImage: `url('/sets/${code}/preview/320.webp')`,
         // backgroundImage: `
         //   image-set(
         //     url('/sets/${code}/preview/320.webp') 320x,
