@@ -12,7 +12,8 @@ let setsProcessed = 0;
 const sets = getSetsJSON();
 
 /**
- * Downloads and saves the preview art for each set in /public/set-previews
+ * Downloads and saves the preview art for each set in
+ *   /public/sets/{set.code}/preview/original.jpg
  */
 function fetchAndSaveSetPreviewArt({ code, name, preview_art }, index) {
   return new Promise((resolve, reject) => {
@@ -27,7 +28,15 @@ function fetchAndSaveSetPreviewArt({ code, name, preview_art }, index) {
           const imageBuffer = await response.arrayBuffer();
 
           writeFile(
-            path.join(`${__dirname}/../public/set-previews`, `${code}.jpg`),
+            path.join(
+              __dirname,
+              '..',
+              'public',
+              'sets',
+              code,
+              'preview',
+              'original.jpg'
+            ),
             Buffer.from(imageBuffer),
             (err) => {
               if (err) {
