@@ -1,0 +1,29 @@
+@tailwind components;
+
+@layer components {
+  .set-select-card {
+    height: 234px;
+    width: 320px;
+  }
+
+  .set-select-card img.preview-art {
+    height: 234px;
+    width: 320px;
+    max-height: 234px;
+    max-width: 320px;
+  }
+
+  @media (min-width: 1024px) {
+    .set-select-card {
+      height: 282px;
+      width: 384px;
+    }
+
+    .set-select-card img.preview-art {
+      height: 282px;
+      width: 384px;
+      max-height: 282px;
+      max-width: 384px;
+    }
+  }
+}

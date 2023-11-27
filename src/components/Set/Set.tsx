@@ -4,6 +4,7 @@
 
 import * as React from 'react';
 // import Image from 'next/image';
+import './Set.css';
 import Link from 'next/link';
 import type { Set } from '@/types';
 import { CLASSES_FOR_MAGIC_COLORS } from './constants';
@@ -42,22 +43,20 @@ export function Set(props: SetProps) {
 
   return (
     <Link
-      className={`flex h-64 w-80 cursor-pointer flex-col items-end justify-between rounded border-transparent text-center shadow-md lg:h-72 lg:w-96 ${buttonColors} bg-cover bg-clip-border bg-center`}
+      className={`set-select-card relative z-0 flex cursor-pointer flex-col items-end justify-between rounded border-transparent text-center shadow-md ${buttonColors} bg-cover bg-clip-border bg-center`}
       href={routeForSet}
       key={code}
-      style={{
-        backgroundImage: `url('/sets/${code}/preview/320.webp')`,
-        // backgroundImage: `
-        //   image-set(
-        //     url('/sets/${code}/preview/320.webp') 320x,
-        //     url('/sets/${code}/preview/384.webp') 384x
-        //   )
-        // `,
-      }}
     >
-      <div className='relative mr-4 mt-4 flex h-14 w-14 flex-col items-center justify-center'>
+      <img
+        alt={`${name}: Preview Card Art`}
+        className='preview-art absolute rounded'
+        src={`/sets/${code}/preview/320.webp`}
+        srcSet={`/sets/${code}/preview/320.webp 320w, /sets/${code}/preview/384.webp 384w`}
+      />
+
+      <div className='relative mr-4 mt-4 flex h-14 w-14 flex-col items-center justify-center rounded'>
         <img
-          alt={`${name} Set Icon`}
+          alt={`${name}: Set Icon`}
           className='max-w-14 max-h-14'
           height={56}
           width={56}
@@ -66,19 +65,10 @@ export function Set(props: SetProps) {
             filter: convertSVGToWhite,
           }}
         />
-        {/* <Image
-          alt={`${name} Set Icon`}
-          fill
-          sizes='100%'
-          src={icon_svg_uri}
-          style={{
-            filter: convertSVGToWhite,
-          }}
-        /> */}
       </div>
 
       <p
-        className={`mb-0 mt-auto h-1/4 w-full bg-black bg-opacity-50 p-2 leading-loose ${
+        className={`z-10 mb-0 mt-auto h-1/4 w-full rounded-b bg-black bg-opacity-50 p-2 leading-loose ${
           isSetNameVeryLong ? 'text-base' : 'text-lg'
         } font-medium text-slate-100`}
         style={isSetNameVeryLong ? { paddingTop: '11px' } : {}}
