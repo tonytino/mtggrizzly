@@ -30,7 +30,7 @@ export default function RootLayout({
             </h1>
           </div>
 
-          <div className='left-0 mt-20 flex h-full w-full flex-col items-center justify-start gap-4 overflow-y-auto'>
+          <div className='left-0 mt-20 flex h-full w-full flex-col items-center justify-start gap-4'>
             {children}
           </div>
         </main>

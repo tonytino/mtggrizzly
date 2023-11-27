@@ -6,7 +6,7 @@
     width: 320px;
   }
 
-  .set-select-card img.preview-art {
+  .set-select-card picture.preview-art {
     height: 234px;
     width: 320px;
     max-height: 234px;
@@ -19,7 +19,7 @@
       width: 384px;
     }
 
-    .set-select-card img.preview-art {
+    .set-select-card picture.preview-art {
       height: 282px;
       width: 384px;
       max-height: 282px;

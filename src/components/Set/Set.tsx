@@ -40,12 +40,21 @@ export function Set(props: SetProps) {
       href={routeForSet}
       key={code}
     >
-      <img
-        alt={`${name}: Preview Card Art`}
-        className='preview-art absolute rounded'
-        src={`/sets/${code}/preview/320.webp`}
-        srcSet={`/sets/${code}/preview/320.webp 320w, /sets/${code}/preview/384.webp 384w`}
-      />
+      <picture className='preview-art absolute'>
+        <source
+          media='(max-width: 1023px)'
+          srcSet={`/sets/${code}/preview/320.webp`}
+        />
+        <source
+          media='(min-width: 1024px)'
+          srcSet={`/sets/${code}/preview/384.webp`}
+        />
+        <img
+          alt={`${name}: Preview Card Art`}
+          className='rounded'
+          src={`/sets/${code}/preview/384.webp`}
+        />
+      </picture>
 
       <div className='relative mr-4 mt-4 flex h-14 w-14 flex-col items-center justify-center rounded'>
         <img
