@@ -7,16 +7,11 @@ import * as React from 'react';
 import './Set.css';
 import Link from 'next/link';
 import type { Set } from '@/types';
-import { CLASSES_FOR_MAGIC_COLORS } from './constants';
 
 const convertSVGToWhite =
   'invert(100%) sepia(0%) saturate(2%) hue-rotate(54deg) brightness(105%) contrast(101%)';
 
 type SetProps = {
-  /**
-   * The index of the set, used to apply a fallback background color
-   */
-  index: number;
   /**
    * The Set to render
    */
@@ -28,22 +23,20 @@ type SetProps = {
  *
  * @example
  *  <Set
- *    index={4}
  *    set={set}
  *  />
  */
 export function Set(props: SetProps) {
-  const { index, set } = props;
+  const { set } = props;
   const { code, icon_svg_uri, name } = set;
 
-  const buttonColors = CLASSES_FOR_MAGIC_COLORS[index % 5];
   const isSetNameVeryLong = name?.length > 28;
 
   const routeForSet = `/sets/${code}`;
 
   return (
     <Link
-      className={`set-select-card relative z-0 flex cursor-pointer flex-col items-end justify-between rounded border-transparent text-center shadow-md ${buttonColors} bg-cover bg-clip-border bg-center`}
+      className={`set-select-card relative flex cursor-pointer flex-col items-end justify-between rounded border-neutral-300 border-transparent bg-neutral-300 text-center shadow-md dark:border-neutral-400 dark:bg-neutral-400`}
       href={routeForSet}
       key={code}
     >
