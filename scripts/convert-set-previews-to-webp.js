@@ -14,18 +14,18 @@ sets.forEach((set, index) => {
   execSync(
     `cwebp \
       ${__dirname}/../public/sets/${set.code}/preview/original.jpg \
-      -o ${__dirname}/../public/sets/${set.code}/preview/320.webp \
+      -o ${__dirname}/../public/sets/${set.code}/preview/480.webp \
       -af \
       -hint picture \
-      -resize 320 0`
+      -resize 480 0`
   );
 
   execSync(
     `cwebp \
       ${__dirname}/../public/sets/${set.code}/preview/original.jpg \
-      -o ${__dirname}/../public/sets/${set.code}/preview/384.webp \
+      -o ${__dirname}/../public/sets/${set.code}/preview/576.webp \
       -af \
       -hint picture \
-      -resize 384 0`
+      -resize 576 0`
   );
 });

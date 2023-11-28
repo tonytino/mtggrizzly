@@ -43,16 +43,16 @@ export function Set(props: SetProps) {
       <picture className='absolute'>
         <source
           media='(max-width: 1023px)'
-          srcSet={`/sets/${code}/preview/320.webp`}
+          srcSet={`/sets/${code}/preview/480.webp`}
         />
         <source
           media='(min-width: 1024px)'
-          srcSet={`/sets/${code}/preview/384.webp`}
+          srcSet={`/sets/${code}/preview/576.webp`}
         />
         <img
           alt={`${name}: Preview Card Art`}
           className='preview-art rounded'
-          src={`/sets/${code}/preview/384.webp`}
+          src={`/sets/${code}/preview/576.webp`}
         />
       </picture>
 
