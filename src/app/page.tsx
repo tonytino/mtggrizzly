@@ -11,7 +11,7 @@ async function HomePage() {
 
   return (
     <React.Fragment>
-      {/* <section className='h-fit w-screen bg-gradient-to-r from-sky-500 to-indigo-500 py-12 text-center transition-colors dark:from-indigo-500 dark:to-sky-500 lg:py-16'>
+      <section className='h-fit w-screen bg-gradient-to-r from-sky-500 to-indigo-500 py-12 text-center transition-colors dark:from-indigo-500 dark:to-sky-500 lg:py-16'>
         <h3 className='mb-4 text-2xl font-bold text-slate-100 md:text-4xl'>
           Welcome to MTG Grizzly
         </h3>
@@ -45,7 +45,7 @@ async function HomePage() {
             <span className='text-4xl md:text-5xl'>📚</span>
           </div>
         </div>
-      </section> */}
+      </section>
 
       <section className='m-auto grid h-min grid-cols-1 gap-8 py-8 md:grid-cols-2 xl:grid-cols-3'>
         {setsToShow.map((set, index) => {
