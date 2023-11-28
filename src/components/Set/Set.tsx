@@ -4,7 +4,6 @@
 
 import * as React from 'react';
 // import Image from 'next/image';
-import './Set.css';
 import Link from 'next/link';
 import type { Set } from '@/types';
 
@@ -36,7 +35,7 @@ export function Set(props: SetProps) {
 
   return (
     <Link
-      className={`set-select-card relative flex cursor-pointer flex-col items-end justify-between rounded border-neutral-300 border-transparent bg-neutral-300 text-center shadow-md dark:border-neutral-400 dark:bg-neutral-400`}
+      className='relative flex h-[234px] w-[320px] cursor-pointer flex-col items-end justify-between rounded border-neutral-300 border-transparent bg-neutral-300 text-center shadow-md dark:border-neutral-400 dark:bg-neutral-400 lg:h-[281px] lg:w-[384px]'
       href={routeForSet}
       key={code}
     >
@@ -51,7 +50,7 @@ export function Set(props: SetProps) {
         />
         <img
           alt={`${name}: Preview Card Art`}
-          className='preview-art rounded'
+          className='h-[234px] max-h-[234px] w-[320px] max-w-[320px] rounded lg:h-[281px] lg:max-h-[281px] lg:w-[384px]  lg:max-w-[384px]'
           src={`/sets/${code}/preview/576.webp`}
         />
       </picture>
@@ -69,14 +68,14 @@ export function Set(props: SetProps) {
         />
       </div>
 
-      <p
+      <h3
         className={`z-10 mb-0 mt-auto h-1/4 w-full rounded-b bg-black bg-opacity-50 p-2 leading-loose ${
           isSetNameVeryLong ? 'text-base' : 'text-lg'
         } font-medium text-slate-100`}
         style={isSetNameVeryLong ? { paddingTop: '11px' } : {}}
       >
         {name}
-      </p>
+      </h3>
     </Link>
   );
 }
