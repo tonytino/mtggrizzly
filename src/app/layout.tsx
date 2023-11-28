@@ -51,15 +51,15 @@ export default function RootLayout({
           </div>
         </main>
 
-        <footer className='flex h-60 w-screen flex-col items-center justify-end gap-4 bg-gradient-to-b from-white from-0% to-slate-300 py-16 text-center dark:from-slate-800 dark:to-slate-950'>
-          <p className='text-lg text-slate-600 dark:text-slate-100'>
+        <footer className='flex h-60 w-screen flex-col items-center justify-end gap-4 bg-gradient-to-b from-white from-0% to-slate-300 px-8 py-16 text-center dark:from-slate-800 dark:to-slate-950'>
+          <p className='text-md text-slate-600 dark:text-slate-100 md:text-lg'>
             Thanks for using MTG Grizzly!
           </p>
 
-          <p className='text-md text-end leading-8 text-slate-600 dark:text-slate-100'>
+          <p className='md:text-md text-center text-sm leading-8 text-slate-600 dark:text-slate-100'>
             Special thanks to&nbsp;
             <a
-              className='text-lg font-semibold text-slate-600 dark:text-slate-500'
+              className='text-md font-semibold text-slate-600 dark:text-slate-500 md:text-lg'
               href='https://scryfall.com/'
               rel='noreferrer'
               target='_blank'
@@ -68,14 +68,14 @@ export default function RootLayout({
             </a>
             &nbsp;and&nbsp;
             <a
-              className='text-lg font-semibold text-slate-600 dark:text-slate-500'
+              className='text-md font-semibold text-slate-600 dark:text-slate-500 md:text-lg'
               href='https://magic.wizards.com/'
               rel='noreferrer'
               target='_blank'
             >
               Wizards of the Coast
             </a>
-            &nbsp;
+            &nbsp; for making this project possible.
           </p>
         </footer>
         <Analytics />
