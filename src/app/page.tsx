@@ -23,7 +23,9 @@ async function HomePage() {
 
   return (
     <section className='m-auto grid h-min grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3'>
-      {setsToShow.map((set) => {
+      {setsToShow.map((set, index) => {
+        if (index > 8) return;
+
         return (
           <Set
             key={set.code}
