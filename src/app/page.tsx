@@ -63,7 +63,7 @@ async function HomePage() {
         </div>
 
         <Link
-          className='mx-auto my-4 block w-[320px] rounded-md bg-emerald-600 py-4 text-center text-xl font-semibold tracking-wide text-white lg:my-8 lg:w-[384px] lg:py-6'
+          className='mx-auto my-4 block w-[var(--Set--width-mobile)] rounded-md bg-emerald-600 py-4 text-center text-xl font-semibold tracking-wide text-white lg:my-8 lg:w-[var(--Set--width-desktop)] lg:py-6'
           href='/sets'
         >
           All Sets

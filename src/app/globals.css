@@ -6,6 +6,12 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
+
+  /* <Set /> */
+  --Set--height-mobile: 234px;
+  --Set--height-desktop: 281px;
+  --Set--width-mobile: 320px;
+  --Set--width-desktop: 384px;
 }
 
 @media (prefers-color-scheme: dark) {

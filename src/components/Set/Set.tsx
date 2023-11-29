@@ -35,7 +35,7 @@ export function Set(props: SetProps) {
 
   return (
     <Link
-      className='relative flex h-[234px] w-[320px] cursor-pointer flex-col items-end justify-between rounded border-neutral-300 border-transparent bg-neutral-300 text-center shadow-md dark:border-neutral-400 dark:bg-neutral-400 lg:h-[281px] lg:w-[384px]'
+      className='relative flex h-[var(--Set--height-mobile)] w-[var(--Set--width-mobile)] cursor-pointer flex-col items-end justify-between rounded border-neutral-300 border-transparent bg-neutral-300 text-center shadow-md dark:border-neutral-400 dark:bg-neutral-400 lg:h-[var(--Set--height-desktop)] lg:w-[var(--Set--width-desktop)]'
       href={routeForSet}
       key={code}
     >
@@ -50,7 +50,7 @@ export function Set(props: SetProps) {
         />
         <img
           alt={`${name}: Preview Card Art`}
-          className='h-[234px] max-h-[234px] w-[320px] max-w-[320px] rounded lg:h-[281px] lg:max-h-[281px] lg:w-[384px]  lg:max-w-[384px]'
+          className='h-[var(--Set--height-mobile)] max-h-[var(--Set--height-mobile)] w-[var(--Set--width-mobile)] max-w-[var(--Set--width-mobile)] rounded lg:h-[var(--Set--height-desktop)] lg:max-h-[var(--Set--height-desktop)] lg:w-[var(--Set--width-desktop)] lg:max-w-[var(--Set--width-desktop)]'
           src={`/sets/${code}/preview/576.webp`}
         />
       </picture>
