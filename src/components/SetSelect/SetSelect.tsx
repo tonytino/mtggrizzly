@@ -23,7 +23,7 @@ export function SetSelect(props: SetSelectProps) {
   const [selectedSetCode, setSelectedSetCode] = React.useState('');
 
   return (
-    <section className='flex flex-col gap-2'>
+    <div className='flex flex-col gap-2'>
       <label htmlFor='set-select'>Choose a set:</label>
 
       <select
@@ -59,6 +59,6 @@ export function SetSelect(props: SetSelectProps) {
       >
         Go
       </button>
-    </section>
+    </div>
   );
 }

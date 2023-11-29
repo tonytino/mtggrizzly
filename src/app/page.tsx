@@ -48,7 +48,7 @@ async function HomePage() {
         </div>
       </section>
 
-      <section>
+      <div>
         <div className='m-auto grid h-min grid-cols-1 gap-8 py-8 md:grid-cols-2 xl:grid-cols-3'>
           {setsToShow.map((set, index) => {
             if (index > 8) return;
@@ -68,7 +68,7 @@ async function HomePage() {
         >
           All Sets
         </Link>
-      </section>
+      </div>
     </React.Fragment>
   );
 }
