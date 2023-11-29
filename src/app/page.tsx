@@ -12,7 +12,7 @@ async function HomePage() {
 
   return (
     <React.Fragment>
-      <section className='h-fit w-screen bg-gradient-to-r from-sky-500 to-indigo-500 py-12 text-center transition-colors dark:from-indigo-500 dark:to-sky-500 lg:py-16'>
+      <section className='h-fit w-screen bg-gradient-to-b from-sky-500 to-indigo-500 py-12 text-center lg:py-16'>
         <h3 className='mb-4 text-2xl font-bold text-slate-100 md:text-4xl'>
           Welcome to MTG Grizzly
         </h3>
