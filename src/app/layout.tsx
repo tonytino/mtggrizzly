@@ -1,8 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { Analytics } from '@vercel/analytics/react';
 import { Inter } from 'next/font/google';
-import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -10,8 +10,6 @@ export const metadata: Metadata = {
   title: 'MTG Grizzly',
   description: 'Your Source for Augmenting Your Limited Gameplay',
 };
-
-const WIDTH_CONSTRAINTS = 'mx-auto px-4 w-full xl:max-w-screen-xl';
 
 export default function RootLayout({
   children,
@@ -43,15 +41,13 @@ export default function RootLayout({
           </div>
         </header>
 
-        <main
-          className={`flex min-h-screen flex-col items-center justify-between pb-10 ${WIDTH_CONSTRAINTS}`}
-        >
-          <div className='left-0 mt-16 flex h-full w-full flex-col items-center justify-start gap-4'>
+        <main className='mx-auto flex min-h-screen w-full flex-col items-center justify-between px-4 pb-10'>
+          <div className='left-0 mt-16 flex h-full w-full flex-col items-center justify-start gap-4 xl:max-w-screen-xl'>
             {children}
           </div>
         </main>
 
-        <footer className='flex h-60 w-screen flex-col items-center justify-end gap-4 bg-gradient-to-b from-white from-0% to-slate-300 px-8 py-16 text-center dark:from-slate-800 dark:to-slate-950'>
+        <footer className='flex h-96 w-screen flex-col items-center justify-end gap-4 bg-slate-100 px-8 py-16 text-center dark:bg-slate-900'>
           <p className='text-md text-slate-600 dark:text-slate-100 md:text-lg'>
             Thanks for using MTG Grizzly!
           </p>
