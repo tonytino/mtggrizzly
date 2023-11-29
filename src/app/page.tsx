@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import * as React from 'react';
+import Link from 'next/link';
 import { Set } from '@/components';
 import sets from '@/src/app/api/sets/sets.json';
 
@@ -47,17 +48,26 @@ async function HomePage() {
         </div>
       </section>
 
-      <section className='m-auto grid h-min grid-cols-1 gap-8 py-8 md:grid-cols-2 xl:grid-cols-3'>
-        {setsToShow.map((set, index) => {
-          if (index > 8) return;
+      <section>
+        <div className='m-auto grid h-min grid-cols-1 gap-8 py-8 md:grid-cols-2 xl:grid-cols-3'>
+          {setsToShow.map((set, index) => {
+            if (index > 8) return;
 
-          return (
-            <Set
-              key={set.code}
-              set={set}
-            />
-          );
-        })}
+            return (
+              <Set
+                key={set.code}
+                set={set}
+              />
+            );
+          })}
+        </div>
+
+        <Link
+          className='mx-auto my-4 block w-[320px] rounded-md bg-emerald-600 py-4 text-center text-xl font-semibold tracking-wide text-white lg:my-8 lg:w-[384px] lg:py-6'
+          href='/sets'
+        >
+          All Sets
+        </Link>
       </section>
     </React.Fragment>
   );
