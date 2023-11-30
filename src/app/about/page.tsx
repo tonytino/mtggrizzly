@@ -10,8 +10,9 @@ async function AboutPage() {
         <h2 className='text-xl font-bold'>What is MTG Grizzly?</h2>
 
         <p className='text-lg'>
-          MTG Grizzly is a project seeking to improve the Magic: the Gathering
-          limited experience by providing helpful tools and resources.
+          MTG Grizzly is an early-stage project seeking to improve the Magic:
+          The Gathering limited experience by providing helpful tools and
+          resources.
         </p>
 
         <p className='text-lg'>
