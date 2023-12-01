@@ -5,6 +5,17 @@ import * as Tooltip from '@radix-ui/react-tooltip';
 import { ThickArrowUpIcon } from '@radix-ui/react-icons';
 
 /**
+ * Smoothly scrolls to the top of the page
+ */
+function scrollToTop() {
+  window.scrollTo({
+    behavior: 'smooth',
+    left: 0,
+    top: 0,
+  });
+}
+
+/**
  * Renders an up arrow icon that scrolls to the top of the page on click
  */
 export default function ScrollToTopIcon() {
@@ -14,13 +25,13 @@ export default function ScrollToTopIcon() {
         <ThickArrowUpIcon
           className='mt-[3px] cursor-pointer text-sky-800 hover:text-sky-600 dark:text-sky-400 dark:hover:text-sky-300'
           height='36px'
-          onClick={() =>
-            window.scrollTo({
-              behavior: 'smooth',
-              left: 0,
-              top: 0,
-            })
-          }
+          onClick={() => scrollToTop()}
+          onKeyDown={(event) => {
+            if (['Enter', ' '].includes(event.key)) {
+              scrollToTop();
+            }
+          }}
+          tabIndex={0}
           width='36px'
         />
       </Tooltip.Trigger>
