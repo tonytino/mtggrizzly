@@ -124,7 +124,7 @@ export function Card(props: CardProps) {
       <ElementType
         className={`group relative mx-auto my-2 rounded-lg border-4 border-transparent ${
           isMultiFaceCard
-            ? 'cursor-pointer hover:border-emerald-600'
+            ? 'cursor-pointer hover:border-sky-600'
             : 'cursor-default'
         }`}
         onClick={isMultiFaceCard ? handleSwapCardFace : noop}
