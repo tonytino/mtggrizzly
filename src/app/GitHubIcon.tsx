@@ -5,6 +5,8 @@ import Link from 'next/link';
 import * as Tooltip from '@radix-ui/react-tooltip';
 import { GitHubLogoIcon } from '@radix-ui/react-icons';
 
+const label = 'Proudly open-source';
+
 /**
  * Renders a GitHub icon that links to the GitHub repo
  */
@@ -13,6 +15,7 @@ export default function GitHubIcon() {
     <Tooltip.Root>
       <Tooltip.Trigger asChild>
         <Link
+          aria-label={label}
           href='https://github.com/tonytino/mtggrizzly'
           rel='noreferrer'
           target='_blank'
@@ -25,8 +28,11 @@ export default function GitHubIcon() {
         </Link>
       </Tooltip.Trigger>
 
-      <Tooltip.Content className='mb-2 rounded bg-sky-800 p-2 text-sm text-slate-100 shadow-sm dark:bg-slate-50 dark:text-sky-800'>
-        Proudly open-source
+      <Tooltip.Content
+        aria-label={label}
+        className='mb-2 rounded bg-sky-800 p-2 text-sm text-slate-100 shadow-sm dark:bg-slate-50 dark:text-sky-800'
+      >
+        {label}
       </Tooltip.Content>
     </Tooltip.Root>
   );

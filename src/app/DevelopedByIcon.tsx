@@ -5,6 +5,8 @@ import Link from 'next/link';
 import * as Tooltip from '@radix-ui/react-tooltip';
 import { LaptopIcon } from '@radix-ui/react-icons';
 
+const label = 'Developed by brbcoding.com';
+
 /**
  * Renders a laptop icon that links to brbcoding.com
  */
@@ -13,6 +15,7 @@ export default function DevelopedByIcon() {
     <Tooltip.Root>
       <Tooltip.Trigger asChild>
         <Link
+          aria-label={label}
           href='https://brbcoding.com'
           rel='noreferrer'
           target='_blank'
@@ -25,8 +28,11 @@ export default function DevelopedByIcon() {
         </Link>
       </Tooltip.Trigger>
 
-      <Tooltip.Content className='mb-2 rounded bg-sky-800 p-2 text-sm text-slate-100 shadow-sm dark:bg-slate-50 dark:text-sky-800'>
-        Developed by brbcoding.com
+      <Tooltip.Content
+        aria-label={label}
+        className='mb-2 rounded bg-sky-800 p-2 text-sm text-slate-100 shadow-sm dark:bg-slate-50 dark:text-sky-800'
+      >
+        {label}
       </Tooltip.Content>
     </Tooltip.Root>
   );
