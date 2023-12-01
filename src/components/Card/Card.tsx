@@ -159,7 +159,7 @@ export function Card(props: CardProps) {
             className='absolute right-8 top-56 flex h-16 w-16 items-center justify-center rounded-full bg-black bg-opacity-40'
           >
             <SymbolIcon
-              color='text-slate-100'
+              className='text-slate-100'
               height='40px'
               width='40px'
             />
