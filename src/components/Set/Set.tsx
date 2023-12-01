@@ -35,7 +35,7 @@ export function Set(props: SetProps) {
 
   return (
     <Link
-      className='relative flex h-[var(--Set--height-mobile)] w-[var(--Set--width-mobile)] cursor-pointer flex-col items-end justify-between rounded border-neutral-300 border-transparent bg-neutral-300 text-center shadow-md dark:border-neutral-400 dark:bg-neutral-400 lg:h-[var(--Set--height-desktop)] lg:w-[var(--Set--width-desktop)]'
+      className='relative flex h-[var(--Set--height-mobile)] w-[var(--Set--width-mobile)] cursor-pointer flex-col items-end justify-between rounded bg-neutral-300 text-center shadow-md dark:bg-neutral-400 lg:h-[var(--Set--height-desktop)] lg:w-[var(--Set--width-desktop)]'
       href={routeForSet}
       key={code}
     >
