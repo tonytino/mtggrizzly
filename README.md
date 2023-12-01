@@ -43,6 +43,8 @@ npm run dev
 - This project leverages [Tailwind CSS](https://tailwindcss.com)
 - This project leverages the [Scryfall API](https://scryfall.com/docs/api)
 - This project adheres to the [Conventional Commits] specification
+- ⚠️ **This project must remain in compliance with [Scryfall's Guidelines](https://scryfall.com/docs/api#use-of-scryfall-data-and-images)**
+- ⚠️ **This project must remain in compliance with [WOTC's Fan Content Policy](https://company.wizards.com/en/legal/fancontentpolicy)**
 
 ### Aliases
 
@@ -62,12 +64,12 @@ There are READMEs throughout the codebase to help document important information
 
 Below are links to all of the READMEs:
 
-1. [Scripts README.md](./scripts/README.md)
-2. [App README.md](./src/app/README.md)
-3. [API README.md](./src/app/api/README.md)
-4. [Components README.md](./src/components/README.md)
-5. [Types README.md](./types/README.md)
-6. [Utils README.md](./utils/README.md)
+1. [Scripts README](./scripts/README.md)
+2. [App README](./src/app/README.md)
+3. [API README](./src/app/api/README.md)
+4. [Components README](./src/components/README.md)
+5. [Types README](./types/README.md)
+6. [Utils README](./utils/README.md)
 
 ## Contributing
 
