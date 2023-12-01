@@ -9,12 +9,12 @@ import ScrollToTopIcon from './ScrollToTopIcon';
 export default function Footer() {
   return (
     <footer
-      className='mx-auto bg-slate-100 p-8 text-xs text-slate-800 dark:bg-slate-900 dark:text-slate-100 md:px-12 md:py-12 lg:px-24 xl:px-60'
+      className='mx-auto bg-slate-100 text-xs text-slate-800 dark:bg-slate-900 dark:text-slate-100'
       style={{
         padding: '1rem max(calc((100vw - var(--max-w-screen-xl))/2), 1rem)',
       }}
     >
-      <div className='mb-4 flex flex-wrap items-start justify-between md:mt-5'>
+      <div className='mb-4 flex flex-wrap items-start justify-between'>
         <Link
           className='mb-4 mr-8 text-3xl font-bold text-sky-800 dark:text-slate-100'
           href='/'
@@ -72,7 +72,7 @@ function Disclaimers() {
         &nbsp;for making this project possible.
       </p>
 
-      <p className='md:mb-5'>
+      <p>
         Any and all original content presented on this page and website are ©
         2023 MTG Grizzly. All rights reserved.
       </p>

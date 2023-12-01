@@ -6,8 +6,13 @@ import Link from 'next/link';
 export default function Header() {
   return (
     <header>
-      <div className='fixed left-0 right-0 top-0 z-50 w-screen bg-white shadow-sm dark:bg-slate-800'>
-        <nav className='mx-auto flex h-16 w-full items-baseline justify-between p-4 md:py-4 xl:max-w-screen-xl'>
+      <div
+        className='fixed left-0 right-0 top-0 z-50 w-screen bg-white shadow-md dark:bg-slate-800'
+        style={{
+          padding: '0 max(calc((100vw - var(--max-w-screen-xl))/2), 1rem)',
+        }}
+      >
+        <nav className='mx-auto flex h-16 w-full items-baseline justify-between py-4 xl:max-w-screen-xl'>
           <Link
             className='text-3xl font-bold text-sky-800 dark:text-slate-100'
             href='/'
