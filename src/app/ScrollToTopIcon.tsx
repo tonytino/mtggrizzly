@@ -1,8 +1,12 @@
 'use client';
 
+// https://www.radix-ui.com/primitives/docs/components/tooltip
 import * as Tooltip from '@radix-ui/react-tooltip';
 import { ThickArrowUpIcon } from '@radix-ui/react-icons';
 
+/**
+ * Renders an up arrow icon that scrolls to the top of the page on click
+ */
 export default function ScrollToTopIcon() {
   return (
     <Tooltip.Root>
