@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header>
       <div
-        className='fixed left-0 right-0 top-0 z-50 w-screen bg-white shadow-md dark:bg-slate-800'
+        className='fixed left-0 right-0 top-0 z-50 w-screen bg-white shadow-sm dark:bg-slate-800'
         style={{
           padding: '0 max(calc((100vw - var(--max-w-screen-xl))/2), 1rem)',
         }}
