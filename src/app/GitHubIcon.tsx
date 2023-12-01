@@ -5,7 +5,10 @@ import Link from 'next/link';
 import * as Tooltip from '@radix-ui/react-tooltip';
 import { GitHubLogoIcon } from '@radix-ui/react-icons';
 
-export default function ScrollToTopIcon() {
+/**
+ * Renders a GitHub icon that links to the GitHub repo
+ */
+export default function GitHubIcon() {
   return (
     <Tooltip.Root>
       <Tooltip.Trigger asChild>

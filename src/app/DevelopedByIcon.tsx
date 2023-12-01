@@ -5,7 +5,10 @@ import Link from 'next/link';
 import * as Tooltip from '@radix-ui/react-tooltip';
 import { LaptopIcon } from '@radix-ui/react-icons';
 
-export default function ScrollToTopIcon() {
+/**
+ * Renders a laptop icon that links to brbcoding.com
+ */
+export default function DevelopedByIcon() {
   return (
     <Tooltip.Root>
       <Tooltip.Trigger asChild>
