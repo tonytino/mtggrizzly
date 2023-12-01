@@ -10,7 +10,7 @@ import { ThickArrowUpIcon } from '@radix-ui/react-icons';
 export default function ScrollToTopIcon() {
   return (
     <Tooltip.Root>
-      <Tooltip.Trigger>
+      <Tooltip.Trigger asChild>
         <ThickArrowUpIcon
           className='mt-[3px] cursor-pointer text-sky-800 hover:text-sky-600 dark:text-sky-400 dark:hover:text-sky-300'
           height='36px'

@@ -8,7 +8,7 @@ import { LaptopIcon } from '@radix-ui/react-icons';
 export default function ScrollToTopIcon() {
   return (
     <Tooltip.Root>
-      <Tooltip.Trigger>
+      <Tooltip.Trigger asChild>
         <Link
           href='https://brbcoding.com'
           rel='noreferrer'

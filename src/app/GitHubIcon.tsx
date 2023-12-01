@@ -8,7 +8,7 @@ import { GitHubLogoIcon } from '@radix-ui/react-icons';
 export default function ScrollToTopIcon() {
   return (
     <Tooltip.Root>
-      <Tooltip.Trigger>
+      <Tooltip.Trigger asChild>
         <Link
           href='https://github.com/tonytino/mtggrizzly'
           rel='noreferrer'
