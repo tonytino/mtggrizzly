@@ -31,11 +31,18 @@ function fetchSetPreviewArtAndModifySetObject(set, index) {
 
           console.log(`\t Random card selected: ${randomCardFromSet.name}`);
 
-          const { image_uris = {} } = randomCardFromSet;
+          if (set.code === 'fake') throw new Error('rawr');
+
+          const { artist, image_uris = {}, name, uri } = randomCardFromSet;
           const { art_crop = '' } = image_uris;
 
           if (art_crop) {
-            set.preview_art = art_crop;
+            set.preview_card = {
+              artist,
+              name,
+              preview_art: art_crop,
+              uri,
+            };
           }
 
           setsProcessed++;

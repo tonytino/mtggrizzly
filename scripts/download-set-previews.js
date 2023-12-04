@@ -15,7 +15,7 @@ const sets = getSetsJSON();
  * Downloads and saves the preview art for each set in
  *   /public/sets/{set.code}/preview/original.jpg
  */
-function fetchAndSaveSetPreviewArt({ code, name, preview_art }, index) {
+function fetchAndSaveSetPreviewArt({ code, name, preview_card }, index) {
   return new Promise((resolve, reject) => {
     try {
       setTimeout(
@@ -23,6 +23,8 @@ function fetchAndSaveSetPreviewArt({ code, name, preview_art }, index) {
           console.log(
             `[${index + 1}/${sets.length}] Downloading art for: ${name}`
           );
+
+          const { preview_art } = preview_card;
 
           const response = await fetch(preview_art);
           const imageBuffer = await response.arrayBuffer();
