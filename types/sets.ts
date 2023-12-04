@@ -16,6 +16,29 @@ export type SetsResponse = {
   types: string[];
 };
 
+type PreviewCard = {
+  /**
+   * The name of the artist for the preview card art, e.g.
+   * "Anthony Hernandez"
+   */
+  artist: string;
+  /**
+   * Name of the preview card, e.g.
+   * "Grizzly Bears"
+   */
+  name: string;
+  /**
+   * Link to preview art for the set (random card's art), e.g.
+   * "https://cards.scryfall.io/art_crop/front/4/0/409f9b88-f03e-40b6-9883-68c14c37c0de.jpg"
+   */
+  preview_art: string;
+  /**
+   * Link to the card's API payload, e.g.
+   * "https://api.scryfall.com/cards/87b56584-8a61-40bc-99b5-7434a681fcdc"
+   */
+  uri: string;
+};
+
 export type Set = {
   /**
    * 0
@@ -58,12 +81,11 @@ export type Set = {
    */
   parent_set_code?: string;
   /**
-   * Link to preview art for the set (random card's art)
-   * "https://cards.scryfall.io/art_crop/front/4/0/409f9b88-f03e-40b6-9883-68c14c37c0de.jpg"
+   * Details about the preview card
    */
-  preview_art: string;
+  preview_card: PreviewCard;
   /**
-   * Query to fetch a random card from the set
+   * Query to fetch a random card from the set, e.g.
    * "https://api.scryfall.com/cards/random?q=set:woe"
    */
   random_card_query: string;
@@ -84,7 +106,7 @@ export type Set = {
    */
   set_type: string;
   /**
-   * Whether to show the set in the list of sets available
+   * Whether to show the set in the list of sets available, e.g.
    * true
    */
   show: boolean;
