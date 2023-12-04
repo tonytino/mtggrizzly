@@ -43,7 +43,7 @@ function Disclaimers() {
     <div className='flex w-full flex-col gap-4 md:max-w-[80%] lg:max-w-[50%]'>
       <p>
         This project leverages assets, information, and aspects of&nbsp;
-        <MagicTheGathering /> in order to produce unofficial fan content in
+        <MagicTheGathering /> in order to produce unofficial Fan Content in
         accordance with&nbsp;
         <WizardsOfTheCoast />
         &apos;s&nbsp;
@@ -60,6 +60,14 @@ function Disclaimers() {
           guidelines
         </Link>
         .
+      </p>
+
+      <p>
+        MTG Grizzly is unofficial Fan Content permitted under the&nbsp;
+        <WizardsOfTheCoastFanContentPolicy />. Not approved/endorsed by Wizards.
+        Portions of the materials used are property of <WizardsOfTheCoast />.
+        ©&nbsp;
+        <WizardsOfTheCoast />, LLC.
       </p>
 
       <p>
