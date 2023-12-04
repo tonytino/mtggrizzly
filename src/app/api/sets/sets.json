@@ -16,8 +16,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/rvr.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/8/7/872301b2-b6e7-4972-a479-66a7e304c1d3.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:rvr"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:rvr",
+    "preview_card": {
+      "artist": "Marcelo Vignali",
+      "name": "Birds of Paradise",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/3/d/3d69a3e0-6a2e-475a-964e-0affed1c017d.jpg?1695422036",
+      "uri": "https://api.scryfall.com/cards/3d69a3e0-6a2e-475a-964e-0affed1c017d"
+    }
   },
   {
     "object": "set",
@@ -38,8 +43,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/lci.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/6/9/690ccdc7-6c43-4902-9d11-2f07b7a36b11.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:lci"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:lci",
+    "preview_card": {
+      "artist": "Daarken",
+      "name": "The Skullspore Nexus",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/b/5/b56a7631-5f94-468d-aab7-7e9e129c5f49.jpg?1699044489",
+      "uri": "https://api.scryfall.com/cards/b56a7631-5f94-468d-aab7-7e9e129c5f49"
+    }
   },
   {
     "object": "set",
@@ -60,8 +70,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/woe.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/b/3/b3d6027c-813f-46df-95b4-e2e305a67620.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:woe"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:woe",
+    "preview_card": {
+      "artist": "Uriah Voth",
+      "name": "Torch the Tower",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/b/3/b3d6027c-813f-46df-95b4-e2e305a67620.jpg?1692938564",
+      "uri": "https://api.scryfall.com/cards/b3d6027c-813f-46df-95b4-e2e305a67620"
+    }
   },
   {
     "object": "set",
@@ -82,8 +97,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/cmm.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/4/5/4512357b-0d08-4996-9301-5853eae1ea64.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:cmm"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:cmm",
+    "preview_card": {
+      "artist": "Jeff Miracola",
+      "name": "Rocky Tar Pit",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/3/4/34fa3e6c-c37b-4e6e-9246-18ff9b36508d.jpg?1690006418",
+      "uri": "https://api.scryfall.com/cards/34fa3e6c-c37b-4e6e-9246-18ff9b36508d"
+    }
   },
   {
     "object": "set",
@@ -104,8 +124,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/mom.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/d/c/dc1454ce-bb49-4b4f-bbca-d77387fa4966.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mom"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mom",
+    "preview_card": {
+      "artist": "Howard Lyon",
+      "name": "Thalia and The Gitrog Monster",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/8/d/8d7ff937-de92-445f-976c-726fef5c91cc.jpg?1682205702",
+      "uri": "https://api.scryfall.com/cards/8d7ff937-de92-445f-976c-726fef5c91cc"
+    }
   },
   {
     "object": "set",
@@ -123,8 +148,13 @@
     "nonfoil_only": true,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/sis.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/c/d/cdb4f1a2-391b-48f5-ac27-da5cf1865d3b.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:sis"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:sis",
+    "preview_card": {
+      "artist": "Igor Kieryluk",
+      "name": "Falkenrath Aristocrat",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/7/8/781edc39-5a35-4f70-86aa-f9992766a6fb.jpg?1679615177",
+      "uri": "https://api.scryfall.com/cards/781edc39-5a35-4f70-86aa-f9992766a6fb"
+    }
   },
   {
     "object": "set",
@@ -142,8 +172,13 @@
     "nonfoil_only": true,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/sir.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/0/9/09379023-478a-4ef2-a557-edb93a439501.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:sir"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:sir",
+    "preview_card": {
+      "artist": "David Gaillet",
+      "name": "Ride Down",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/1/2/1255e40a-8162-4f51-9cb8-6d823d890c42.jpg?1678945252",
+      "uri": "https://api.scryfall.com/cards/1255e40a-8162-4f51-9cb8-6d823d890c42"
+    }
   },
   {
     "object": "set",
@@ -165,8 +200,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/one.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/6/2/626c46a3-72b8-4e04-adf2-c9c7aaf94f04.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:one"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:one",
+    "preview_card": {
+      "artist": "Sam Wolfe Connelly",
+      "name": "Indoctrination Attendant",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/d/0/d051bfc7-b402-444d-896e-c3a9562cdb0d.jpg?1675956909",
+      "uri": "https://api.scryfall.com/cards/d051bfc7-b402-444d-896e-c3a9562cdb0d"
+    }
   },
   {
     "object": "set",
@@ -185,8 +225,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/dmr.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/8/c/8cb024fa-2df1-4414-b0d7-6f700d152c51.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:dmr"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:dmr",
+    "preview_card": {
+      "artist": "Greg Staples",
+      "name": "Sulfuric Vortex",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/3/2/3253a624-50cc-4a8a-9b0c-9902aa53775f.jpg?1675200242",
+      "uri": "https://api.scryfall.com/cards/3253a624-50cc-4a8a-9b0c-9902aa53775f"
+    }
   },
   {
     "object": "set",
@@ -207,8 +252,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/bro.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/3/5/35ba6c05-a4c2-422b-a4cb-852b3aef77a5.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:bro"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:bro",
+    "preview_card": {
+      "artist": "Dominik Mayer",
+      "name": "Gix's Command",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/9/6/9606de75-c25f-411b-a271-258ac5a60987.jpg?1674420864",
+      "uri": "https://api.scryfall.com/cards/9606de75-c25f-411b-a271-258ac5a60987"
+    }
   },
   {
     "object": "set",
@@ -230,8 +280,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/dmu.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/4/2/42f01cba-43d4-46ad-b7a5-d7631b0e1347.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:dmu"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:dmu",
+    "preview_card": {
+      "artist": "Seb McKinnon",
+      "name": "Swamp",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/5/a/5a846f00-ccb9-4ee2-8358-7c7722258601.jpg?1674073757",
+      "uri": "https://api.scryfall.com/cards/5a846f00-ccb9-4ee2-8358-7c7722258601"
+    }
   },
   {
     "object": "set",
@@ -251,8 +306,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/2x2.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/7/3/7383f71d-3f51-4632-9ea0-27d47fa2fa50.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:2x2"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:2x2",
+    "preview_card": {
+      "artist": "Michael Komarck",
+      "name": "Kaalia of the Vast",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/9/3/93f6631f-f3a6-4d3c-8618-4b4ab4e82483.jpg?1673148814",
+      "uri": "https://api.scryfall.com/cards/93f6631f-f3a6-4d3c-8618-4b4ab4e82483"
+    }
   },
   {
     "object": "set",
@@ -274,8 +334,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/snc.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/2/7/27851834-688f-4929-967d-dfa015194f7f.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:snc"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:snc",
+    "preview_card": {
+      "artist": "Mila Pesic",
+      "name": "Ledger Shredder",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/7/e/7ea4b5bc-18a4-45db-a56a-ab3f8bd2fb0d.jpg?1664410287",
+      "uri": "https://api.scryfall.com/cards/7ea4b5bc-18a4-45db-a56a-ab3f8bd2fb0d"
+    }
   },
   {
     "object": "set",
@@ -295,8 +360,13 @@
     "nonfoil_only": true,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/star.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/c/8/c83542de-38ca-4aad-acba-189374be37e2.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:slx"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:slx",
+    "preview_card": {
+      "artist": "Helge C. Balzer",
+      "name": "The Howling Abomination",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/5/a/5aa862c3-69a3-4d6c-abe8-201e1868c204.jpg?1677763660",
+      "uri": "https://api.scryfall.com/cards/5aa862c3-69a3-4d6c-abe8-201e1868c204"
+    }
   },
   {
     "object": "set",
@@ -318,8 +388,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/neo.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/d/f/df5c4d9c-6c27-4d29-a6b8-df8905f810a6.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:neo"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:neo",
+    "preview_card": {
+      "artist": "Dominik Mayer",
+      "name": "Repel the Vile",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/9/a/9a37d5b4-af3a-48b0-895f-91b652108ef6.jpg?1654566470",
+      "uri": "https://api.scryfall.com/cards/9a37d5b4-af3a-48b0-895f-91b652108ef6"
+    }
   },
   {
     "object": "set",
@@ -343,8 +418,13 @@
     "block_code": "dbl",
     "block": "Innistrad: Double Feature",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/vow.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/d/b/dbbcd63d-6c25-47a6-a76c-ac53bf12949c.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:vow"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:vow",
+    "preview_card": {
+      "artist": "Alix Branwyn",
+      "name": "Inspired Idea",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/2/f/2fe4ee8e-579d-4bfa-8c19-bfdb1c0b7177.jpg?1643587992",
+      "uri": "https://api.scryfall.com/cards/2fe4ee8e-579d-4bfa-8c19-bfdb1c0b7177"
+    }
   },
   {
     "object": "set",
@@ -368,8 +448,13 @@
     "block_code": "dbl",
     "block": "Innistrad: Double Feature",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/mid.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/d/e/dedfe6ea-cd43-4ec4-83a1-1f0f74e27f56.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mid"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mid",
+    "preview_card": {
+      "artist": "Simon Dominic",
+      "name": "Consuming Blob",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/4/5/4540fa4b-93e8-4749-a839-9a6e816c1145.jpg?1636224089",
+      "uri": "https://api.scryfall.com/cards/4540fa4b-93e8-4749-a839-9a6e816c1145"
+    }
   },
   {
     "object": "set",
@@ -391,8 +476,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/afr.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/d/5/d58486dc-3e78-4649-89c7-46f6210ff80f.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:afr"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:afr",
+    "preview_card": {
+      "artist": "Jason Felix",
+      "name": "Sphere of Annihilation",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/3/d/3d2315a9-584b-4c59-af43-dd38bcb6c322.jpg?1627705427",
+      "uri": "https://api.scryfall.com/cards/3d2315a9-584b-4c59-af43-dd38bcb6c322"
+    }
   },
   {
     "object": "set",
@@ -414,8 +504,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/stx.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/3/1/31b770cc-09e7-4c0b-b2a4-462ab4f7200d.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:stx"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:stx",
+    "preview_card": {
+      "artist": "YW Tang",
+      "name": "Dream Strix",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/3/1/31d82f7a-64f1-463f-bb6b-936c3e49bf2b.jpg?1624590117",
+      "uri": "https://api.scryfall.com/cards/31d82f7a-64f1-463f-bb6b-936c3e49bf2b"
+    }
   },
   {
     "object": "set",
@@ -434,8 +529,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/tsr.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/1/4/14e870a0-5699-4f42-b67a-8dbd24e0c9c2.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:tsr"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:tsr",
+    "preview_card": {
+      "artist": "Scott Altmann",
+      "name": "Muraganda Petroglyphs",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/b/1/b103cb22-93b2-4206-9f80-5f966155e07e.jpg?1658648183",
+      "uri": "https://api.scryfall.com/cards/b103cb22-93b2-4206-9f80-5f966155e07e"
+    }
   },
   {
     "object": "set",
@@ -456,8 +556,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/khm.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/d/f/df2f81dc-2346-4bd9-aa3b-aaa2d3873415.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:khm"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:khm",
+    "preview_card": {
+      "artist": "Johannes Voss",
+      "name": "Island",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/1/a/1a25a714-c7f3-4697-8b69-8f966b4d370a.jpg?1631057737",
+      "uri": "https://api.scryfall.com/cards/1a25a714-c7f3-4697-8b69-8f966b4d370a"
+    }
   },
   {
     "object": "set",
@@ -475,8 +580,13 @@
     "nonfoil_only": true,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/klr.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/8/5/851f1aa8-7492-4204-9c6e-d604bd965746.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:klr"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:klr",
+    "preview_card": {
+      "artist": "Christine Choi",
+      "name": "Paradox Engine",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/e/c/ecfe191b-2b08-4c6b-a607-cc7db7276522.jpg?1605329958",
+      "uri": "https://api.scryfall.com/cards/ecfe191b-2b08-4c6b-a607-cc7db7276522"
+    }
   },
   {
     "object": "set",
@@ -495,8 +605,13 @@
     "nonfoil_only": true,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/planeswalker.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/2/3/23d31207-a9ec-4947-ba11-56925ee5d55c.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:plist"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:plist",
+    "preview_card": {
+      "artist": "Darrell Riche",
+      "name": "Nomad Mythmaker",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/4/c/4c5dc9bd-3b74-483f-b86e-a838a4b2e835.jpg?1693274502",
+      "uri": "https://api.scryfall.com/cards/4c5dc9bd-3b74-483f-b86e-a838a4b2e835"
+    }
   },
   {
     "object": "set",
@@ -518,8 +633,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/znr.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/1/1/112077b8-1514-4320-a70f-b23f3c7ce18a.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:znr"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:znr",
+    "preview_card": {
+      "artist": "Campbell White",
+      "name": "Brushfire Elemental",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/8/f/8fc448f6-a7fe-47c4-ac7c-385a77326469.jpg?1604199996",
+      "uri": "https://api.scryfall.com/cards/8fc448f6-a7fe-47c4-ac7c-385a77326469"
+    }
   },
   {
     "object": "set",
@@ -537,8 +657,13 @@
     "nonfoil_only": true,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/akr.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/f/8/f86bc112-4744-4310-a3a8-df5c6c9421b3.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:akr"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:akr",
+    "preview_card": {
+      "artist": "Tony Foti",
+      "name": "Scarab Feast",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/3/b/3b88be55-ad39-4db3-8eaa-f83069126a2b.jpg?1597172509",
+      "uri": "https://api.scryfall.com/cards/3b88be55-ad39-4db3-8eaa-f83069126a2b"
+    }
   },
   {
     "object": "set",
@@ -560,8 +685,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/2xm.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/7/f/7ff6346a-5154-4c93-9a24-8b1936683517.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:2xm"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:2xm",
+    "preview_card": {
+      "artist": "Nils Hamm",
+      "name": "Baleful Strix",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/a/1/a1b799b2-bb4e-482f-9afd-5aab90090710.jpg?1599707817",
+      "uri": "https://api.scryfall.com/cards/a1b799b2-bb4e-482f-9afd-5aab90090710"
+    }
   },
   {
     "object": "set",
@@ -585,8 +715,13 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/m21.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/c/2/c2e6fdc0-bdd4-4bba-b8f1-bbc8dfad038e.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:m21"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:m21",
+    "preview_card": {
+      "artist": "Caroline Gariba",
+      "name": "Shipwreck Dowser",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/5/9/59d38ef7-5017-4ea3-b97f-a8fe12d03e98.jpg?1594735761",
+      "uri": "https://api.scryfall.com/cards/59d38ef7-5017-4ea3-b97f-a8fe12d03e98"
+    }
   },
   {
     "object": "set",
@@ -608,8 +743,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/iko.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/0/e/0e790851-f0f7-4f1a-80e6-94be649499b6.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:iko"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:iko",
+    "preview_card": {
+      "artist": "Chris Rallis",
+      "name": "Go for Blood",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/6/7/67315df9-99a1-45ba-8ade-ddc476368a86.jpg?1591227254",
+      "uri": "https://api.scryfall.com/cards/67315df9-99a1-45ba-8ade-ddc476368a86"
+    }
   },
   {
     "object": "set",
@@ -629,8 +769,13 @@
     "nonfoil_only": false,
     "foil_only": true,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/planeswalker.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/b/f/bff02baa-e1e1-42a3-9bea-97d40c8cd055.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:fmb1"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:fmb1",
+    "preview_card": {
+      "artist": "Alan Pollack",
+      "name": "Iron Myr",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/7/d/7d81fc9c-9713-4671-ae17-044b710f613e.jpg?1583453046",
+      "uri": "https://api.scryfall.com/cards/7d81fc9c-9713-4671-ae17-044b710f613e"
+    }
   },
   {
     "object": "set",
@@ -651,8 +796,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/thb.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/c/2/c2159949-3d21-448d-bc34-a3dbaf219476.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:thb"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:thb",
+    "preview_card": {
+      "artist": "Caroline Gariba",
+      "name": "Elspeth's Devotee",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/0/f/0f82064c-b335-454c-9be6-9fbcb21aa8e5.jpg?1581481438",
+      "uri": "https://api.scryfall.com/cards/0f82064c-b335-454c-9be6-9fbcb21aa8e5"
+    }
   },
   {
     "object": "set",
@@ -671,8 +821,13 @@
     "nonfoil_only": true,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/planeswalker.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/4/8/48930979-41a6-472c-bc97-32b747caa02f.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mb1"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mb1",
+    "preview_card": {
+      "artist": "Johann Bodin",
+      "name": "Gnarlid Pack",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/1/e/1e445fa9-ea4a-4276-8211-de023a56dff6.jpg?1573513761",
+      "uri": "https://api.scryfall.com/cards/1e445fa9-ea4a-4276-8211-de023a56dff6"
+    }
   },
   {
     "object": "set",
@@ -693,8 +848,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/eld.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/c/a/cad7efd1-5f53-4466-9a02-c474c265298a.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:eld"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:eld",
+    "preview_card": {
+      "artist": "Milivoj Ćeran",
+      "name": "Cauldron Familiar",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/9/a/9a539a23-8383-4525-82dd-acfe1d219fe9.jpg?1572490099",
+      "uri": "https://api.scryfall.com/cards/9a539a23-8383-4525-82dd-acfe1d219fe9"
+    }
   },
   {
     "object": "set",
@@ -717,8 +877,13 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/m20.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/0/2/021963bf-87fc-432f-b9a1-4f627885a7a9.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:m20"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:m20",
+    "preview_card": {
+      "artist": "Josu Hernaiz",
+      "name": "Sleep Paralysis",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/2/b/2babef35-27ab-45aa-88cd-f21dccae5125.jpg?1592516504",
+      "uri": "https://api.scryfall.com/cards/2babef35-27ab-45aa-88cd-f21dccae5125"
+    }
   },
   {
     "object": "set",
@@ -741,8 +906,13 @@
     "block_code": "grn",
     "block": "Guilds of Ravnica",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/war.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/c/4/c4a5f86f-44a8-4735-909a-770586d33a15.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:war"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:war",
+    "preview_card": {
+      "artist": "Eric Deschamps",
+      "name": "Spark Double",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/b/b/bb8a103c-b776-4501-9441-a45b90391045.jpg?1666094645",
+      "uri": "https://api.scryfall.com/cards/bb8a103c-b776-4501-9441-a45b90391045"
+    }
   },
   {
     "object": "set",
@@ -766,8 +936,13 @@
     "block_code": "grn",
     "block": "Guilds of Ravnica",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/rna.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/5/e/5ed140c1-752b-4539-88f2-1fa354049b17.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:rna"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:rna",
+    "preview_card": {
+      "artist": "Dan Scott",
+      "name": "Amplifire",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/7/a/7a58c77f-7c15-44f4-8011-6046482a2d08.jpg?1584830780",
+      "uri": "https://api.scryfall.com/cards/7a58c77f-7c15-44f4-8011-6046482a2d08"
+    }
   },
   {
     "object": "set",
@@ -789,8 +964,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/uma.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/e/d/eda0fd38-38e6-4e9b-9c17-4d855e01b1e1.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:uma"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:uma",
+    "preview_card": {
+      "artist": "Iain McCaig",
+      "name": "Mad Prophet",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/8/9/89a62145-8dad-4385-9c6d-8cf8bfdad681.jpg?1547517306",
+      "uri": "https://api.scryfall.com/cards/89a62145-8dad-4385-9c6d-8cf8bfdad681"
+    }
   },
   {
     "object": "set",
@@ -814,8 +994,13 @@
     "block_code": "grn",
     "block": "Guilds of Ravnica",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/grn.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/c/5/c52ceefc-90d0-49d1-ae54-9a4eab819849.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:grn"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:grn",
+    "preview_card": {
+      "artist": "Filip Burburan",
+      "name": "Barging Sergeant",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/5/2/52a54ebc-008a-4180-a023-2e1d5318780c.jpg?1572893099",
+      "uri": "https://api.scryfall.com/cards/52a54ebc-008a-4180-a023-2e1d5318780c"
+    }
   },
   {
     "object": "set",
@@ -839,8 +1024,13 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/m19.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/e/e/ee338221-ead9-4b89-8b0c-12745c4ca13d.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:m19"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:m19",
+    "preview_card": {
+      "artist": "Jakub Kasper",
+      "name": "Sure Strike",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/1/e/1e618ab0-b092-499c-b5e9-d374433ff19c.jpg?1562300777",
+      "uri": "https://api.scryfall.com/cards/1e618ab0-b092-499c-b5e9-d374433ff19c"
+    }
   },
   {
     "object": "set",
@@ -862,8 +1052,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/dom.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/d/b/db827ee7-6f2e-4e10-aac0-120fc2b69fbd.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:dom"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:dom",
+    "preview_card": {
+      "artist": "Mathias Kollros",
+      "name": "Thallid Omnivore",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/9/9/99b35391-f1dc-434b-b581-ca6cb6f3439f.jpg?1562740048",
+      "uri": "https://api.scryfall.com/cards/99b35391-f1dc-434b-b581-ca6cb6f3439f"
+    }
   },
   {
     "object": "set",
@@ -885,8 +1080,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/a25.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/0/2/02ac4e89-d5fa-4f1b-bd61-be15eb322f40.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:a25"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:a25",
+    "preview_card": {
+      "artist": "Scott M. Fischer",
+      "name": "Freed from the Real",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/c/4/c47ee6f6-50c1-4f56-b9ce-4c309bfb92ca.jpg?1562440713",
+      "uri": "https://api.scryfall.com/cards/c47ee6f6-50c1-4f56-b9ce-4c309bfb92ca"
+    }
   },
   {
     "object": "set",
@@ -910,8 +1110,13 @@
     "block_code": "xln",
     "block": "Ixalan",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/rix.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/3/0/30dc237e-b28a-4b65-9790-6b434828bf2e.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:rix"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:rix",
+    "preview_card": {
+      "artist": "Anthony Hernandez",
+      "name": "Grizzly Bears",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/3/0/30dc237e-b28a-4b65-9790-6b434828bf2e.jpg",
+      "uri": "https://api.scryfall.com/cards/87b56584-8a61-40bc-99b5-7434a681fcdc"
+    }
   },
   {
     "object": "set",
@@ -933,8 +1138,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/ima.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/c/5/c5e52f38-2991-429a-a312-a02696c86b05.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ima"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ima",
+    "preview_card": {
+      "artist": "Jim Nelson",
+      "name": "Hunting Pack",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/0/6/06224230-d4cb-437d-87d5-956251c6f03d.jpg?1562845310",
+      "uri": "https://api.scryfall.com/cards/06224230-d4cb-437d-87d5-956251c6f03d"
+    }
   },
   {
     "object": "set",
@@ -958,8 +1168,13 @@
     "block_code": "xln",
     "block": "Ixalan",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/xln.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/c/5/c5e791ce-1380-4de0-b314-246ea6dfc3cc.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:xln"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:xln",
+    "preview_card": {
+      "artist": "Sidharth Chaturvedi",
+      "name": "Legion Conquistador",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/f/3/f30590d7-59c7-4a1a-a8e5-3cc13f69bd41.jpg?1562566571",
+      "uri": "https://api.scryfall.com/cards/f30590d7-59c7-4a1a-a8e5-3cc13f69bd41"
+    }
   },
   {
     "object": "set",
@@ -983,8 +1198,13 @@
     "block_code": "akh",
     "block": "Amonkhet",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/hou.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/a/5/a51f8207-485e-4a4e-aa62-8e0e69645a0e.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:hou"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:hou",
+    "preview_card": {
+      "artist": "Sidharth Chaturvedi",
+      "name": "Aerial Guide",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/b/7/b744c138-9b9e-47f6-9d56-feb6a78ce377.jpg?1562812010",
+      "uri": "https://api.scryfall.com/cards/b744c138-9b9e-47f6-9d56-feb6a78ce377"
+    }
   },
   {
     "object": "set",
@@ -1008,8 +1228,13 @@
     "block_code": "akh",
     "block": "Amonkhet",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/akh.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/b/e/becbd481-311d-4f85-aacd-df1f7d7ef587.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:akh"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:akh",
+    "preview_card": {
+      "artist": "Victor Adame Minguez",
+      "name": "Anointed Procession",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/9/a/9a52c265-6920-4929-ba0a-70da08df01f1.jpg?1543674565",
+      "uri": "https://api.scryfall.com/cards/9a52c265-6920-4929-ba0a-70da08df01f1"
+    }
   },
   {
     "object": "set",
@@ -1031,8 +1256,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/mm3.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/a/6/a62f09c4-4ed2-429b-b8cc-a40c83fc60ff.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mm3"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mm3",
+    "preview_card": {
+      "artist": "Kev Walker",
+      "name": "Damnation",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/7/9/795fdd00-5833-4732-bc73-0ebcd84aa330.jpg?1593813232",
+      "uri": "https://api.scryfall.com/cards/795fdd00-5833-4732-bc73-0ebcd84aa330"
+    }
   },
   {
     "object": "set",
@@ -1056,8 +1286,13 @@
     "block_code": "kld",
     "block": "Kaladesh",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/aer.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/0/2/02fb7a26-fbf0-4b91-847b-cfc46e01a342.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:aer"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:aer",
+    "preview_card": {
+      "artist": "Winona Nelson",
+      "name": "Aetherstream Leopard",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/6/f/6f3a727a-5eca-44de-aa8f-0d2573db83eb.jpg?1576381940",
+      "uri": "https://api.scryfall.com/cards/6f3a727a-5eca-44de-aa8f-0d2573db83eb"
+    }
   },
   {
     "object": "set",
@@ -1081,8 +1316,13 @@
     "block_code": "kld",
     "block": "Kaladesh",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/kld.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/f/b/fbd3f376-1075-42c9-91df-80dc2d5faacf.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:kld"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:kld",
+    "preview_card": {
+      "artist": "Chris Rallis",
+      "name": "Impeccable Timing",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/2/9/2921c95e-bf2f-409b-a41d-86d873690562.jpg?1576380905",
+      "uri": "https://api.scryfall.com/cards/2921c95e-bf2f-409b-a41d-86d873690562"
+    }
   },
   {
     "object": "set",
@@ -1106,8 +1346,13 @@
     "block_code": "soi",
     "block": "Shadows over Innistrad",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/emn.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/6/1/617f9f3a-61a1-4c73-8efe-3d74fe362901.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:emn"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:emn",
+    "preview_card": {
+      "artist": "Anthony Palumbo",
+      "name": "Woodcutter's Grit",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/c/c/cc329134-4b71-4c33-8cfb-c3867a733115.jpg?1576384953",
+      "uri": "https://api.scryfall.com/cards/cc329134-4b71-4c33-8cfb-c3867a733115"
+    }
   },
   {
     "object": "set",
@@ -1129,8 +1374,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/ema.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/d/3/d326dae6-7539-4422-8c81-a1cffbbe8f74.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ema"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ema",
+    "preview_card": {
+      "artist": "Cynthia Sheppard",
+      "name": "Young Pyromancer",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/7/4/74bd3e04-2cc6-4538-b0e4-11a3653f8331.jpg?1580014707",
+      "uri": "https://api.scryfall.com/cards/74bd3e04-2cc6-4538-b0e4-11a3653f8331"
+    }
   },
   {
     "object": "set",
@@ -1154,8 +1404,13 @@
     "block_code": "soi",
     "block": "Shadows over Innistrad",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/soi.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/4/f/4f0f87d4-5fed-415c-918a-c3546697a3da.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:soi"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:soi",
+    "preview_card": {
+      "artist": "Kieran Yanner",
+      "name": "Vessel of Ephemera",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/f/4/f4051020-688c-473a-9a08-b62f0fd75675.jpg?1576383969",
+      "uri": "https://api.scryfall.com/cards/f4051020-688c-473a-9a08-b62f0fd75675"
+    }
   },
   {
     "object": "set",
@@ -1179,8 +1434,13 @@
     "block_code": "bfz",
     "block": "Battle for Zendikar",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/ogw.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/2/e/2ecacff4-87b9-4cc1-bfbe-019cfda82d17.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ogw"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ogw",
+    "preview_card": {
+      "artist": "Steve Prescott",
+      "name": "Press into Service",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/6/9/69b9eb4b-3ab8-4506-baa4-3a818e7677a3.jpg?1562916245",
+      "uri": "https://api.scryfall.com/cards/69b9eb4b-3ab8-4506-baa4-3a818e7677a3"
+    }
   },
   {
     "object": "set",
@@ -1204,8 +1464,13 @@
     "block_code": "bfz",
     "block": "Battle for Zendikar",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/bfz.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/4/b/4bc855d3-817c-4748-a7f5-1533d8b0e930.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:bfz"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:bfz",
+    "preview_card": {
+      "artist": "Tyler Jacobson",
+      "name": "Undergrowth Champion",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/d/5/d53104d8-5b9a-45b6-a2f9-b2c5d231a03d.jpg?1562945756",
+      "uri": "https://api.scryfall.com/cards/d53104d8-5b9a-45b6-a2f9-b2c5d231a03d"
+    }
   },
   {
     "object": "set",
@@ -1229,8 +1494,13 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/ori.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/c/5/c5f0d87a-8f37-4598-9106-c3545dadf6fd.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ori"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ori",
+    "preview_card": {
+      "artist": "Marco Nelor",
+      "name": "Iroas's Champion",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/c/0/c0441583-c9d5-47a1-8754-c9162cec64bc.jpg?1562039959",
+      "uri": "https://api.scryfall.com/cards/c0441583-c9d5-47a1-8754-c9162cec64bc"
+    }
   },
   {
     "object": "set",
@@ -1252,8 +1522,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/mm2.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/e/b/eb0a9736-c84d-42a6-831c-3b1a8bad50b7.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mm2"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mm2",
+    "preview_card": {
+      "artist": "Pete Venters",
+      "name": "Daggerclaw Imp",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/8/a/8afa8918-86b7-4244-813f-ef7b51d77809.jpg?1562264762",
+      "uri": "https://api.scryfall.com/cards/8afa8918-86b7-4244-813f-ef7b51d77809"
+    }
   },
   {
     "object": "set",
@@ -1274,8 +1549,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/tpr.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/1/6/16c408cc-cb77-4cd6-814f-b26b513c1c0c.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:tpr"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:tpr",
+    "preview_card": {
+      "artist": "Ron Spencer",
+      "name": "Sliver Queen",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/0/9/096cff82-28eb-4096-be1d-a02b9a56e682.jpg?1562428176",
+      "uri": "https://api.scryfall.com/cards/096cff82-28eb-4096-be1d-a02b9a56e682"
+    }
   },
   {
     "object": "set",
@@ -1299,8 +1579,13 @@
     "block_code": "ktk",
     "block": "Khans of Tarkir",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/dtk.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/3/c/3cf4c637-82c3-41fa-b484-31e7dcf475a9.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:dtk"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:dtk",
+    "preview_card": {
+      "artist": "Mike Sass",
+      "name": "Enduring Victory",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/5/4/54fef763-7ee2-4341-9c67-546e4b6710b7.jpg?1562786446",
+      "uri": "https://api.scryfall.com/cards/54fef763-7ee2-4341-9c67-546e4b6710b7"
+    }
   },
   {
     "object": "set",
@@ -1324,8 +1609,13 @@
     "block_code": "ktk",
     "block": "Khans of Tarkir",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/frf.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/3/7/37c96615-0dcb-4108-978a-b41b43e12f38.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:frf"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:frf",
+    "preview_card": {
+      "artist": "Jason Rainville",
+      "name": "Sage's Reverie",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/0/f/0f22dd6f-807a-48a7-bc69-29aaec7012de.jpg?1562822490",
+      "uri": "https://api.scryfall.com/cards/0f22dd6f-807a-48a7-bc69-29aaec7012de"
+    }
   },
   {
     "object": "set",
@@ -1349,8 +1639,13 @@
     "block_code": "ktk",
     "block": "Khans of Tarkir",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/ktk.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/c/d/cd8fffd3-81ad-47e3-a27b-d8059f2b506f.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ktk"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ktk",
+    "preview_card": {
+      "artist": "Magali Villeneuve",
+      "name": "Rakshasa's Secret",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/a/e/ae62a43e-36ce-471e-93f1-21fe674858b5.jpg?1562791960",
+      "uri": "https://api.scryfall.com/cards/ae62a43e-36ce-471e-93f1-21fe674858b5"
+    }
   },
   {
     "object": "set",
@@ -1374,8 +1669,13 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/m15.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/8/4/84a341a4-8177-41cd-a3bc-eff5dee48c94.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:m15"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:m15",
+    "preview_card": {
+      "artist": "Rob Alexander",
+      "name": "Llanowar Wastes",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/d/7/d75b4559-8946-45bb-a580-318a13d1e89e.jpg?1562795085",
+      "uri": "https://api.scryfall.com/cards/d75b4559-8946-45bb-a580-318a13d1e89e"
+    }
   },
   {
     "object": "set",
@@ -1396,8 +1696,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/vma.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/6/2/62b886ae-0109-4e9a-aabc-d22b792715cb.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:vma"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:vma",
+    "preview_card": {
+      "artist": "Daarken",
+      "name": "Penumbra Wurm",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/a/6/a66be186-ccd3-4b51-b3fb-5a1116b189e4.jpg?1562928641",
+      "uri": "https://api.scryfall.com/cards/a66be186-ccd3-4b51-b3fb-5a1116b189e4"
+    }
   },
   {
     "object": "set",
@@ -1421,8 +1726,13 @@
     "block_code": "ths",
     "block": "Theros",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/jou.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/7/e/7e9aaba1-e480-4667-b3c9-d5665a3b4806.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:jou"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:jou",
+    "preview_card": {
+      "artist": "Jason A. Engle",
+      "name": "Satyr Grovedancer",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/d/4/d46febca-f3c0-4467-aef4-4dfcdf3009fe.jpg?1593096315",
+      "uri": "https://api.scryfall.com/cards/d46febca-f3c0-4467-aef4-4dfcdf3009fe"
+    }
   },
   {
     "object": "set",
@@ -1446,8 +1756,13 @@
     "block_code": "ths",
     "block": "Theros",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/bng.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/6/4/64204816-6e1d-4bf8-acd0-8f83ca7eb8c7.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:bng"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:bng",
+    "preview_card": {
+      "artist": "Noah Bradley",
+      "name": "Pinnacle of Rage",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/b/2/b26ff2fa-82de-4831-9341-a446abf9ed03.jpg?1593092319",
+      "uri": "https://api.scryfall.com/cards/b26ff2fa-82de-4831-9341-a446abf9ed03"
+    }
   },
   {
     "object": "set",
@@ -1471,8 +1786,13 @@
     "block_code": "ths",
     "block": "Theros",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/ths.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/3/3/33f36143-85b6-412c-8c79-053728b45c25.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ths"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ths",
+    "preview_card": {
+      "artist": "Anthony Palumbo",
+      "name": "Dragon Mantle",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/d/9/d97b1080-9001-4751-b2f5-7f56d9f58dff.jpg?1562833100",
+      "uri": "https://api.scryfall.com/cards/d97b1080-9001-4751-b2f5-7f56d9f58dff"
+    }
   },
   {
     "object": "set",
@@ -1496,8 +1816,13 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/m14.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/0/f/0f672328-3361-498e-a9f4-2d8e69a8b072.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:m14"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:m14",
+    "preview_card": {
+      "artist": "Warren Mahy",
+      "name": "Deadly Recluse",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/c/8/c82cc190-7ec0-4493-b3dc-dad0cbffa2f8.jpg?1562834974",
+      "uri": "https://api.scryfall.com/cards/c82cc190-7ec0-4493-b3dc-dad0cbffa2f8"
+    }
   },
   {
     "object": "set",
@@ -1519,8 +1844,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/mma.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/2/2/22ce657c-2092-419a-b35f-7b9786adc621.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mma"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mma",
+    "preview_card": {
+      "artist": "Scott M. Fischer",
+      "name": "Dark Confidant",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/4/c/4c008ad2-ad33-46ee-a3f1-af85368c8734.jpg?1561966897",
+      "uri": "https://api.scryfall.com/cards/4c008ad2-ad33-46ee-a3f1-af85368c8734"
+    }
   },
   {
     "object": "set",
@@ -1544,8 +1874,13 @@
     "block_code": "rtr",
     "block": "Return to Ravnica",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/dgm.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/f/e/fee34fcb-0158-4741-9292-513fed9684cb.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:dgm"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:dgm",
+    "preview_card": {
+      "artist": "Karla Ortiz",
+      "name": "Teysa, Envoy of Ghosts",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/c/b/cbd8183c-6967-4332-b822-02b82c14ef2d.jpg?1562933141",
+      "uri": "https://api.scryfall.com/cards/cbd8183c-6967-4332-b822-02b82c14ef2d"
+    }
   },
   {
     "object": "set",
@@ -1569,8 +1904,13 @@
     "block_code": "rtr",
     "block": "Return to Ravnica",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/gtc.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/e/b/eb0865cd-d9b4-43ea-87d2-ad5c65fc0459.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:gtc"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:gtc",
+    "preview_card": {
+      "artist": "Willian Murai",
+      "name": "Frontline Medic",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/7/1/711a5eca-531d-4b07-b7df-9b06bad491be.jpg?1561831268",
+      "uri": "https://api.scryfall.com/cards/711a5eca-531d-4b07-b7df-9b06bad491be"
+    }
   },
   {
     "object": "set",
@@ -1594,8 +1934,13 @@
     "block_code": "rtr",
     "block": "Return to Ravnica",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/rtr.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/2/1/2167cc6d-ddb5-4f13-8905-a0c5123b852a.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:rtr"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:rtr",
+    "preview_card": {
+      "artist": "Christopher Moeller",
+      "name": "Pursuit of Flight",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/3/7/37a6290c-a0a8-4032-972b-84a7eef04dae.jpg?1562784875",
+      "uri": "https://api.scryfall.com/cards/37a6290c-a0a8-4032-972b-84a7eef04dae"
+    }
   },
   {
     "object": "set",
@@ -1619,8 +1964,13 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/m13.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/c/c/cc5b622c-83a4-477e-a99c-2674e2bd6bb9.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:m13"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:m13",
+    "preview_card": {
+      "artist": "Vincent Proce",
+      "name": "Chronomaton",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/a/a/aac35e28-dd0e-4dc8-b8e6-4a1e33706214.jpg?1562558456",
+      "uri": "https://api.scryfall.com/cards/aac35e28-dd0e-4dc8-b8e6-4a1e33706214"
+    }
   },
   {
     "object": "set",
@@ -1644,8 +1994,13 @@
     "block_code": "isd",
     "block": "Innistrad",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/avr.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/e/e/eec7dfd7-d7b2-44fa-b351-022a19fe81b8.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:avr"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:avr",
+    "preview_card": {
+      "artist": "Izzy",
+      "name": "Triumph of Cruelty",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/9/0/906618e2-2638-4017-9d6e-e6f282967a81.jpg?1592708986",
+      "uri": "https://api.scryfall.com/cards/906618e2-2638-4017-9d6e-e6f282967a81"
+    }
   },
   {
     "object": "set",
@@ -1669,8 +2024,13 @@
     "block_code": "isd",
     "block": "Innistrad",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/dka.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/1/6/16d2448c-1b2e-466a-a0ab-e20ba1de6bc9.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:dka"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:dka",
+    "preview_card": {
+      "artist": "John Stanko",
+      "name": "Burden of Guilt",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/d/7/d7440288-6c55-4502-bf20-3c5b50a2de5a.jpg?1562946355",
+      "uri": "https://api.scryfall.com/cards/d7440288-6c55-4502-bf20-3c5b50a2de5a"
+    }
   },
   {
     "object": "set",
@@ -1694,8 +2054,13 @@
     "block_code": "isd",
     "block": "Innistrad",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/isd.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/2/c/2c7b19de-96a6-4590-bfc3-31b0c7b2e25e.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:isd"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:isd",
+    "preview_card": {
+      "artist": "Tomasz Jedruszek",
+      "name": "Woodland Sleuth",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/3/0/3088a924-58c6-4ab7-baf0-842d6688fcec.jpg?1562828167",
+      "uri": "https://api.scryfall.com/cards/3088a924-58c6-4ab7-baf0-842d6688fcec"
+    }
   },
   {
     "object": "set",
@@ -1719,8 +2084,13 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/m12.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/2/b/2b61fa9d-3f69-4632-be0e-09924ca88501.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:m12"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:m12",
+    "preview_card": {
+      "artist": "Izzy",
+      "name": "Redirect",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/e/f/efdb01f8-209d-4f8b-a280-b45e1ab0b880.jpg?1562665309",
+      "uri": "https://api.scryfall.com/cards/efdb01f8-209d-4f8b-a280-b45e1ab0b880"
+    }
   },
   {
     "object": "set",
@@ -1744,8 +2114,13 @@
     "block_code": "som",
     "block": "Scars of Mirrodin",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/nph.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/6/6/666eb9a5-b105-45c1-be3e-7ac5cc650338.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:nph"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:nph",
+    "preview_card": {
+      "artist": "Tomasz Jedruszek",
+      "name": "Mountain",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/9/a/9af1a73f-e2ab-4832-b9a0-5bd9643f4fd3.jpg?1562880088",
+      "uri": "https://api.scryfall.com/cards/9af1a73f-e2ab-4832-b9a0-5bd9643f4fd3"
+    }
   },
   {
     "object": "set",
@@ -1769,8 +2144,13 @@
     "block_code": "som",
     "block": "Scars of Mirrodin",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/mbs.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/0/4/04f54188-2cfc-4964-add7-b452f32d57ef.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mbs"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mbs",
+    "preview_card": {
+      "artist": "Chippy",
+      "name": "Bonehoard",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/e/1/e14613bc-0083-48d6-ac10-b2839657e84b.jpg?1562615479",
+      "uri": "https://api.scryfall.com/cards/e14613bc-0083-48d6-ac10-b2839657e84b"
+    }
   },
   {
     "object": "set",
@@ -1791,8 +2171,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/me4.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/2/8/2888553d-5ed0-4e47-8cc2-1491b5557c53.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:me4"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:me4",
+    "preview_card": {
+      "artist": "Drew Tucker",
+      "name": "Gravebind",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/a/2/a2949265-bfd4-4cc8-8d50-3f0f0b1a46dd.jpg?1562933383",
+      "uri": "https://api.scryfall.com/cards/a2949265-bfd4-4cc8-8d50-3f0f0b1a46dd"
+    }
   },
   {
     "object": "set",
@@ -1816,8 +2201,13 @@
     "block_code": "som",
     "block": "Scars of Mirrodin",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/som.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/c/0/c071dca0-fccb-48b8-b65a-74741b12e3f0.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:som"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:som",
+    "preview_card": {
+      "artist": "Nic Klein",
+      "name": "Fulgent Distraction",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/c/3/c33a8cf1-e413-4633-b348-2ef594a945a5.jpg?1562822726",
+      "uri": "https://api.scryfall.com/cards/c33a8cf1-e413-4633-b348-2ef594a945a5"
+    }
   },
   {
     "object": "set",
@@ -1841,8 +2231,13 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/m11.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/f/5/f5498e4d-8ccd-4874-8ecc-3b1819b15f85.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:m11"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:m11",
+    "preview_card": {
+      "artist": "Matt Cavotta",
+      "name": "Wild Griffin",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/f/3/f35bfacf-b1a0-4c5a-9131-412682d483e5.jpg?1562480795",
+      "uri": "https://api.scryfall.com/cards/f35bfacf-b1a0-4c5a-9131-412682d483e5"
+    }
   },
   {
     "object": "set",
@@ -1866,8 +2261,13 @@
     "block_code": "zen",
     "block": "Zendikar",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/roe.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/6/1/61d6a649-ae48-4cf1-b0e3-ba627b4ac1e1.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:roe"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:roe",
+    "preview_card": {
+      "artist": "Chippy",
+      "name": "Harmless Assault",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/a/7/a77fef2c-227e-474e-896e-c0ebe227f494.jpg?1562707101",
+      "uri": "https://api.scryfall.com/cards/a77fef2c-227e-474e-896e-c0ebe227f494"
+    }
   },
   {
     "object": "set",
@@ -1891,8 +2291,13 @@
     "block_code": "zen",
     "block": "Zendikar",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/wwk.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/a/d/ad16a3b8-e99e-47ed-92ce-ef42310f9f46.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:wwk"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:wwk",
+    "preview_card": {
+      "artist": "Howard Lyon",
+      "name": "Basilisk Collar",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/5/5/55cdba1b-7a80-435f-9cff-b9365f62e311.jpg?1562287734",
+      "uri": "https://api.scryfall.com/cards/55cdba1b-7a80-435f-9cff-b9365f62e311"
+    }
   },
   {
     "object": "set",
@@ -1916,8 +2321,13 @@
     "block_code": "zen",
     "block": "Zendikar",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/zen.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/d/6/d68fc3bc-eb3b-4504-93a3-8943d07b23f8.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:zen"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:zen",
+    "preview_card": {
+      "artist": "Anthony Francisco",
+      "name": "Elemental Appeal",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/3/a/3a583f30-a3e0-4c4f-81b3-01452edaf22c.jpg?1562611369",
+      "uri": "https://api.scryfall.com/cards/3a583f30-a3e0-4c4f-81b3-01452edaf22c"
+    }
   },
   {
     "object": "set",
@@ -1938,8 +2348,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/me3.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/2/8/28616e3e-e3e8-4200-85d8-5633fbb1fa1e.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:me3"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:me3",
+    "preview_card": {
+      "artist": "Nicola Leonard",
+      "name": "Karakas",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/3/0/303d20a2-cf61-4d47-abc4-53e3876435e3.jpg?1562905166",
+      "uri": "https://api.scryfall.com/cards/303d20a2-cf61-4d47-abc4-53e3876435e3"
+    }
   },
   {
     "object": "set",
@@ -1963,8 +2378,13 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/m10.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/1/7/172bb1b6-08c3-4ffd-b26d-b1c77dba06c3.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:m10"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:m10",
+    "preview_card": {
+      "artist": "Jon Foster",
+      "name": "Dragonskull Summit",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/2/d/2d4998db-13c0-412f-b02c-9f041cc45c7e.jpg?1561975145",
+      "uri": "https://api.scryfall.com/cards/2d4998db-13c0-412f-b02c-9f041cc45c7e"
+    }
   },
   {
     "object": "set",
@@ -1988,8 +2408,13 @@
     "block_code": "ala",
     "block": "Alara",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/arb.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/0/9/094a235d-a5b8-434e-b4b0-c982da45a54d.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:arb"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:arb",
+    "preview_card": {
+      "artist": "Matt Stewart",
+      "name": "Knotvine Paladin",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/a/7/a715673f-77f1-46d6-91ae-01fb3af54760.jpg?1562643413",
+      "uri": "https://api.scryfall.com/cards/a715673f-77f1-46d6-91ae-01fb3af54760"
+    }
   },
   {
     "object": "set",
@@ -2013,8 +2438,13 @@
     "block_code": "ala",
     "block": "Alara",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/con.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/f/d/fd20150c-ae49-457d-9f64-b72160745ff9.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:con"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:con",
+    "preview_card": {
+      "artist": "Chris Rahn",
+      "name": "Mirror-Sigil Sergeant",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/e/9/e94b3eec-7420-45fa-8750-7f01028836d3.jpg?1562804416",
+      "uri": "https://api.scryfall.com/cards/e94b3eec-7420-45fa-8750-7f01028836d3"
+    }
   },
   {
     "object": "set",
@@ -2038,8 +2468,13 @@
     "block_code": "ala",
     "block": "Alara",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/ala.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/d/4/d4a4b3a3-b7ae-4210-8037-098fdf5808d0.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ala"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ala",
+    "preview_card": {
+      "artist": "Kev Walker",
+      "name": "Soul's Might",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/7/7/77ef536d-d55b-447a-b6ab-04123f1cfaa3.jpg?1562705599",
+      "uri": "https://api.scryfall.com/cards/77ef536d-d55b-447a-b6ab-04123f1cfaa3"
+    }
   },
   {
     "object": "set",
@@ -2060,8 +2495,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/me2.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/6/4/64bde90c-afe9-44a0-b7ae-d0588e425c18.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:me2"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:me2",
+    "preview_card": {
+      "artist": "Dan Frazier",
+      "name": "Orcish Lumberjack",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/a/c/ac70573c-2ce3-4729-b71b-2763f6a1c033.jpg?1562870015",
+      "uri": "https://api.scryfall.com/cards/ac70573c-2ce3-4729-b71b-2763f6a1c033"
+    }
   },
   {
     "object": "set",
@@ -2085,8 +2525,13 @@
     "block_code": "shm",
     "block": "Shadowmoor",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/eve.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/6/2/62615f86-0431-4709-b41c-af43f7793fdb.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:eve"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:eve",
+    "preview_card": {
+      "artist": "Jesper Ejsing",
+      "name": "Aerie Ouphes",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/b/2/b2e4cb09-c99f-4a17-a6fd-55c9a169a808.jpg?1562932733",
+      "uri": "https://api.scryfall.com/cards/b2e4cb09-c99f-4a17-a6fd-55c9a169a808"
+    }
   },
   {
     "object": "set",
@@ -2110,8 +2555,13 @@
     "block_code": "shm",
     "block": "Shadowmoor",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/shm.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/2/9/293f7768-6279-4f26-979f-ea4e48095ae5.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:shm"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:shm",
+    "preview_card": {
+      "artist": "Scott Altmann",
+      "name": "Parapet Watchers",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/4/9/499f9987-87d8-4cd3-98c4-b6976c70739e.jpg?1562829734",
+      "uri": "https://api.scryfall.com/cards/499f9987-87d8-4cd3-98c4-b6976c70739e"
+    }
   },
   {
     "object": "set",
@@ -2135,8 +2585,13 @@
     "block_code": "lrw",
     "block": "Lorwyn",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/mor.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/f/4/f459acfa-a9db-43c6-b0e9-ed66d772a335.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mor"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mor",
+    "preview_card": {
+      "artist": "Ralph Horsley",
+      "name": "Brighthearth Banneret",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/c/b/cb44df5b-6c89-46ae-b068-5056b8c4c189.jpg?1562881406",
+      "uri": "https://api.scryfall.com/cards/cb44df5b-6c89-46ae-b068-5056b8c4c189"
+    }
   },
   {
     "object": "set",
@@ -2160,8 +2615,13 @@
     "block_code": "lrw",
     "block": "Lorwyn",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/lrw.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/5/3/5305b5c6-2af6-4b5c-9a57-0a2d2628e2f4.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:lrw"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:lrw",
+    "preview_card": {
+      "artist": "Ron Spencer",
+      "name": "Blades of Velis Vel",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/5/a/5a3ac629-a8c9-4b84-a8ea-b775d7913238.jpg?1562349510",
+      "uri": "https://api.scryfall.com/cards/5a3ac629-a8c9-4b84-a8ea-b775d7913238"
+    }
   },
   {
     "object": "set",
@@ -2182,8 +2642,13 @@
     "nonfoil_only": false,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/me1.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/f/4/f4c21c0d-91ee-4c2c-bfa4-81bb07106842.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:me1"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:me1",
+    "preview_card": {
+      "artist": "Pat Lewis",
+      "name": "Yavimaya Ants",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/4/1/41fba6db-fc52-43f2-a5d6-72001be126af.jpg?1559592459",
+      "uri": "https://api.scryfall.com/cards/41fba6db-fc52-43f2-a5d6-72001be126af"
+    }
   },
   {
     "object": "set",
@@ -2207,8 +2672,13 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/10e.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/9/b/9b8a232d-7289-48c2-9160-54c1c4154721.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:10e"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:10e",
+    "preview_card": {
+      "artist": "Christopher Moeller",
+      "name": "Sky Weaver",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/5/0/5095e0e4-d077-46a5-850c-68399fd16da6.jpg?1562547586",
+      "uri": "https://api.scryfall.com/cards/5095e0e4-d077-46a5-850c-68399fd16da6"
+    }
   },
   {
     "object": "set",
@@ -2232,8 +2702,13 @@
     "block_code": "tsp",
     "block": "Time Spiral",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/fut.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/3/7/3705d3e4-317e-460d-b16e-e57238a19070.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:fut"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:fut",
+    "preview_card": {
+      "artist": "Brian Despain",
+      "name": "Nix",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/3/d/3dab4f64-2a91-409a-b83b-45b22afd22ff.jpg?1562907421",
+      "uri": "https://api.scryfall.com/cards/3dab4f64-2a91-409a-b83b-45b22afd22ff"
+    }
   },
   {
     "object": "set",
@@ -2257,8 +2732,13 @@
     "block_code": "tsp",
     "block": "Time Spiral",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/plc.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/f/9/f9a4d7ac-082b-4f66-9b7f-4d1d0fda78c7.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:plc"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:plc",
+    "preview_card": {
+      "artist": "Luca Zontini",
+      "name": "Dust Corona",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/b/b/bb554768-d908-474d-832d-d4e36d293712.jpg?1562580556",
+      "uri": "https://api.scryfall.com/cards/bb554768-d908-474d-832d-d4e36d293712"
+    }
   },
   {
     "object": "set",
@@ -2282,8 +2762,13 @@
     "block_code": "tsp",
     "block": "Time Spiral",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/tsp.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/4/f/4f7ff7d2-a8f1-4ce4-acad-828ef36afe07.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:tsp"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:tsp",
+    "preview_card": {
+      "artist": "Alan Pollack",
+      "name": "Nightshade Assassin",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/2/e/2e57492c-ca26-4f75-a27e-5c54967534ea.jpg?1562904752",
+      "uri": "https://api.scryfall.com/cards/2e57492c-ca26-4f75-a27e-5c54967534ea"
+    }
   },
   {
     "object": "set",
@@ -2307,8 +2792,13 @@
     "block_code": "ice",
     "block": "Ice Age",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/csp.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/6/7/6716c980-bd89-4297-a843-9c3e18178b47.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:csp"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:csp",
+    "preview_card": {
+      "artist": "Dan Scott",
+      "name": "Martyr of Spores",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/3/7/375fc47b-9a1b-4540-9c07-09e4e92ab974.jpg?1593275417",
+      "uri": "https://api.scryfall.com/cards/375fc47b-9a1b-4540-9c07-09e4e92ab974"
+    }
   },
   {
     "object": "set",
@@ -2332,8 +2822,13 @@
     "block_code": "rav",
     "block": "Ravnica",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/dis.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/a/e/ae8a4756-d82b-4c6d-b652-5c3722d3edec.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:dis"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:dis",
+    "preview_card": {
+      "artist": "Carl Critchlow",
+      "name": "Magewright's Stone",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/d/2/d27e8442-91ce-4106-bfc6-a1f6e0e34c2d.jpg?1593274008",
+      "uri": "https://api.scryfall.com/cards/d27e8442-91ce-4106-bfc6-a1f6e0e34c2d"
+    }
   },
   {
     "object": "set",
@@ -2357,8 +2852,13 @@
     "block_code": "rav",
     "block": "Ravnica",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/gpt.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/2/3/23d09839-b41e-4aab-8913-40d63052dbf3.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:gpt"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:gpt",
+    "preview_card": {
+      "artist": "Pete Venters",
+      "name": "Gruul Nodorog",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/9/8/9855ce83-ae26-4b1d-ab7f-637cde09d679.jpg?1593272463",
+      "uri": "https://api.scryfall.com/cards/9855ce83-ae26-4b1d-ab7f-637cde09d679"
+    }
   },
   {
     "object": "set",
@@ -2382,8 +2882,13 @@
     "block_code": "rav",
     "block": "Ravnica",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/rav.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/2/4/24a1db16-d936-4f92-9611-327a988ce04c.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:rav"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:rav",
+    "preview_card": {
+      "artist": "Stephan Martiniere",
+      "name": "Plains",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/3/d/3d8d3cd4-0f5f-4424-82ee-d8ba81da47fd.jpg?1598918551",
+      "uri": "https://api.scryfall.com/cards/3d8d3cd4-0f5f-4424-82ee-d8ba81da47fd"
+    }
   },
   {
     "object": "set",
@@ -2407,8 +2912,13 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/9ed.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/5/3/5312742c-0f35-4abc-97ec-fceda2658cec.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:9ed"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:9ed",
+    "preview_card": {
+      "artist": "Roger Raupp",
+      "name": "Quicksand",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/5/8/58c62bbe-aa06-4d1b-8338-ab270ab617e5.jpg?1562735655",
+      "uri": "https://api.scryfall.com/cards/58c62bbe-aa06-4d1b-8338-ab270ab617e5"
+    }
   },
   {
     "object": "set",
@@ -2432,8 +2942,13 @@
     "block_code": "chk",
     "block": "Kamigawa",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/sok.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/4/9/49f8a9e7-f505-4fc5-b820-0af1ee1960c7.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:sok"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:sok",
+    "preview_card": {
+      "artist": "Dan Frazier",
+      "name": "Shinen of Fury's Fire",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/6/6/66c05acc-7cb2-4a06-9e6f-cb9419298385.jpg?1562494191",
+      "uri": "https://api.scryfall.com/cards/66c05acc-7cb2-4a06-9e6f-cb9419298385"
+    }
   },
   {
     "object": "set",
@@ -2457,8 +2972,13 @@
     "block_code": "chk",
     "block": "Kamigawa",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/bok.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/0/0/0058be07-a8a1-448e-8c3d-61718cb384ec.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:bok"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:bok",
+    "preview_card": {
+      "artist": "Greg Staples",
+      "name": "Genju of the Fields",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/e/0/e0cf9142-be8e-48d8-a1b4-9a7fb71718d0.jpg?1562880345",
+      "uri": "https://api.scryfall.com/cards/e0cf9142-be8e-48d8-a1b4-9a7fb71718d0"
+    }
   },
   {
     "object": "set",
@@ -2482,8 +3002,13 @@
     "block_code": "chk",
     "block": "Kamigawa",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/chk.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/8/e/8ef25165-2458-4c00-8b7c-0ad6fd98e3af.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:chk"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:chk",
+    "preview_card": {
+      "artist": "Alan Pollack",
+      "name": "Eye of Nowhere",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/b/3/b307af89-1890-4fac-a12e-f8a678f1101f.jpg?1562763684",
+      "uri": "https://api.scryfall.com/cards/b307af89-1890-4fac-a12e-f8a678f1101f"
+    }
   },
   {
     "object": "set",
@@ -2507,8 +3032,13 @@
     "block_code": "mrd",
     "block": "Mirrodin",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/5dn.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/1/2/1252e9e2-2dd5-4bd6-aa56-f0a0ba056a77.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:5dn"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:5dn",
+    "preview_card": {
+      "artist": "Justin Sweet",
+      "name": "Plunge into Darkness",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/d/2/d21c74b4-dd9e-43d6-ad0a-06e026a8d672.jpg?1562879871",
+      "uri": "https://api.scryfall.com/cards/d21c74b4-dd9e-43d6-ad0a-06e026a8d672"
+    }
   },
   {
     "object": "set",
@@ -2532,8 +3062,13 @@
     "block_code": "mrd",
     "block": "Mirrodin",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/dst.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/9/7/97d5fc3c-7f6b-42a5-a482-d789a2a421c7.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:dst"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:dst",
+    "preview_card": {
+      "artist": "Jim Murray",
+      "name": "Auriok Siege Sled",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/7/d/7d3808b1-41df-467a-9779-70bbdfbefa6f.jpg?1562637726",
+      "uri": "https://api.scryfall.com/cards/7d3808b1-41df-467a-9779-70bbdfbefa6f"
+    }
   },
   {
     "object": "set",
@@ -2557,8 +3092,13 @@
     "block_code": "mrd",
     "block": "Mirrodin",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/mrd.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/7/5/75e5bcc2-9203-4526-a9a9-fac6fd02a854.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mrd"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mrd",
+    "preview_card": {
+      "artist": "Jim Nelson",
+      "name": "Pyrite Spellbomb",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/9/7/97b9bab9-12ee-4da5-9d53-d0b82d9279cd.jpg?1562151710",
+      "uri": "https://api.scryfall.com/cards/97b9bab9-12ee-4da5-9d53-d0b82d9279cd"
+    }
   },
   {
     "object": "set",
@@ -2582,8 +3122,13 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/8ed.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/1/5/15a680ae-aa4f-4030-8032-113b2b80e1fb.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:8ed"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:8ed",
+    "preview_card": {
+      "artist": "Randy Gallegos",
+      "name": "Dingus Egg",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/3/0/30d893a2-400c-459d-a26d-31f1f3b0642e.jpg?1562904939",
+      "uri": "https://api.scryfall.com/cards/30d893a2-400c-459d-a26d-31f1f3b0642e"
+    }
   },
   {
     "object": "set",
@@ -2607,8 +3152,13 @@
     "block_code": "ons",
     "block": "Onslaught",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/scg.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/e/6/e643fbf1-74d5-412b-beba-ab3c712edb3b.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:scg"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:scg",
+    "preview_card": {
+      "artist": "Carl Critchlow",
+      "name": "Decree of Pain",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/e/1/e1958a07-fc75-41cd-ac45-d92d49587754.jpg?1562536145",
+      "uri": "https://api.scryfall.com/cards/e1958a07-fc75-41cd-ac45-d92d49587754"
+    }
   },
   {
     "object": "set",
@@ -2632,8 +3182,13 @@
     "block_code": "ons",
     "block": "Onslaught",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/lgn.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/2/d/2d6343c0-3fb5-4bac-bea7-cba36498cd69.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:lgn"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:lgn",
+    "preview_card": {
+      "artist": "Matt Thompson",
+      "name": "Vexing Beetle",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/d/5/d599d35f-1b73-498b-9a21-831c908a95d8.jpg?1562937848",
+      "uri": "https://api.scryfall.com/cards/d599d35f-1b73-498b-9a21-831c908a95d8"
+    }
   },
   {
     "object": "set",
@@ -2657,8 +3212,13 @@
     "block_code": "ons",
     "block": "Onslaught",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/ons.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/6/9/69b58b6b-24cd-4440-b99c-d88d44b3c41c.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ons"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ons",
+    "preview_card": {
+      "artist": "Christopher Moeller",
+      "name": "Elvish Warrior",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/2/c/2c6b767b-49e5-4845-9b3f-29540e5fa330.jpg?1562905400",
+      "uri": "https://api.scryfall.com/cards/2c6b767b-49e5-4845-9b3f-29540e5fa330"
+    }
   },
   {
     "object": "set",
@@ -2682,8 +3242,13 @@
     "block_code": "ody",
     "block": "Odyssey",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/jud.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/0/9/099873b1-7181-4b9d-8ce1-8ec63c814afe.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:jud"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:jud",
+    "preview_card": {
+      "artist": "Mark Tedin",
+      "name": "Treacherous Werewolf",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/c/9/c9647726-302b-4fc4-91d7-2aa0bba0b653.jpg?1562631959",
+      "uri": "https://api.scryfall.com/cards/c9647726-302b-4fc4-91d7-2aa0bba0b653"
+    }
   },
   {
     "object": "set",
@@ -2707,8 +3272,13 @@
     "block_code": "ody",
     "block": "Odyssey",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/tor.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/4/0/40e4ace0-421d-4e8e-ab85-8f74757e99c7.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:tor"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:tor",
+    "preview_card": {
+      "artist": "Greg Staples",
+      "name": "Retraced Image",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/c/6/c62fa778-ce44-4a3e-958a-91dfe5398944.jpg?1562631940",
+      "uri": "https://api.scryfall.com/cards/c62fa778-ce44-4a3e-958a-91dfe5398944"
+    }
   },
   {
     "object": "set",
@@ -2732,8 +3302,13 @@
     "block_code": "ody",
     "block": "Odyssey",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/ody.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/f/3/f399b371-fed0-42b8-8f95-5d76fdbe193d.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ody"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ody",
+    "preview_card": {
+      "artist": "Mark Brill",
+      "name": "Sarcatog",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/7/6/760a329c-e815-49d3-8df1-d052ce19b0c6.jpg?1562916836",
+      "uri": "https://api.scryfall.com/cards/760a329c-e815-49d3-8df1-d052ce19b0c6"
+    }
   },
   {
     "object": "set",
@@ -2757,8 +3332,13 @@
     "block_code": "inv",
     "block": "Invasion",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/apc.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/8/f/8f596ce1-b754-4e34-98e3-e1ddda2fd9b0.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:apc"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:apc",
+    "preview_card": {
+      "artist": "Mark Romanoski",
+      "name": "Goblin Legionnaire",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/c/6/c684407e-277a-4e32-a978-cdac9548acce.jpg?1562941861",
+      "uri": "https://api.scryfall.com/cards/c684407e-277a-4e32-a978-cdac9548acce"
+    }
   },
   {
     "object": "set",
@@ -2782,8 +3362,13 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/7ed.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/5/6/5681e85c-79d5-4300-bda6-4ae40bb7d5d4.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:7ed"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:7ed",
+    "preview_card": {
+      "artist": "Scott Bailey",
+      "name": "Karplusan Forest",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/4/c/4c393b6f-2421-4d77-9025-dac9dfaaae36.jpg?1562237392",
+      "uri": "https://api.scryfall.com/cards/4c393b6f-2421-4d77-9025-dac9dfaaae36"
+    }
   },
   {
     "object": "set",
@@ -2807,8 +3392,13 @@
     "block_code": "inv",
     "block": "Invasion",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/pls.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/a/a/aa52bc97-109a-4de5-b287-bce21dad6a9c.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:pls"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:pls",
+    "preview_card": {
+      "artist": "Paolo Parente",
+      "name": "Steel Leaf Paladin",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/2/8/28e8697f-fdf3-4a1a-a84d-dd29b17336c2.jpg?1562903659",
+      "uri": "https://api.scryfall.com/cards/28e8697f-fdf3-4a1a-a84d-dd29b17336c2"
+    }
   },
   {
     "object": "set",
@@ -2832,8 +3422,13 @@
     "block_code": "inv",
     "block": "Invasion",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/inv.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/1/a/1a9d4ff8-af35-413f-9aa2-f4c6e34fade2.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:inv"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:inv",
+    "preview_card": {
+      "artist": "rk post",
+      "name": "Faerie Squadron",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/4/c/4c707c81-dbbd-43be-a79a-7bc92a584839.jpg?1562910474",
+      "uri": "https://api.scryfall.com/cards/4c707c81-dbbd-43be-a79a-7bc92a584839"
+    }
   },
   {
     "object": "set",
@@ -2857,8 +3452,13 @@
     "block_code": "mmq",
     "block": "Masques",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/pcy.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/e/8/e8e5c9ca-b453-488b-8702-fc74907a8335.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:pcy"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:pcy",
+    "preview_card": {
+      "artist": "Mark Tedin",
+      "name": "Whipstitched Zombie",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/9/c/9cd00b0b-2ac1-4926-a735-215f402ba1c4.jpg?1562924207",
+      "uri": "https://api.scryfall.com/cards/9cd00b0b-2ac1-4926-a735-215f402ba1c4"
+    }
   },
   {
     "object": "set",
@@ -2882,8 +3482,13 @@
     "block_code": "mmq",
     "block": "Masques",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/nem.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/0/d/0d18050e-9aad-471e-a6ae-66e5fa2bbb6f.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:nem"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:nem",
+    "preview_card": {
+      "artist": "Dan Frazier",
+      "name": "Shrieking Mogg",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/0/c/0ce46919-d312-490c-8942-39fbb2d375bf.jpg?1562628622",
+      "uri": "https://api.scryfall.com/cards/0ce46919-d312-490c-8942-39fbb2d375bf"
+    }
   },
   {
     "object": "set",
@@ -2907,8 +3512,13 @@
     "block_code": "mmq",
     "block": "Masques",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/mmq.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/2/0/20aa9108-470c-484d-908a-c31cf6935765.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mmq"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mmq",
+    "preview_card": {
+      "artist": "Doug Chaffee",
+      "name": "Crash",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/7/a/7a26bde3-8392-4476-b347-f223d52554a6.jpg?1562381377",
+      "uri": "https://api.scryfall.com/cards/7a26bde3-8392-4476-b347-f223d52554a6"
+    }
   },
   {
     "object": "set",
@@ -2932,8 +3542,13 @@
     "block_code": "usg",
     "block": "Urza",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/uds.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/3/2/325d9372-01c9-4e99-a966-13c8f8566e2e.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:uds"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:uds",
+    "preview_card": {
+      "artist": "Jeff Miracola",
+      "name": "Bubbling Beebles",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/0/0/002cf7d8-3fc2-48eb-a727-a1ce5a049665.jpg?1562443310",
+      "uri": "https://api.scryfall.com/cards/002cf7d8-3fc2-48eb-a727-a1ce5a049665"
+    }
   },
   {
     "object": "set",
@@ -2955,8 +3570,13 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/6ed.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/5/7/57cdfb23-3c62-4312-a503-e30be384e3ab.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:6ed"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:6ed",
+    "preview_card": {
+      "artist": "Dameon Willich",
+      "name": "Mana Short",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/2/c/2c2893b8-11e4-4a76-a3bf-6dd86c11ae09.jpg?1562815962",
+      "uri": "https://api.scryfall.com/cards/2c2893b8-11e4-4a76-a3bf-6dd86c11ae09"
+    }
   },
   {
     "object": "set",
@@ -2980,8 +3600,13 @@
     "block_code": "usg",
     "block": "Urza",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/ulg.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/b/6/b6cb2549-e485-44d6-9d65-7605c568909e.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ulg"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ulg",
+    "preview_card": {
+      "artist": "Melissa A. Benson",
+      "name": "About Face",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/8/5/85e71828-095b-4729-ab11-c6c39ba29aab.jpg?1562863291",
+      "uri": "https://api.scryfall.com/cards/85e71828-095b-4729-ab11-c6c39ba29aab"
+    }
   },
   {
     "object": "set",
@@ -3005,8 +3630,13 @@
     "block_code": "usg",
     "block": "Urza",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/usg.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/1/a/1aa4baf7-4693-4c55-af04-2fa5d901d701.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:usg"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:usg",
+    "preview_card": {
+      "artist": "Berry",
+      "name": "Songstitcher",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/f/a/fa8d306f-3f4e-4c21-9461-caa3daf4fc50.jpg?1562948054",
+      "uri": "https://api.scryfall.com/cards/fa8d306f-3f4e-4c21-9461-caa3daf4fc50"
+    }
   },
   {
     "object": "set",
@@ -3030,8 +3660,13 @@
     "block_code": "tmp",
     "block": "Tempest",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/exo.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/1/7/17f4d2a5-bb85-4662-b2dd-a363ec7eab9b.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:exo"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:exo",
+    "preview_card": {
+      "artist": "rk post",
+      "name": "High Ground",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/1/c/1c5239dc-f51b-48c0-91a2-ed6551aaff32.jpg?1562087353",
+      "uri": "https://api.scryfall.com/cards/1c5239dc-f51b-48c0-91a2-ed6551aaff32"
+    }
   },
   {
     "object": "set",
@@ -3054,8 +3689,13 @@
     "block_code": "tmp",
     "block": "Tempest",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/sth.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/8/8/88a9b76d-6ce1-40d4-bc04-7ae6237f5eaf.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:sth"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:sth",
+    "preview_card": {
+      "artist": "Ron Spencer",
+      "name": "Mob Justice",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/b/7/b790d789-bb21-4119-a0e3-43af9bef8acc.jpg?1562597361",
+      "uri": "https://api.scryfall.com/cards/b790d789-bb21-4119-a0e3-43af9bef8acc"
+    }
   },
   {
     "object": "set",
@@ -3078,8 +3718,13 @@
     "block_code": "tmp",
     "block": "Tempest",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/tmp.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/e/9/e9091667-d5a8-4978-9023-032ff65f9642.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:tmp"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:tmp",
+    "preview_card": {
+      "artist": "Thomas Gianni",
+      "name": "Dregs of Sorrow",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/8/0/80e4203a-ff11-4075-a03a-11448779b413.jpg?1562054971",
+      "uri": "https://api.scryfall.com/cards/80e4203a-ff11-4075-a03a-11448779b413"
+    }
   },
   {
     "object": "set",
@@ -3102,8 +3747,13 @@
     "block_code": "mir",
     "block": "Mirage",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/wth.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/c/8/c857a151-45fe-43af-a9be-a93d26f220f3.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:wth"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:wth",
+    "preview_card": {
+      "artist": "Gary Leach",
+      "name": "Haunting Misery",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/9/3/939b83ba-8ba8-4b98-8a13-a037ba7805e9.jpg?1562802204",
+      "uri": "https://api.scryfall.com/cards/939b83ba-8ba8-4b98-8a13-a037ba7805e9"
+    }
   },
   {
     "object": "set",
@@ -3124,8 +3774,13 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/5ed.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/7/b/7b4c1316-d6df-4bc4-9bfe-0458ff7c2908.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:5ed"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:5ed",
+    "preview_card": {
+      "artist": "DiTerlizzi",
+      "name": "Frozen Shade",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/c/b/cbd0b4ff-f49f-4079-991a-f66d1220235d.jpg?1562594238",
+      "uri": "https://api.scryfall.com/cards/cbd0b4ff-f49f-4079-991a-f66d1220235d"
+    }
   },
   {
     "object": "set",
@@ -3148,8 +3803,13 @@
     "block_code": "mir",
     "block": "Mirage",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/vis.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/2/0/20ba72c7-7957-4d02-b41e-c0132fe1f2e6.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:vis"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:vis",
+    "preview_card": {
+      "artist": "Christopher Rush",
+      "name": "Archangel",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/3/6/368144bf-d415-48ab-a957-9d7ac1ceb353.jpg?1562277438",
+      "uri": "https://api.scryfall.com/cards/368144bf-d415-48ab-a957-9d7ac1ceb353"
+    }
   },
   {
     "object": "set",
@@ -3172,8 +3832,13 @@
     "block_code": "mir",
     "block": "Mirage",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/mir.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/6/6/6622f325-6bc3-49dc-ba8e-154e70772dd5.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mir"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:mir",
+    "preview_card": {
+      "artist": "Kari Johnson",
+      "name": "Mountain Valley",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/d/e/ded4e5c2-4f03-47c1-9843-b98c239ccfea.jpg?1562722373",
+      "uri": "https://api.scryfall.com/cards/ded4e5c2-4f03-47c1-9843-b98c239ccfea"
+    }
   },
   {
     "object": "set",
@@ -3194,8 +3859,13 @@
     "block_code": "ice",
     "block": "Ice Age",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/all.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/9/1/9185d10f-7368-4b40-b4a6-baf46c616c34.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:all"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:all",
+    "preview_card": {
+      "artist": "Bill Sienkiewicz",
+      "name": "Soldevi Steam Beast",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/e/a/ead79d2c-170e-4106-962d-d69c4b5fead0.jpg?1562770654",
+      "uri": "https://api.scryfall.com/cards/ead79d2c-170e-4106-962d-d69c4b5fead0"
+    }
   },
   {
     "object": "set",
@@ -3214,8 +3884,13 @@
     "nonfoil_only": true,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/hml.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/0/1/01ff4430-c8f7-408a-aad2-a098d747ea62.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:hml"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:hml",
+    "preview_card": {
+      "artist": "Alan Rabinowitz",
+      "name": "Leeches",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/9/0/90db206e-b254-476c-b2f3-1cd56bb5297d.jpg?1562587765",
+      "uri": "https://api.scryfall.com/cards/90db206e-b254-476c-b2f3-1cd56bb5297d"
+    }
   },
   {
     "object": "set",
@@ -3236,8 +3911,13 @@
     "block_code": "ice",
     "block": "Ice Age",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/ice.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/3/c/3c1c67fa-ff88-4a61-b8a5-8a872b3dc44f.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ice"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:ice",
+    "preview_card": {
+      "artist": "Dameon Willich",
+      "name": "Hipparion",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/5/9/5969875a-f647-4daf-b76c-d1514d45c312.jpg?1562911517",
+      "uri": "https://api.scryfall.com/cards/5969875a-f647-4daf-b76c-d1514d45c312"
+    }
   },
   {
     "object": "set",
@@ -3258,8 +3938,13 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/4ed.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/a/d/ad34094d-a7ec-4b04-a288-4d4f1a07fc6b.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:4ed"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:4ed",
+    "preview_card": {
+      "artist": "Douglas Shuler",
+      "name": "Circle of Protection: White",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/9/2/92e1e153-cf5c-429a-9680-53b7c89dbd88.jpg?1559604211",
+      "uri": "https://api.scryfall.com/cards/92e1e153-cf5c-429a-9680-53b7c89dbd88"
+    }
   },
   {
     "object": "set",
@@ -3278,8 +3963,13 @@
     "nonfoil_only": true,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/fem.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/9/0/9028f200-80dd-4c53-877f-ea380ff417cb.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:fem"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:fem",
+    "preview_card": {
+      "artist": "Douglas Shuler",
+      "name": "River Merfolk",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/2/7/27d7fa54-4b89-4a9a-b088-4b89c525c1ea.jpg?1562902383",
+      "uri": "https://api.scryfall.com/cards/27d7fa54-4b89-4a9a-b088-4b89c525c1ea"
+    }
   },
   {
     "object": "set",
@@ -3298,8 +3988,13 @@
     "nonfoil_only": true,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/drk.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/4/e/4eef9bb7-cd3c-422e-a93b-90d98684675a.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:drk"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:drk",
+    "preview_card": {
+      "artist": "Christopher Rush",
+      "name": "Niall Silvain",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/9/d/9d5911b5-a54e-4ebb-9c36-d4dc8e97bb4b.jpg?1562932140",
+      "uri": "https://api.scryfall.com/cards/9d5911b5-a54e-4ebb-9c36-d4dc8e97bb4b"
+    }
   },
   {
     "object": "set",
@@ -3318,8 +4013,13 @@
     "nonfoil_only": true,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/leg.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/f/3/f3020304-7a39-411e-b055-3ade72b4bff8.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:leg"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:leg",
+    "preview_card": {
+      "artist": "Andi Rusu",
+      "name": "Vaevictis Asmadi",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/2/2/22ea73ec-1325-4437-a23f-dcda1767c713.jpg?1562858215",
+      "uri": "https://api.scryfall.com/cards/22ea73ec-1325-4437-a23f-dcda1767c713"
+    }
   },
   {
     "object": "set",
@@ -3340,8 +4040,13 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/3ed.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/4/9/4945ec9e-eda7-42ad-88b7-ba14f9d95e54.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:3ed"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:3ed",
+    "preview_card": {
+      "artist": "Mark Tedin",
+      "name": "Wall of Swords",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/4/3/4390978b-f647-4720-8caa-00eeecff8471.jpg?1559597107",
+      "uri": "https://api.scryfall.com/cards/4390978b-f647-4720-8caa-00eeecff8471"
+    }
   },
   {
     "object": "set",
@@ -3360,8 +4065,13 @@
     "nonfoil_only": true,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/atq.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/1/f/1f372950-6693-4838-80ef-8fd9aa3e0349.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:atq"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:atq",
+    "preview_card": {
+      "artist": "Douglas Shuler",
+      "name": "Candelabra of Tawnos",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/3/5/35a335bf-7358-460f-b7c9-1e8bc4300f64.jpg?1562906316",
+      "uri": "https://api.scryfall.com/cards/35a335bf-7358-460f-b7c9-1e8bc4300f64"
+    }
   },
   {
     "object": "set",
@@ -3380,8 +4090,13 @@
     "nonfoil_only": true,
     "foil_only": false,
     "icon_svg_uri": "https://svgs.scryfall.io/sets/arn.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/7/1/71504078-a16f-4dc4-9626-0ecc42b1e93b.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:arn"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:arn",
+    "preview_card": {
+      "artist": "Ken Meyer, Jr.",
+      "name": "Erhnam Djinn",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/4/2/42bc0c3f-0a52-4bdc-83da-6484bf3102f3.jpg?1562907201",
+      "uri": "https://api.scryfall.com/cards/42bc0c3f-0a52-4bdc-83da-6484bf3102f3"
+    }
   },
   {
     "object": "set",
@@ -3402,8 +4117,13 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/2ed.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/a/d/ade7d00d-4e7b-46e9-ace1-63f628a589fc.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:2ed"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:2ed",
+    "preview_card": {
+      "artist": "Jeff A. Menges",
+      "name": "Bog Wraith",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/9/4/94345aab-b9f2-463e-91ab-acd8b99a7ec0.jpg?1559592126",
+      "uri": "https://api.scryfall.com/cards/94345aab-b9f2-463e-91ab-acd8b99a7ec0"
+    }
   },
   {
     "object": "set",
@@ -3424,8 +4144,13 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/leb.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/0/f/0f2c32a0-ee97-4239-94e3-aabab91dab83.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:leb"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:leb",
+    "preview_card": {
+      "artist": "Richard Thomas",
+      "name": "Wall of Fire",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/8/8/88baaea5-69ec-4756-86c2-9c9d73ca8ef1.jpg?1559591692",
+      "uri": "https://api.scryfall.com/cards/88baaea5-69ec-4756-86c2-9c9d73ca8ef1"
+    }
   },
   {
     "object": "set",
@@ -3446,7 +4171,12 @@
     "block_code": "lea",
     "block": "Core Set",
     "icon_svg_uri": "https://svgs.scryfall.io/sets/lea.svg?1698033600",
-    "preview_art": "https://cards.scryfall.io/art_crop/front/f/8/f8ac5006-91bd-4803-93da-f87cf196dd2f.jpg",
-    "random_card_query": "https://api.scryfall.com/cards/random?q=set:lea"
+    "random_card_query": "https://api.scryfall.com/cards/random?q=set:lea",
+    "preview_card": {
+      "artist": "Cornelius Brudi",
+      "name": "Pearled Unicorn",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/6/d/6daf1aab-1e58-4a5a-bc66-cb3f7c86e0e8.jpg?1559591411",
+      "uri": "https://api.scryfall.com/cards/6daf1aab-1e58-4a5a-bc66-cb3f7c86e0e8"
+    }
   }
 ]
