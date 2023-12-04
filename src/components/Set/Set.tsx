@@ -5,6 +5,7 @@
 import * as React from 'react';
 // import Image from 'next/image';
 import Link from 'next/link';
+import { Pencil1Icon } from '@radix-ui/react-icons';
 import type { Set } from '@/types';
 
 const convertSVGToWhite =
@@ -27,7 +28,8 @@ type SetProps = {
  */
 export function Set(props: SetProps) {
   const { set } = props;
-  const { code, icon_svg_uri, name } = set;
+  const { code, icon_svg_uri, name, preview_card } = set;
+  const { artist } = preview_card;
 
   const isSetNameVeryLong = name?.length > 28;
 
@@ -76,6 +78,18 @@ export function Set(props: SetProps) {
       >
         {name}
       </h3>
+
+      <div className='absolute bottom-0 left-0 right-0 flex justify-between  px-2 py-[4px] text-[8px] text-slate-100'>
+        <p className='flex items-center'>
+          <Pencil1Icon
+            height='8px'
+            width='8px'
+          />
+          &nbsp;{artist}
+        </p>
+
+        <p>™️ & © Wizards of the Coast</p>
+      </div>
     </Link>
   );
 }
