@@ -12,7 +12,7 @@ async function HomePage() {
 
   return (
     <React.Fragment>
-      <section className='h-fit w-screen bg-gradient-to-b from-sky-500 to-indigo-500 py-12 text-center lg:py-16'>
+      <section className='mt-[-2rem] h-fit w-screen bg-gradient-to-b from-sky-500 to-indigo-500 py-12 text-center lg:py-16'>
         <h3 className='mb-4 text-2xl font-bold text-slate-100 md:text-4xl'>
           Welcome to MTG Grizzly
         </h3>
@@ -63,7 +63,7 @@ async function HomePage() {
         </div>
 
         <Link
-          className='mx-auto my-4 block w-[var(--Set--width-mobile)] rounded-md bg-sky-700 py-4 text-center text-xl font-semibold text-slate-100 hover:bg-sky-600 dark:bg-slate-200 dark:text-sky-800 dark:hover:bg-slate-100 dark:hover:text-sky-600 lg:my-8 lg:w-[var(--Set--width-desktop)]'
+          className='mx-auto block w-[var(--Set--width-mobile)] rounded-md bg-sky-700 py-4 text-center text-xl font-semibold text-slate-100 hover:bg-sky-600 dark:bg-slate-200 dark:text-sky-800 dark:hover:bg-slate-100 dark:hover:text-sky-600 lg:mt-8 lg:w-[var(--Set--width-desktop)]'
           href='/sets'
         >
           All Sets
