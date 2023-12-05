@@ -46,7 +46,7 @@ async function SetPage({
         {name} ({code.toUpperCase()})
       </h1>
 
-      <div className='m-auto grid h-min w-full grid-cols-1 place-content-center gap-8 md:grid-cols-2 lg:grid-cols-3'>
+      <div className='m-auto grid h-min w-full grid-cols-1 place-content-center gap-4 md:grid-cols-2 lg:grid-cols-3 xl:gap-8'>
         {cards.map((card, index) => {
           return (
             <Card
