@@ -122,7 +122,7 @@ export function Card(props: CardProps) {
       key={fullName}
     >
       <ElementType
-        className={`group relative mx-auto my-2 rounded-lg border-4 border-transparent ${
+        className={`group relative mx-auto rounded-lg border-4 border-transparent ${
           isMultiFaceCard
             ? 'cursor-pointer hover:border-sky-600'
             : 'cursor-default'
@@ -131,7 +131,6 @@ export function Card(props: CardProps) {
       >
         <img
           alt={faceName}
-          className='rounded-lg'
           height={680}
           loading={isPriority ? 'eager' : 'lazy'}
           onError={handleImageSrcError}
@@ -167,11 +166,12 @@ export function Card(props: CardProps) {
         )}
       </ElementType>
 
-      <p className='my-auto text-lg font-medium text-slate-800 dark:text-slate-50'>
+      {/* Perhaps temporarily removing this for now to feel it out */}
+      {/* <p className='my-auto text-lg font-medium text-sky-900 dark:text-slate-50'>
         {faceName}
         {isMultiFaceCard && isFrontFace && ' (Front)'}
         {isMultiFaceCard && !isFrontFace && ' (Back)'}
-      </p>
+      </p> */}
     </div>
   );
 }
