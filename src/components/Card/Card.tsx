@@ -151,7 +151,7 @@ export function Card(props: CardProps) {
         {isMultiFaceCard && (
           <div
             aria-label='Transform card'
-            className='absolute right-8 top-56 flex h-16 w-16 items-center justify-center rounded-full bg-black bg-opacity-40'
+            className='absolute right-8 top-36 flex h-16 w-16 items-center justify-center rounded-full bg-black bg-opacity-40'
           >
             <SymbolIcon
               className='text-slate-100'
