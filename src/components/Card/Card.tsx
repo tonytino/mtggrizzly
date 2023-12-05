@@ -114,7 +114,7 @@ export function Card(props: CardProps) {
 
   return (
     <div
-      className='flex flex-col items-center justify-between text-center'
+      className='flex h-[453] min-h-[453] w-[325] min-w-[325] flex-col items-center justify-between text-center'
       key={fullName}
     >
       <ElementType
