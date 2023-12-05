@@ -25,7 +25,7 @@ export default function RootLayout({
           <Header />
 
           <main className='mx-auto flex min-h-screen w-full flex-col items-center justify-between px-4 pb-8 lg:pb-16'>
-            <div className='left-0 mt-24 flex h-full w-full flex-col items-center justify-start gap-4 xl:max-w-screen-xl'>
+            <div className='left-0 mt-20 flex h-full w-full flex-col items-center justify-start gap-4 xl:mt-24 xl:max-w-screen-xl'>
               {children}
             </div>
           </main>

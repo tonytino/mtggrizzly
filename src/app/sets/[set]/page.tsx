@@ -42,7 +42,7 @@ async function SetPage({
 
   return (
     <React.Fragment>
-      <h1 className='text-3xl font-bold text-sky-900 dark:text-slate-100'>
+      <h1 className='text-3xl font-bold text-sky-900 dark:text-slate-100 xl:mb-8'>
         {name} ({code.toUpperCase()})
       </h1>
 
