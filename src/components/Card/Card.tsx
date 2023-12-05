@@ -75,8 +75,8 @@ export function Card(props: CardProps) {
   const { card_faces = [], image_uris, layout, name: fullName } = card;
   const isMultiFaceCard = MULTI_FACE_CARD_LAYOUTS.includes(layout);
   const initialCardImageSrc = isMultiFaceCard
-    ? card_faces[0]?.image_uris?.png
-    : image_uris?.png;
+    ? card_faces[0]?.image_uris?.normal
+    : image_uris?.normal;
   const initialFaceName = isMultiFaceCard ? card_faces[0]?.name : fullName;
 
   const [state, dispatch] = React.useReducer(stateReducer, {
@@ -127,11 +127,12 @@ export function Card(props: CardProps) {
       >
         <img
           alt={faceName}
-          height={680}
+          className='rounded-xl'
+          height={453}
           loading={isPriority ? 'eager' : 'lazy'}
           onError={handleImageSrcError}
           src={imgSrc}
-          width={488}
+          width={325}
         />
 
         {isMultiFaceCard && (
@@ -143,7 +144,7 @@ export function Card(props: CardProps) {
           <img
             alt={card_faces[1].name}
             className='hidden'
-            src={card_faces[1].image_uris.png}
+            src={card_faces[1].image_uris.normal}
           />
         )}
 
