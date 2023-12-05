@@ -1,7 +1,3 @@
-// Disabled this rule as we'd easily blow through the image optimiziation budget
-// https://vercel.com/docs/limits/usage#image-optimization
-/* eslint-disable @next/next/no-img-element */
-
 'use client';
 import * as React from 'react';
 // https://github.com/radix-ui/icons/blob/master/packages/radix-icons/src/SymbolIcon.tsx
@@ -136,7 +132,6 @@ export function Card(props: CardProps) {
           onError={handleImageSrcError}
           src={imgSrc}
           width={488}
-          // priority={isPriority}
         />
 
         {isMultiFaceCard && (

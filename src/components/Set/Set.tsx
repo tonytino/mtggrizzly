@@ -1,9 +1,4 @@
-// Disabled this rule as we'd easily blow through the image optimiziation budget
-// https://vercel.com/docs/limits/usage#image-optimization
-/* eslint-disable @next/next/no-img-element */
-
 import * as React from 'react';
-// import Image from 'next/image';
 import Link from 'next/link';
 import { Pencil1Icon } from '@radix-ui/react-icons';
 import type { Set } from '@/types';

@@ -26,6 +26,9 @@ const eslintConfig = {
       { absence: false, presence: true },
     ],
     '@typescript-eslint/no-var-requires': 'off',
+    // While a great feature, the nature of this app would make it too
+    // expensive financially to leverage this throughout
+    '@next/next/no-img-element': 'off',
   },
 };
 
