@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Card } from '@/components';
-import type { DraftSet, Set } from '@/types';
+import type { DraftSet } from '@/types';
 import sets from '@/src/app/api/sets/sets.json';
 
 async function getSet(set: string): Promise<DraftSet> {
