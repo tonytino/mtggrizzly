@@ -127,7 +127,7 @@ export function Card(props: CardProps) {
       >
         <img
           alt={faceName}
-          className='rounded-xl'
+          className='rounded-[1rem]'
           height={453}
           loading={isPriority ? 'eager' : 'lazy'}
           onError={handleImageSrcError}
