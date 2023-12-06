@@ -1,13 +1,11 @@
-import { headers } from 'next/headers';
 import * as React from 'react';
 import { Card } from '@/components';
-import type { DraftSet } from '@/types';
+import type { DraftSet, Set } from '@/types';
 import sets from '@/src/app/api/sets/sets.json';
 
 async function getSet(set: string): Promise<DraftSet> {
-  const reqHeaders = headers();
-  const host = reqHeaders.get('host') ?? 'localhost:3000';
-  const protocol = host.includes('localhost') ? 'http' : 'https';
+  const host = process.env.HOST ?? 'mtggrizzly.vercel.app';
+  const protocol = process.env.PROTOCOL ?? 'https';
   const res = await fetch(`${protocol}://${host}/api/set/${set}`);
 
   if (!res.ok) {
