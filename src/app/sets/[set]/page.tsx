@@ -21,7 +21,9 @@ async function getSet(setCode: string): Promise<DraftSet> {
 
   while (hasMore) {
     if (cards.length > 999) {
-      throw new Error('Over 999 cards found, please narrow your search');
+      throw new Error(
+        `Over 999 cards found for query (${requestUrl}), please narrow your search.`
+      );
     }
 
     try {
@@ -53,9 +55,15 @@ async function getSet(setCode: string): Promise<DraftSet> {
 
 // https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes#generating-static-params
 export async function generateStaticParams() {
-  return sets.map((set) => ({
-    set: set.code,
-  }));
+  return sets.reduce((pages, set) => {
+    if (set.show) {
+      pages.push({
+        set: set.code,
+      });
+    }
+
+    return pages;
+  }, []);
 }
 
 // https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamicparams
