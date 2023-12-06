@@ -9,7 +9,7 @@ export type DraftSet = {
    * Number of (draftable) cards present in the Set
    * @example 0
    */
-  card_count: number;
+  count: number;
   /**
    * Cards in the set
    */
