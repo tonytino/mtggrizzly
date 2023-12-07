@@ -32,11 +32,11 @@ export function Set(props: SetProps) {
 
   return (
     <Link
-      className='relative flex h-[var(--Set--height-mobile)] w-[var(--Set--width-mobile)] cursor-pointer flex-col items-end justify-between rounded bg-neutral-300 text-center shadow-md dark:bg-neutral-400 lg:h-[var(--Set--height-desktop)] lg:w-[var(--Set--width-desktop)]'
+      className='relative flex h-[var(--Set--height-mobile)] w-[var(--Set--width-mobile)] cursor-pointer flex-col items-end justify-between overflow-hidden rounded bg-neutral-300 text-center shadow-md dark:bg-neutral-400 lg:h-[var(--Set--height-desktop)] lg:w-[var(--Set--width-desktop)]'
       href={routeForSet}
       key={code}
     >
-      <picture className='absolute'>
+      <picture>
         <source
           media='(max-width: 1023px)'
           srcSet={`/sets/${code}/preview/480.webp`}
@@ -47,12 +47,12 @@ export function Set(props: SetProps) {
         />
         <img
           alt={`${name}: Preview Card Art`}
-          className='h-[var(--Set--height-mobile)] max-h-[var(--Set--height-mobile)] w-[var(--Set--width-mobile)] max-w-[var(--Set--width-mobile)] rounded lg:h-[var(--Set--height-desktop)] lg:max-h-[var(--Set--height-desktop)] lg:w-[var(--Set--width-desktop)] lg:max-w-[var(--Set--width-desktop)]'
+          className='w-[var(--Set--width-mobile)]	max-w-[var(--Set--width-mobile)] scale-105 rounded lg:w-[var(--Set--width-desktop)] lg:max-w-[var(--Set--width-desktop)]'
           src={`/sets/${code}/preview/576.webp`}
         />
       </picture>
 
-      <div className='relative mr-4 mt-4 flex h-14 w-14 flex-col items-center justify-center rounded'>
+      <div className='absolute right-0 top-0 mr-4 mt-4 flex h-14 w-14 flex-col items-center justify-center rounded'>
         <img
           alt={`${name}: Set Icon`}
           className='max-w-14 max-h-14'
@@ -66,7 +66,7 @@ export function Set(props: SetProps) {
       </div>
 
       <h3
-        className={`z-10 mb-0 mt-auto h-1/4 w-full rounded-b bg-black bg-opacity-50 p-2 leading-loose ${
+        className={`absolute bottom-0 z-10 mb-0 mt-auto h-1/4 w-full rounded-b bg-black bg-opacity-50 p-2 leading-loose ${
           isSetNameVeryLong ? 'text-base' : 'text-lg'
         } font-medium text-slate-100`}
         style={isSetNameVeryLong ? { paddingTop: '11px' } : {}}
