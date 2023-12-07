@@ -47,7 +47,7 @@ export function Set(props: SetProps) {
         />
         <img
           alt={`${name}: Preview Card Art`}
-          className='w-[var(--Set--width-mobile)]	max-w-[var(--Set--width-mobile)] scale-105 rounded lg:w-[var(--Set--width-desktop)] lg:max-w-[var(--Set--width-desktop)]'
+          className='scale-105rounded h-[var(--Set--height-mobile)] max-h-[var(--Set--height-mobile)] w-[var(--Set--width-mobile)] max-w-[var(--Set--width-mobile)] scale-105 lg:h-[var(--Set--height-desktop)] lg:max-h-[var(--Set--height-desktop)] lg:w-[var(--Set--width-desktop)] lg:max-w-[var(--Set--width-desktop)]'
           src={`/sets/${code}/preview/576.webp`}
         />
       </picture>
