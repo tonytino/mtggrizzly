@@ -6,7 +6,7 @@ import * as React from 'react';
 async function AboutPage() {
   return (
     <React.Fragment>
-      <section className='flex max-w-3xl flex-col gap-8 text-sky-900 dark:text-slate-100'>
+      <section className='flex max-w-3xl flex-col gap-8 text-sky-800 dark:text-slate-100'>
         <h2 className='text-xl font-bold'>What is MTG Grizzly?</h2>
 
         <p className='text-lg'>
