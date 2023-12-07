@@ -83,7 +83,7 @@ export function Set(props: SetProps) {
           &nbsp;{artist}
         </p>
 
-        <p>™️ & © Wizards of the Coast</p>
+        <p>™ & © Wizards of the Coast</p>
       </div>
     </Link>
   );
