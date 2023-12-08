@@ -1112,10 +1112,10 @@
     "icon_svg_uri": "https://svgs.scryfall.io/sets/rix.svg?1698033600",
     "random_card_query": "https://api.scryfall.com/cards/random?q=set:rix",
     "preview_card": {
-      "artist": "Anthony Hernandez",
-      "name": "Grizzly Bears",
-      "preview_art": "https://cards.scryfall.io/art_crop/front/3/0/30dc237e-b28a-4b65-9790-6b434828bf2e.jpg",
-      "uri": "https://api.scryfall.com/cards/87b56584-8a61-40bc-99b5-7434a681fcdc"
+      "artist": "Zoltan Boros",
+      "name": "Dire Fleet Daredevil",
+      "preview_art": "https://cards.scryfall.io/art_crop/front/1/3/13e3c0c5-7451-4da9-acc0-d6e4e1f2655e.jpg?1555040408",
+      "uri": "https://api.scryfall.com/cards/13e3c0c5-7451-4da9-acc0-d6e4e1f2655e"
     }
   },
   {
