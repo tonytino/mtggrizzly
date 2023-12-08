@@ -77,6 +77,7 @@ export function Set(props: SetProps) {
       <div className='absolute bottom-0 left-0 right-0 flex justify-between  px-2 py-[4px] text-xs text-slate-100'>
         <p className='flex items-center'>
           <Pencil1Icon
+            data-testid='pencil-icon'
             height='12px'
             width='12px'
           />
