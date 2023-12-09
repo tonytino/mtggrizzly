@@ -35,8 +35,6 @@ function stateReducer(state, action) {
       imgSrc,
     };
   }
-
-  throw Error('Unknown action.');
 }
 
 type CardProps = {
@@ -82,7 +80,7 @@ export function Card(props: CardProps) {
     dispatch({
       type: 'swap_face',
       faceName: card_faces[isFrontFace ? 1 : 0].name,
-      imgSrc: card_faces[isFrontFace ? 1 : 0].image_uris.png,
+      imgSrc: card_faces[isFrontFace ? 1 : 0].image_uris.normal,
     });
   };
 
@@ -110,7 +108,7 @@ export function Card(props: CardProps) {
           width={325}
         />
 
-        {isMultiFaceCard && (
+        {isMultiFaceCard && isFrontFace && (
           // Load the back face so that the image loads immediately when a card
           // face is swapped. Note that we cannot lazy load as the browser will
           // not load it until it's close to the viewport
@@ -119,6 +117,7 @@ export function Card(props: CardProps) {
           <img
             alt={card_faces[1].name}
             className='hidden'
+            hidden
             src={card_faces[1].image_uris.normal}
           />
         )}
