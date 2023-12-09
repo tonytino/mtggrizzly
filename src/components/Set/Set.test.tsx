@@ -1,78 +1,84 @@
-import { React, render, screen, userEvent } from 'test-utils';
+import { React, render, screen } from 'test-utils';
 import type { Set as SetType } from '@/types';
 import { Set } from './Set';
 import SampleSet from './Set.sample.json';
-import { CLASSES_FOR_MAGIC_COLORS } from './constants';
-
-const pushMock = jest.fn();
-
-jest.mock('next/navigation', () => {
-  return {
-    useRouter: () => {
-      return {
-        push: pushMock,
-      };
-    },
-  };
-});
 
 const set = SampleSet as SetType;
 
 describe('<Set />', () => {
   describe('features', () => {
-    test('renders the set image alongside the set name', () => {
-      render(
-        <Set
-          index={0}
-          set={set}
-        />
+    test('renders the set name with a larger font when it is not long', () => {
+      render(<Set set={set} />);
+
+      const setName = screen.getByText(set.name);
+
+      expect(setName).toBeInTheDocument();
+      expect(setName).toHaveClass('text-lg');
+      expect(setName).not.toHaveStyle({ paddingTop: '11px' });
+    });
+
+    test('renders the set name with a smaller font when it is long', () => {
+      const name = 'Adventures in the Forgotten Realms';
+
+      render(<Set set={{ ...set, name }} />);
+
+      const setName = screen.getByText(name);
+
+      expect(setName).toBeInTheDocument();
+      expect(setName).toHaveClass('text-base');
+      expect(setName).toHaveStyle({ paddingTop: '11px' });
+    });
+
+    test('renders a link to the set page', async () => {
+      render(<Set set={set} />);
+
+      const setPageLink = screen.getByRole('link');
+
+      expect(setPageLink).toBeInTheDocument();
+      expect(setPageLink).toHaveAttribute('href', `/sets/${set.code}`);
+    });
+
+    test('renders the set preview card art', () => {
+      render(<Set set={set} />);
+
+      const setPreviewImage = screen.getByAltText(
+        `${set.name}: Preview Card Art`
       );
 
-      const setIcon = screen.getByAltText(`${set.name} Set Icon`);
-      const setPreviewImage = screen.getByRole('button');
-      const setName = screen.getByText(set.name);
+      expect(setPreviewImage).toBeInTheDocument();
+      expect(setPreviewImage).toHaveAttribute(
+        'src',
+        `/sets/${set.code}/preview/576.webp`
+      );
+    });
+
+    test('renders the set icon', () => {
+      render(<Set set={set} />);
+
+      const setIcon = screen.getByAltText(`${set.name}: Set Icon`);
 
       expect(setIcon).toBeInTheDocument();
       expect(setIcon).toHaveAttribute('src', set.icon_svg_uri);
-
-      expect(setPreviewImage).toBeInTheDocument();
-      expect(setPreviewImage).toHaveStyle(
-        `background-image: url(${set.preview_art})`
-      );
-
-      expect(setName).toBeInTheDocument();
     });
 
-    describe('when clicked', () => {
-      test('navigates you to the set page', async () => {
-        render(
-          <Set
-            index={0}
-            set={set}
-          />
-        );
+    test('renders the name of the artist for the preview art card', () => {
+      render(<Set set={set} />);
 
-        const setPreviewImage = screen.getByRole('button');
-
-        await userEvent.click(setPreviewImage);
-
-        expect(pushMock).toHaveBeenCalledWith(`/sets/${set.code}`);
-      });
+      expect(screen.getByText(set.preview_card.artist)).toBeInTheDocument();
     });
-  });
 
-  describe('prop: index', () => {
-    test('renders with a fallback background color', () => {
-      render(
-        <Set
-          index={0}
-          set={set}
-        />
-      );
+    test('renders the WOTC trademark and copyright', () => {
+      render(<Set set={set} />);
 
-      const setPreviewImage = screen.getByRole('button');
+      expect(
+        screen.getByText('™ & © Wizards of the Coast')
+      ).toBeInTheDocument();
+    });
 
-      expect(setPreviewImage).toHaveClass(CLASSES_FOR_MAGIC_COLORS[0]);
+    test('renders the pencil icon', () => {
+      render(<Set set={set} />);
+
+      expect(screen.getByTestId('pencil-icon')).toBeInTheDocument();
     });
   });
 });

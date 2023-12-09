@@ -1,5 +1,6 @@
 {
   "object": "set",
+  "show": true,
   "id": "79139661-13ee-43c4-8bad-a8c069f1a1df",
   "code": "woe",
   "mtgo_code": "woe",
@@ -17,5 +18,11 @@
   "foil_only": false,
   "icon_svg_uri": "https://svgs.scryfall.io/sets/woe.svg?1698033600",
   "preview_art": "https://cards.scryfall.io/art_crop/front/b/3/b3d6027c-813f-46df-95b4-e2e305a67620.jpg",
-  "random_card_query": "https://api.scryfall.com/cards/random?q=set:woe"
+  "random_card_query": "https://api.scryfall.com/cards/random?q=set:woe",
+  "preview_card": {
+    "artist": "Marcelo Vignali",
+    "name": "Birds of Paradise",
+    "preview_art": "https://cards.scryfall.io/art_crop/front/3/d/3d69a3e0-6a2e-475a-964e-0affed1c017d.jpg?1695422036",
+    "uri": "https://api.scryfall.com/cards/3d69a3e0-6a2e-475a-964e-0affed1c017d"
+  }
 }

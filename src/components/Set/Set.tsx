@@ -47,7 +47,7 @@ export function Set(props: SetProps) {
         />
         <img
           alt={`${name}: Preview Card Art`}
-          className='scale-105rounded h-[var(--Set--height-mobile)] max-h-[var(--Set--height-mobile)] w-[var(--Set--width-mobile)] max-w-[var(--Set--width-mobile)] scale-105 lg:h-[var(--Set--height-desktop)] lg:max-h-[var(--Set--height-desktop)] lg:w-[var(--Set--width-desktop)] lg:max-w-[var(--Set--width-desktop)]'
+          className='h-[var(--Set--height-mobile)] max-h-[var(--Set--height-mobile)] w-[var(--Set--width-mobile)] max-w-[var(--Set--width-mobile)] scale-105 rounded lg:h-[var(--Set--height-desktop)] lg:max-h-[var(--Set--height-desktop)] lg:w-[var(--Set--width-desktop)] lg:max-w-[var(--Set--width-desktop)]'
           src={`/sets/${code}/preview/576.webp`}
         />
       </picture>
@@ -77,6 +77,7 @@ export function Set(props: SetProps) {
       <div className='absolute bottom-0 left-0 right-0 flex justify-between  px-2 py-[4px] text-xs text-slate-100'>
         <p className='flex items-center'>
           <Pencil1Icon
+            data-testid='pencil-icon'
             height='12px'
             width='12px'
           />

@@ -20,23 +20,12 @@ const MULTI_FACE_CARD_LAYOUTS = [
 ];
 
 const defaultState = {
-  error: false,
   faceName: 'Grizzly Bears',
   imgSrc: FALLBACK_IMAGE_SRC,
   isFrontFace: true,
-  isMultiFaceCard: false,
 };
 
 function stateReducer(state, action) {
-  if (action.type === 'error') {
-    return {
-      ...state,
-      error: true,
-      imgSrc: FALLBACK_IMAGE_SRC,
-      faceName: 'Something went wrong, sorry!',
-    };
-  }
-
   if (action.type === 'swap_face') {
     const { faceName, imgSrc } = action;
     return {
@@ -46,8 +35,6 @@ function stateReducer(state, action) {
       imgSrc,
     };
   }
-
-  throw Error('Unknown action.');
 }
 
 type CardProps = {
@@ -62,7 +49,7 @@ type CardProps = {
 };
 
 /**
- * Renders a Card from a Set with the card image displayed alongside the name
+ * Renders a Card from a Set with the card image displayed
  *
  * @example
  *  <Card
@@ -83,7 +70,6 @@ export function Card(props: CardProps) {
     ...defaultState,
     faceName: initialFaceName,
     imgSrc: initialCardImageSrc,
-    isMultiFaceCard,
   });
 
   const { faceName, imgSrc, isFrontFace } = state;
@@ -91,33 +77,21 @@ export function Card(props: CardProps) {
   const ElementType = isMultiFaceCard ? 'button' : 'div';
 
   const handleSwapCardFace = () => {
-    try {
-      dispatch({
-        type: 'swap_face',
-        faceName: card_faces[isFrontFace ? 1 : 0].name,
-        imgSrc: card_faces[isFrontFace ? 1 : 0].image_uris.png,
-      });
-    } catch (error) {
-      dispatch({
-        type: 'error',
-      });
-    }
-  };
-
-  const handleImageSrcError = (error) => {
-    error.stopPropagation();
-
     dispatch({
-      type: 'error',
+      type: 'swap_face',
+      faceName: card_faces[isFrontFace ? 1 : 0].name,
+      imgSrc: card_faces[isFrontFace ? 1 : 0].image_uris.normal,
     });
   };
 
   return (
-    <div
-      className='flex h-[453] min-h-[453] w-[325] min-w-[325] flex-col items-center justify-between text-center'
-      key={fullName}
-    >
+    <div className='flex h-[453] min-h-[453] w-[325] min-w-[325] flex-col items-center justify-between text-center'>
       <ElementType
+        aria-label={
+          isMultiFaceCard
+            ? `See the ${isFrontFace ? 'back' : 'front'} side of the card`
+            : undefined
+        }
         className={`group relative mx-auto rounded-lg border-4 border-transparent ${
           isMultiFaceCard
             ? 'cursor-pointer hover:border-sky-600'
@@ -130,12 +104,11 @@ export function Card(props: CardProps) {
           className='rounded-[1rem]'
           height={453}
           loading={isPriority ? 'eager' : 'lazy'}
-          onError={handleImageSrcError}
           src={imgSrc}
           width={325}
         />
 
-        {isMultiFaceCard && (
+        {isMultiFaceCard && isFrontFace && (
           // Load the back face so that the image loads immediately when a card
           // face is swapped. Note that we cannot lazy load as the browser will
           // not load it until it's close to the viewport
@@ -144,6 +117,7 @@ export function Card(props: CardProps) {
           <img
             alt={card_faces[1].name}
             className='hidden'
+            hidden
             src={card_faces[1].image_uris.normal}
           />
         )}
@@ -163,7 +137,7 @@ export function Card(props: CardProps) {
       </ElementType>
 
       {/* Perhaps temporarily removing this for now to feel it out */}
-      {/* <p className='my-auto text-lg font-medium text-sky-900 dark:text-slate-50'>
+      {/* <p className='my-auto text-lg font-medium text-sky-800 dark:text-slate-50'>
         {faceName}
         {isMultiFaceCard && isFrontFace && ' (Front)'}
         {isMultiFaceCard && !isFrontFace && ' (Back)'}
