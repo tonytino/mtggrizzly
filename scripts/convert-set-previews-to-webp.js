@@ -1,6 +1,7 @@
 /**
- * Converts jpg set preview images to webp in both 320w and 384w sizes using
- * cwebp: https://developers.google.com/speed/webp/docs/cwebp
+ * Converts jpg set preview images to webp (creating two diff sizes) using cwebp: https://developers.google.com/speed/webp/docs/cwebp
+ *
+ * Ensures consistent in ratios of resulting images using imagemagick: https://imagemagick.org/script/convert.php
  */
 
 const { execSync } = require('child_process');
