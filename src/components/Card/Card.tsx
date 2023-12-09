@@ -89,6 +89,11 @@ export function Card(props: CardProps) {
   return (
     <div className='flex h-[453] min-h-[453] w-[325] min-w-[325] flex-col items-center justify-between text-center'>
       <ElementType
+        aria-label={
+          isMultiFaceCard
+            ? `See the ${isFrontFace ? 'back' : 'front'} side of the card`
+            : undefined
+        }
         className={`group relative mx-auto rounded-lg border-4 border-transparent ${
           isMultiFaceCard
             ? 'cursor-pointer hover:border-sky-600'
