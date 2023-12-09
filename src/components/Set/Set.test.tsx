@@ -7,12 +7,26 @@ const set = SampleSet as SetType;
 
 describe('<Set />', () => {
   describe('features', () => {
-    test('renders the set name', () => {
+    test('renders the set name with a larger font when it is not long', () => {
       render(<Set set={set} />);
 
       const setName = screen.getByText(set.name);
 
       expect(setName).toBeInTheDocument();
+      expect(setName).toHaveClass('text-lg');
+      expect(setName).not.toHaveStyle({ paddingTop: '11px' });
+    });
+
+    test('renders the set name with a smaller font when it is long', () => {
+      const name = 'Adventures in the Forgotten Realms';
+
+      render(<Set set={{ ...set, name }} />);
+
+      const setName = screen.getByText(name);
+
+      expect(setName).toBeInTheDocument();
+      expect(setName).toHaveClass('text-base');
+      expect(setName).toHaveStyle({ paddingTop: '11px' });
     });
 
     test('renders a link to the set page', async () => {
