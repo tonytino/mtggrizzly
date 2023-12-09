@@ -3,9 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 255, 255, 255;
-  --background-end-rgb: 255, 255, 255;
+  --default-font-color-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255; /* white */
   --max-w-screen-xl: 1280px;
 
   /* <Set /> */
@@ -17,19 +16,12 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 30, 41, 59; /* slate-800 */
-    --background-end-rgb: 2, 6, 23; /* slate-950 */
+    --default-font-color-rgb: 255, 255, 255;
+    --background-rgb: 30, 41, 59; /* slate-800 */
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-start-rgb));
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+  color: rgb(var(--default-font-color-rgb));
+  background: rgb(var(--background-rgb));
 }
