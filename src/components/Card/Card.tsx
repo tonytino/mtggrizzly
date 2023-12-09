@@ -20,23 +20,12 @@ const MULTI_FACE_CARD_LAYOUTS = [
 ];
 
 const defaultState = {
-  error: false,
   faceName: 'Grizzly Bears',
   imgSrc: FALLBACK_IMAGE_SRC,
   isFrontFace: true,
-  isMultiFaceCard: false,
 };
 
 function stateReducer(state, action) {
-  if (action.type === 'error') {
-    return {
-      ...state,
-      error: true,
-      imgSrc: FALLBACK_IMAGE_SRC,
-      faceName: 'Something went wrong, sorry!',
-    };
-  }
-
   if (action.type === 'swap_face') {
     const { faceName, imgSrc } = action;
     return {
@@ -62,7 +51,7 @@ type CardProps = {
 };
 
 /**
- * Renders a Card from a Set with the card image displayed alongside the name
+ * Renders a Card from a Set with the card image displayed
  *
  * @example
  *  <Card
@@ -83,7 +72,6 @@ export function Card(props: CardProps) {
     ...defaultState,
     faceName: initialFaceName,
     imgSrc: initialCardImageSrc,
-    isMultiFaceCard,
   });
 
   const { faceName, imgSrc, isFrontFace } = state;
@@ -91,24 +79,10 @@ export function Card(props: CardProps) {
   const ElementType = isMultiFaceCard ? 'button' : 'div';
 
   const handleSwapCardFace = () => {
-    try {
-      dispatch({
-        type: 'swap_face',
-        faceName: card_faces[isFrontFace ? 1 : 0].name,
-        imgSrc: card_faces[isFrontFace ? 1 : 0].image_uris.png,
-      });
-    } catch (error) {
-      dispatch({
-        type: 'error',
-      });
-    }
-  };
-
-  const handleImageSrcError = (error) => {
-    error.stopPropagation();
-
     dispatch({
-      type: 'error',
+      type: 'swap_face',
+      faceName: card_faces[isFrontFace ? 1 : 0].name,
+      imgSrc: card_faces[isFrontFace ? 1 : 0].image_uris.png,
     });
   };
 
@@ -130,7 +104,6 @@ export function Card(props: CardProps) {
           className='rounded-[1rem]'
           height={453}
           loading={isPriority ? 'eager' : 'lazy'}
-          onError={handleImageSrcError}
           src={imgSrc}
           width={325}
         />
@@ -163,7 +136,7 @@ export function Card(props: CardProps) {
       </ElementType>
 
       {/* Perhaps temporarily removing this for now to feel it out */}
-      {/* <p className='my-auto text-lg font-medium text-sky-900 dark:text-slate-50'>
+      {/* <p className='my-auto text-lg font-medium text-sky-800 dark:text-slate-50'>
         {faceName}
         {isMultiFaceCard && isFrontFace && ' (Front)'}
         {isMultiFaceCard && !isFrontFace && ' (Back)'}
