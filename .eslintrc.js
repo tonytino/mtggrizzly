@@ -10,7 +10,6 @@ const eslintConfig = {
   ],
   parser: '@typescript-eslint/parser',
   plugins: [
-    '@tanstack/query',
     '@typescript-eslint',
     'jsx-a11y',
     'react',
@@ -19,7 +18,6 @@ const eslintConfig = {
   ],
   root: true,
   rules: {
-    '@tanstack/query/exhaustive-deps': 'error',
     'react/react-in-jsx-scope': 'off',
     'testing-library/prefer-presence-queries': [
       'error',
