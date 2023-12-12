@@ -18,23 +18,27 @@ function SetPageCards(props: SetPageCardsType) {
   const { cards } = props;
   const [query, setQuery] = React.useState('');
 
-  const filteredCards = cards.filter((card) => {
-    const hasMultipleFaces = Boolean(card?.card_faces?.length);
-    const aspectsToCheck = hasMultipleFaces
-      ? [
-          card.card_faces[0].oracle_text,
-          card.card_faces[0].name,
-          card.card_faces[0].type_line,
-          card.card_faces[1].oracle_text,
-          card.card_faces[1].name,
-          card.card_faces[1].type_line,
-        ]
-      : [card.oracle_text, card.name, card.type_line];
+  const isQueryPresent = Boolean(query.length);
 
-    return aspectsToCheck.some((aspect) =>
-      aspect.toLowerCase().includes(query.toLowerCase())
-    );
-  });
+  const filteredCards = isQueryPresent
+    ? cards.filter((card) => {
+        const hasMultipleFaces = Boolean(card?.card_faces?.length);
+        const aspectsToCheck = hasMultipleFaces
+          ? [
+              card.card_faces[0].oracle_text,
+              card.card_faces[0].name,
+              card.card_faces[0].type_line,
+              card.card_faces[1].oracle_text,
+              card.card_faces[1].name,
+              card.card_faces[1].type_line,
+            ]
+          : [card.oracle_text, card.name, card.type_line];
+
+        return aspectsToCheck.some((aspect) =>
+          aspect.toLowerCase().includes(query.toLowerCase())
+        );
+      })
+    : cards;
 
   return (
     <React.Fragment>
@@ -44,7 +48,7 @@ function SetPageCards(props: SetPageCardsType) {
           htmlFor='card-query-input'
         >
           Search
-          {Boolean(query.length) && (
+          {isQueryPresent && (
             <span className='float-right'>Hits: {filteredCards.length}</span>
           )}
         </label>
@@ -58,7 +62,7 @@ function SetPageCards(props: SetPageCardsType) {
           value={query}
         />
 
-        {Boolean(query.length) && (
+        {isQueryPresent && (
           <button
             className='absolute bottom-[calc(0.5rem+2px)] right-4 dark:text-sky-700'
             onClick={() => setQuery('')}
