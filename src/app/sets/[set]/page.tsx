@@ -86,7 +86,7 @@ async function SetPage({
 
   return (
     <React.Fragment>
-      <h1 className='mb-4 text-3xl font-bold text-sky-800 dark:text-slate-100 xl:mb-8'>
+      <h1 className='text-center text-3xl font-bold text-sky-800 dark:text-slate-100'>
         {name}
       </h1>
 

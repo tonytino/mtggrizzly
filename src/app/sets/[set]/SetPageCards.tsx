@@ -42,7 +42,7 @@ function SetPageCards(props: SetPageCardsType) {
 
   return (
     <React.Fragment>
-      <div className='relative mx-auto my-4 flex min-w-full flex-col items-start gap-2 text-slate-500 focus-within:text-sky-800 dark:text-slate-100 dark:focus-within:text-slate-100 md:min-w-[22rem]'>
+      <div className='relative mx-auto my-8 flex min-w-full flex-col items-start gap-2 text-slate-500 focus-within:text-sky-800 dark:text-slate-100 dark:focus-within:text-slate-100 md:min-w-[22rem]'>
         <label
           className='w-full font-bold'
           htmlFor='card-query-input'
