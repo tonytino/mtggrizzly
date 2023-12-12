@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Card } from '@/components';
 import type { Card as CardType, DraftSet } from '@/types';
 import sets from '@/src/app/api/sets/sets.json';
+import SetPageCards from './SetPageCards';
 
 /**
  * [Search Syntax](https://scryfall.com/docs/syntax#sets)
@@ -86,21 +86,11 @@ async function SetPage({
 
   return (
     <React.Fragment>
-      <h1 className='mb-4 text-3xl font-bold text-sky-800 dark:text-slate-100 xl:mb-8'>
+      <h1 className='text-center text-3xl font-bold text-sky-800 dark:text-slate-100'>
         {name}
       </h1>
 
-      <div className='m-auto grid h-min w-full grid-cols-1 place-content-center gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-8'>
-        {cards.map((card, index) => {
-          return (
-            <Card
-              card={card}
-              isPriority={index < 9}
-              key={card.name}
-            />
-          );
-        })}
-      </div>
+      <SetPageCards cards={cards} />
     </React.Fragment>
   );
 }
