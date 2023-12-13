@@ -17,6 +17,7 @@ type SetPageCardsType = {
 function SetPageCards(props: SetPageCardsType) {
   const { cards } = props;
   const [query, setQuery] = React.useState('');
+  const queryInputRef = React.useRef(null);
 
   const isQueryPresent = Boolean(query.length);
 
@@ -58,6 +59,7 @@ function SetPageCards(props: SetPageCardsType) {
           name='card-query-input'
           onChange={(event) => setQuery(event.target.value)}
           placeholder='Storm...'
+          ref={queryInputRef}
           type='text'
           value={query}
         />
@@ -65,7 +67,10 @@ function SetPageCards(props: SetPageCardsType) {
         {isQueryPresent && (
           <button
             className='absolute bottom-2 right-4 rounded px-2 py-0.5 hover:bg-slate-100 dark:text-sky-700'
-            onClick={() => setQuery('')}
+            onClick={() => {
+              setQuery('');
+              queryInputRef.current.focus();
+            }}
             type='button'
           >
             Clear
