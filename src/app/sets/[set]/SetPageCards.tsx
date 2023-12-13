@@ -64,7 +64,7 @@ function SetPageCards(props: SetPageCardsType) {
 
         {isQueryPresent && (
           <button
-            className='absolute bottom-[calc(0.5rem+2px)] right-4 dark:text-sky-700'
+            className='absolute bottom-2 right-4 rounded px-2 py-0.5 hover:bg-slate-100 dark:text-sky-700'
             onClick={() => setQuery('')}
             type='button'
           >
