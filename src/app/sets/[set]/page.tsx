@@ -2,6 +2,7 @@ import * as React from 'react';
 import type { Card as CardType, DraftSet } from '@/types';
 import sets from '@/src/app/api/sets/sets.json';
 import SetPageCards from './SetPageCards';
+import CardsQueryProvider from './CardsQueryProvider';
 
 /**
  * [Search Syntax](https://scryfall.com/docs/syntax#sets)
@@ -90,7 +91,9 @@ async function SetPage({
         {name}
       </h1>
 
-      <SetPageCards cards={cards} />
+      <CardsQueryProvider>
+        <SetPageCards cards={cards} />
+      </CardsQueryProvider>
     </React.Fragment>
   );
 }
