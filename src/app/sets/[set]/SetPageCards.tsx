@@ -3,6 +3,7 @@
 import * as React from 'react';
 import { Card } from '@/components';
 import type { Card as CardType } from '@/types';
+import CardsQueryContext from './CardsQueryContext';
 
 type SetPageCardsType = {
   /**
@@ -16,12 +17,13 @@ type SetPageCardsType = {
  */
 function SetPageCards(props: SetPageCardsType) {
   const { cards } = props;
-  const [query, setQuery] = React.useState('');
-  const queryInputRef = React.useRef(null);
+  const { searchText, setQueries } = React.useContext(CardsQueryContext);
 
-  const isQueryPresent = Boolean(query.length);
+  const searchTextInputRef = React.useRef(null);
 
-  const filteredCards = isQueryPresent
+  const isSearchTextPresent = Boolean(searchText);
+
+  const filteredCards = isSearchTextPresent
     ? cards.filter((card) => {
         const hasMultipleFaces = Boolean(card?.card_faces?.length);
         const aspectsToCheck = hasMultipleFaces
@@ -36,7 +38,7 @@ function SetPageCards(props: SetPageCardsType) {
           : [card.oracle_text, card.name, card.type_line];
 
         return aspectsToCheck.some((aspect) =>
-          aspect.toLowerCase().includes(query.toLowerCase())
+          aspect.toLowerCase().includes(searchText.toLowerCase())
         );
       })
     : cards;
@@ -49,7 +51,7 @@ function SetPageCards(props: SetPageCardsType) {
           htmlFor='card-query-input'
         >
           Search
-          {isQueryPresent && (
+          {isSearchTextPresent && (
             <span className='float-right'>Hits: {filteredCards.length}</span>
           )}
         </label>
@@ -57,19 +59,31 @@ function SetPageCards(props: SetPageCardsType) {
         <input
           className='w-full rounded-lg border-2 border-slate-200 p-2 px-4 dark:border-transparent dark:text-sky-700'
           name='card-query-input'
-          onChange={(event) => setQuery(event.target.value)}
+          onChange={(event) =>
+            setQueries((queries) => {
+              return {
+                ...queries,
+                searchText: event.target.value,
+              };
+            })
+          }
           placeholder='Storm...'
-          ref={queryInputRef}
+          ref={searchTextInputRef}
           type='text'
-          value={query}
+          value={searchText}
         />
 
-        {isQueryPresent && (
+        {isSearchTextPresent && (
           <button
             className='absolute bottom-2 right-4 rounded px-2 py-0.5 hover:bg-slate-100 dark:text-sky-700'
             onClick={() => {
-              setQuery('');
-              queryInputRef.current.focus();
+              setQueries((queries) => {
+                return {
+                  ...queries,
+                  searchText: '',
+                };
+              });
+              searchTextInputRef.current.focus();
             }}
             type='button'
           >
