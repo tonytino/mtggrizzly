@@ -49,7 +49,7 @@ function CardsQueryModal() {
           onClick={() => setIsOpen(false)}
         />
 
-        <Dialog.Content className='fixed bottom-0 left-0 right-0 top-0 z-30 m-auto h-screen w-screen bg-white p-4 text-sky-800 dark:bg-slate-800 dark:text-slate-100 lg:h-3/4 lg:w-3/4 lg:rounded-md lg:p-8'>
+        <Dialog.Content className='fixed bottom-0 left-0 right-0 top-0 z-30 m-auto h-dvh w-screen bg-white p-4 text-sky-800 lg:h-3/4 lg:w-3/4 lg:rounded-md lg:p-8 dark:bg-slate-800 dark:text-slate-100'>
           <div className='flex h-full w-full flex-col justify-between'>
             <div>
               <Dialog.Title className='w-full text-2xl font-bold lg:text-center'>
@@ -64,7 +64,7 @@ function CardsQueryModal() {
                 Use the options below to peruse the set
               </Dialog.Description>
 
-              <div className='relative flex min-w-full flex-col items-start gap-2 text-slate-500 focus-within:text-sky-800 dark:text-slate-100 dark:focus-within:text-slate-100 md:min-w-[22rem]'>
+              <div className='relative flex min-w-full flex-col items-start gap-2 text-slate-500 focus-within:text-sky-800 md:min-w-[22rem] dark:text-slate-100 dark:focus-within:text-slate-100'>
                 <label
                   className='w-full font-bold'
                   htmlFor='card-query-input'
@@ -112,7 +112,7 @@ function CardsQueryModal() {
             <div className='flex flex-col justify-between gap-4 lg:flex-row-reverse'>
               <button
                 aria-label='Save the query options'
-                className='w-[calc(100vw-2rem)] rounded-md bg-sky-700 py-4 text-center text-xl font-semibold text-slate-100 hover:bg-sky-600 dark:bg-slate-200 dark:text-sky-800 dark:hover:bg-slate-100 dark:hover:text-sky-600 lg:w-[var(--Set--width-desktop)]'
+                className='w-[calc(100vw-2rem)] rounded-md bg-sky-700 py-4 text-center text-xl font-semibold text-slate-100 hover:bg-sky-600 lg:w-[var(--Set--width-desktop)] dark:bg-slate-200 dark:text-sky-800 dark:hover:bg-slate-100 dark:hover:text-sky-600'
                 onClick={() => setIsOpen(false)}
                 type='button'
               >
@@ -121,7 +121,7 @@ function CardsQueryModal() {
 
               <button
                 aria-label={cancelChangesLabel}
-                className='w-[calc(100vw-2rem)] rounded-md bg-slate-600 py-4 text-center text-xl font-semibold text-slate-100 hover:bg-slate-500 dark:bg-slate-600 dark:hover:bg-slate-500 lg:w-[var(--Set--width-desktop)]'
+                className='w-[calc(100vw-2rem)] rounded-md bg-slate-600 py-4 text-center text-xl font-semibold text-slate-100 hover:bg-slate-500 lg:w-[var(--Set--width-desktop)] dark:bg-slate-600 dark:hover:bg-slate-500'
                 onClick={() => setIsOpen(false)}
                 type='button'
               >
