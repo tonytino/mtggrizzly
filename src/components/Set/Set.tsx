@@ -32,7 +32,7 @@ export function Set(props: SetProps) {
 
   return (
     <Link
-      className='relative flex h-[var(--Set--height-mobile)] w-[var(--Set--width-mobile)] cursor-pointer flex-col items-end justify-between overflow-hidden rounded bg-neutral-300 text-center shadow-md dark:bg-neutral-400 lg:h-[var(--Set--height-desktop)] lg:w-[var(--Set--width-desktop)]'
+      className='relative flex h-[var(--Set--height-mobile)] w-[var(--Set--width-mobile)] cursor-pointer flex-col items-end justify-between overflow-hidden rounded bg-neutral-300 text-center shadow-md lg:h-[var(--Set--height-desktop)] lg:w-[var(--Set--width-desktop)] dark:bg-neutral-400'
       href={routeForSet}
       key={code}
     >
@@ -55,7 +55,7 @@ export function Set(props: SetProps) {
       <div className='absolute right-0 top-0 mr-4 mt-4 flex h-14 w-14 flex-col items-center justify-center rounded'>
         <img
           alt={`${name}: Set Icon`}
-          className='max-w-14 max-h-14'
+          className='max-h-14 max-w-14'
           height={56}
           width={56}
           src={icon_svg_uri}
