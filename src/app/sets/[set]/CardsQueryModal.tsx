@@ -121,7 +121,7 @@ function CardsQueryModal() {
 
               <button
                 aria-label={cancelChangesLabel}
-                className='w-[calc(100vw-2rem)] rounded-md bg-slate-600 py-4 text-center text-xl font-semibold text-slate-100 hover:bg-slate-500 dark:bg-slate-200 dark:text-sky-800 dark:hover:bg-slate-100 dark:hover:text-sky-600 lg:w-[var(--Set--width-desktop)]'
+                className='w-[calc(100vw-2rem)] rounded-md bg-slate-600 py-4 text-center text-xl font-semibold text-slate-100 hover:bg-slate-500 dark:bg-slate-600 dark:hover:bg-slate-500 lg:w-[var(--Set--width-desktop)]'
                 onClick={() => setIsOpen(false)}
                 type='button'
               >
