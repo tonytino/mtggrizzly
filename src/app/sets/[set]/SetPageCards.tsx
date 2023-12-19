@@ -17,9 +17,9 @@ type SetPageCardsType = {
  */
 function SetPageCards(props: SetPageCardsType) {
   const { cards } = props;
-  const { searchText, setQueries } = React.useContext(CardsQueryContext);
+  const { searchText } = React.useContext(CardsQueryContext);
 
-  const searchTextInputRef = React.useRef(null);
+  // const searchTextInputRef = React.useRef(null);
 
   const isSearchTextPresent = Boolean(searchText);
 
@@ -45,7 +45,7 @@ function SetPageCards(props: SetPageCardsType) {
 
   return (
     <React.Fragment>
-      <div className='relative mx-auto my-8 flex min-w-full flex-col items-start gap-2 text-slate-500 focus-within:text-sky-800 dark:text-slate-100 dark:focus-within:text-slate-100 md:min-w-[22rem]'>
+      {/* <div className='relative mx-auto my-8 flex min-w-full flex-col items-start gap-2 text-slate-500 focus-within:text-sky-800 dark:text-slate-100 dark:focus-within:text-slate-100 md:min-w-[22rem]'>
         <label
           className='w-full font-bold'
           htmlFor='card-query-input'
@@ -90,9 +90,9 @@ function SetPageCards(props: SetPageCardsType) {
             Clear
           </button>
         )}
-      </div>
+      </div> */}
 
-      <div className='m-auto grid h-min w-full grid-cols-1 place-content-center gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-8'>
+      <div className='m-auto mt-4 grid h-min w-full grid-cols-1 place-content-center gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-8'>
         {filteredCards.map((card, index) => {
           return (
             <Card
