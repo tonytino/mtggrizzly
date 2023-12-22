@@ -13,11 +13,7 @@ export const metadata: Metadata = {
   description: 'Your Source for Augmenting Your Limited Gameplay',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <Providers>
       <html lang='en'>
@@ -38,3 +34,5 @@ export default function RootLayout({
     </Providers>
   );
 }
+
+export default RootLayout;

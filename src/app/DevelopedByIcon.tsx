@@ -10,7 +10,7 @@ const label = 'Developed by brbcoding.com';
 /**
  * Renders a laptop icon that links to brbcoding.com
  */
-export default function DevelopedByIcon() {
+function DevelopedByIcon() {
   return (
     <Tooltip.Root>
       <Tooltip.Trigger asChild>
@@ -37,3 +37,5 @@ export default function DevelopedByIcon() {
     </Tooltip.Root>
   );
 }
+
+export default DevelopedByIcon;

@@ -10,7 +10,7 @@ const label = 'Proudly open-source';
 /**
  * Renders a GitHub icon that links to the GitHub repo
  */
-export default function GitHubIcon() {
+function GitHubIcon() {
   return (
     <Tooltip.Root>
       <Tooltip.Trigger asChild>
@@ -37,3 +37,5 @@ export default function GitHubIcon() {
     </Tooltip.Root>
   );
 }
+
+export default GitHubIcon;

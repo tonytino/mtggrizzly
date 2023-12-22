@@ -20,7 +20,7 @@ const label = 'Scroll to top';
 /**
  * Renders an up arrow icon that scrolls to the top of the page on click
  */
-export default function ScrollToTopIcon() {
+function ScrollToTopIcon() {
   return (
     <Tooltip.Root>
       <Tooltip.Trigger asChild>
@@ -47,3 +47,5 @@ export default function ScrollToTopIcon() {
     </Tooltip.Root>
   );
 }
+
+export default ScrollToTopIcon;
