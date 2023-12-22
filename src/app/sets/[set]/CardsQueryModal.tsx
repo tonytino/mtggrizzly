@@ -113,12 +113,12 @@ function CardsQueryModal() {
 
             <div className='flex flex-col justify-between gap-4 md:flex-row-reverse'>
               <button
-                aria-label='Save the query options'
+                aria-label={closeModalLabel}
                 className='w-[calc(100vw-2rem)] rounded-md bg-sky-700 py-4 text-center text-xl font-semibold text-slate-100 hover:bg-sky-600 lg:w-[var(--Set--width-desktop)] dark:bg-slate-200 dark:text-sky-800 dark:hover:bg-slate-100 dark:hover:text-sky-600'
                 onClick={() => setIsOpen(false)}
                 type='button'
               >
-                Save
+                Close
               </button>
 
               <button
