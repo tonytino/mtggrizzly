@@ -8,8 +8,8 @@ import * as Tooltip from '@radix-ui/react-tooltip';
 import { Cross2Icon, MixerVerticalIcon } from '@radix-ui/react-icons';
 import CardsQueryContext from './CardsQueryContext';
 
-const openModalTooltipLabel = 'Query the cards';
-const cancelChangesLabel = 'Cancel the changes to the query options';
+const openModalTooltipLabel = 'Search within the set';
+const closeModalLabel = 'Close the search options interface';
 
 /**
  * A modal that contains various means by which to query the cards of a set
@@ -44,7 +44,7 @@ function CardsQueryModal() {
 
       <Dialog.Portal>
         <Dialog.Overlay
-          aria-label={cancelChangesLabel}
+          aria-label={closeModalLabel}
           className='fixed bottom-0 left-0 right-0 top-0 z-20 h-full w-full cursor-pointer bg-slate-900 opacity-75'
           onClick={() => setIsOpen(false)}
         />
@@ -120,12 +120,21 @@ function CardsQueryModal() {
               </button>
 
               <button
-                aria-label={cancelChangesLabel}
-                className='w-[calc(100vw-2rem)] rounded-md bg-slate-600 py-4 text-center text-xl font-semibold text-slate-100 hover:bg-slate-500 lg:w-[var(--Set--width-desktop)] dark:bg-slate-600 dark:hover:bg-slate-500'
-                onClick={() => setIsOpen(false)}
+                aria-label='Reset the search options'
+                className='w-[calc(100vw-2rem)] rounded-md border-4 border-slate-500 py-2 text-center text-xl font-semibold text-slate-500 hover:border-red-500 hover:text-red-500 lg:w-[var(--Set--width-desktop)] dark:border-slate-400 dark:text-slate-400 dark:hover:border-red-500'
+                onClick={() => {
+                  if (
+                    window.confirm('Are you sure you want to reset everything?')
+                  ) {
+                    setQueries({
+                      permittedColors: [],
+                      searchText: '',
+                    });
+                  }
+                }}
                 type='button'
               >
-                Cancel
+                Reset
               </button>
             </div>
           </div>
@@ -186,7 +195,7 @@ const CloseQueryOptionsButton = React.forwardRef(
   ) {
     return (
       <button
-        aria-label={cancelChangesLabel}
+        aria-label={closeModalLabel}
         className='absolute right-4 top-4 lg:right-8 lg:top-8'
         onClick={props.onClick}
         ref={forwardedRef}
