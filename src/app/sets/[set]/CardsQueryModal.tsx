@@ -37,6 +37,8 @@ function CardsQueryModal() {
         <Tooltip.Content
           aria-label={openModalTooltipLabel}
           className='mb-2 rounded bg-sky-800 p-2 text-sm text-slate-100 shadow-xl dark:bg-slate-50 dark:text-sky-800'
+          side='left'
+          sideOffset={12}
         >
           {openModalTooltipLabel}
         </Tooltip.Content>
