@@ -41,6 +41,7 @@ npm run dev
 - This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font
 - This project leverages [Next.js' app router](https://nextjs.org/docs#app-router-vs-pages-router)
 - This project leverages [Tailwind CSS](https://tailwindcss.com)
+- This project leverages Radix's [Primitives](https://www.radix-ui.com/primitives) and [Icons](https://www.radix-ui.com/icons)
 - This project leverages the [Scryfall API](https://scryfall.com/docs/api)
 - This project adheres to the [Conventional Commits] specification
 - ⚠️ **This project must remain in compliance with [Scryfall's Guidelines](https://scryfall.com/docs/api#use-of-scryfall-data-and-images)**
@@ -64,12 +65,12 @@ There are READMEs throughout the codebase to help document important information
 
 Below are links to all of the READMEs:
 
-1. [Scripts README](./scripts/README.md)
-2. [App README](./src/app/README.md)
-3. [API README](./src/app/api/README.md)
-4. [Components README](./src/components/README.md)
-5. [Types README](./types/README.md)
-6. [Utils README](./utils/README.md)
+- [Scripts README](./scripts/README.md)
+- [App README](./src/app/README.md)
+- [API README](./src/app/api/README.md)
+- [Components README](./src/components/README.md)
+- [Types README](./types/README.md)
+- [Utils README](./utils/README.md)
 
 ## Contributing
 

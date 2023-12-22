@@ -3,7 +3,7 @@ import Link from 'next/link';
 /**
  * Renders all aspects of the website's header
  */
-export default function Header() {
+function Header() {
   return (
     <header>
       <div
@@ -57,3 +57,5 @@ function PrimaryNavLink(props: PrimaryNavLinkProps) {
     </Link>
   );
 }
+
+export default Header;

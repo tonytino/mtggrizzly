@@ -6,7 +6,7 @@ import ScrollToTopIcon from './ScrollToTopIcon';
 /**
  * Renders all aspects of the website's footer
  */
-export default function Footer() {
+function Footer() {
   return (
     <footer
       className='mx-auto bg-slate-100 text-xs text-slate-800 dark:bg-slate-900 dark:text-slate-100'
@@ -139,3 +139,5 @@ function WizardsOfTheCoastFanContentPolicy() {
     </Link>
   );
 }
+
+export default Footer;

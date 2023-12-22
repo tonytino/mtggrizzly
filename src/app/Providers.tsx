@@ -10,10 +10,12 @@ type ProvidersProps = {
 /**
  * Renders all providers necessary at the root level
  */
-export default function Providers(props: ProvidersProps) {
+function Providers(props: ProvidersProps) {
   return (
     <React.Fragment>
       <Tooltip.Provider>{props.children}</Tooltip.Provider>
     </React.Fragment>
   );
 }
+
+export default Providers;
