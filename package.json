@@ -6,6 +6,7 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
+    "pr:create": "gh pr create --web --fill",
     "prepare": "husky install",
     "start": "next start",
     "test": "npm run test:eslint && npm run test:css && npm run test:prettier && npm run test:types && npm run test:code",
