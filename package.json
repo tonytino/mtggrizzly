@@ -4,6 +4,9 @@
   "private": true,
   "scripts": {
     "build": "next build",
+    "clean": "npm run clean:eslint && npm run clean:prettier",
+    "clean:eslint": "npx eslint --fix .",
+    "clean:prettier": "npx prettier --write .",
     "dev": "next dev",
     "lint": "next lint",
     "pr:create": "gh pr create --web --fill",
