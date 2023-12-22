@@ -135,8 +135,6 @@ function CardsQueryModal() {
   );
 }
 
-export default CardsQueryModal;
-
 type OpenQueryOptionsButtonType = {
   /**
    * Function that sets the query options modal to open
@@ -203,3 +201,5 @@ const CloseQueryOptionsButton = React.forwardRef(
     );
   }
 );
+
+export default CardsQueryModal;
