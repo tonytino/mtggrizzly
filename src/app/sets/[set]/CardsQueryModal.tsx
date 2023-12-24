@@ -120,7 +120,7 @@ function CardsQueryModal() {
                 </div>
               </div>
 
-              <div className='relative flex min-w-full flex-col items-start gap-2 text-slate-500 focus-within:text-sky-800 hover:text-sky-800 md:min-w-[22rem] dark:text-slate-100 dark:focus-within:text-slate-100'>
+              <div className='relative flex min-w-full flex-col items-start gap-2 text-slate-500 focus-within:text-sky-800 md:min-w-[22rem] dark:text-slate-100 dark:focus-within:text-slate-100'>
                 <label
                   className='w-full font-bold'
                   htmlFor='selected-colors'
@@ -130,7 +130,7 @@ function CardsQueryModal() {
 
                 <ToggleGroup.Root
                   aria-label='Select the colors to include'
-                  className='flex w-full flex-wrap gap-2 text-slate-500 md:gap-4 dark:text-slate-100'
+                  className='flex w-full flex-wrap gap-2 text-slate-600 focus-within:text-slate-600 md:gap-4'
                   defaultValue={[]}
                   onValueChange={(values) => {
                     setQueries((queries) => {
@@ -224,7 +224,7 @@ function CardsQueryModal() {
 
               <button
                 aria-label='Reset the search options'
-                className='w-[calc(100vw-2rem)] rounded-md border-4 border-slate-500 py-2 text-center text-xl font-semibold text-slate-500 hover:border-red-500 hover:text-red-500 lg:w-[var(--Set--width-desktop)] landscape:mb-4 md:landscape:mb-0 dark:border-slate-400 dark:text-slate-400 dark:hover:border-red-500'
+                className='w-[calc(100vw-2rem)] rounded-md border-4 border-slate-500 py-2 text-center text-xl font-semibold text-slate-500 hover:border-red-500 hover:text-red-500 focus:border-red-500 focus:text-red-500 lg:w-[var(--Set--width-desktop)] landscape:mb-4 md:landscape:mb-0 dark:border-slate-400 dark:text-slate-400 dark:hover:border-red-500 dark:focus:border-red-500'
                 onClick={() => {
                   if (
                     window.confirm('Are you sure you want to reset everything?')
