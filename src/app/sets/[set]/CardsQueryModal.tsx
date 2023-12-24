@@ -3,9 +3,11 @@
 import * as React from 'react';
 // https://www.radix-ui.com/primitives/docs/components/dialog
 import * as Dialog from '@radix-ui/react-dialog';
+// https://www.radix-ui.com/primitives/docs/components/toggle-group
+import * as ToggleGroup from '@radix-ui/react-toggle-group';
 // https://www.radix-ui.com/primitives/docs/components/tooltip
 import * as Tooltip from '@radix-ui/react-tooltip';
-import { Cross2Icon, MixerVerticalIcon } from '@radix-ui/react-icons';
+import { Cross2Icon, MixerHorizontalIcon } from '@radix-ui/react-icons';
 import CardsQueryContext from './CardsQueryContext';
 
 const openModalTooltipLabel = 'Search within the set';
@@ -17,7 +19,8 @@ const closeModalLabel = 'Close the search options interface';
 function CardsQueryModal() {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  const { searchText, setQueries } = React.useContext(CardsQueryContext);
+  const { permittedColors, searchText, setQueries } =
+    React.useContext(CardsQueryContext);
   const searchTextInputRef = React.useRef(null);
 
   const isSearchTextPresent = Boolean(searchText);
@@ -35,6 +38,8 @@ function CardsQueryModal() {
         </Tooltip.Trigger>
 
         <Tooltip.Content
+          align='start'
+          alignOffset={22}
           aria-label={openModalTooltipLabel}
           className='mb-2 rounded bg-sky-800 p-2 text-sm text-slate-100 shadow-xl dark:bg-slate-50 dark:text-sky-800'
           side='left'
@@ -53,61 +58,160 @@ function CardsQueryModal() {
 
         <Dialog.Content className='fixed bottom-0 left-0 right-0 top-0 z-30 m-auto h-dvh w-screen bg-white p-4 text-sky-800 lg:h-3/4 lg:w-[800px] lg:rounded-md lg:p-8 xl:w-2/4 xl:min-w-[800px] dark:bg-slate-800 dark:text-slate-100'>
           <div className='flex h-full w-full flex-col justify-between'>
-            <div>
-              <Dialog.Title className='w-full text-2xl font-bold lg:text-center'>
-                Search the Set
-              </Dialog.Title>
+            <div className='flex flex-col gap-8'>
+              <div>
+                <Dialog.Title className='w-full text-2xl font-bold lg:text-center'>
+                  Search the Set
+                </Dialog.Title>
 
-              <Dialog.Close asChild>
-                <CloseQueryOptionsButton onClick={() => setIsOpen(false)} />
-              </Dialog.Close>
+                <Dialog.Close asChild>
+                  <CloseQueryOptionsButton onClick={() => setIsOpen(false)} />
+                </Dialog.Close>
 
-              <Dialog.Description className='py-8 text-lg'>
-                Use the options below to search for matching cards
-              </Dialog.Description>
+                <Dialog.Description className='py-8 text-lg'>
+                  Use the options below to search for matching cards
+                </Dialog.Description>
 
-              <div className='relative flex min-w-full flex-col items-start gap-2 text-slate-500 focus-within:text-sky-800 md:min-w-[22rem] dark:text-slate-100 dark:focus-within:text-slate-100'>
-                <label
-                  className='w-full font-bold'
-                  htmlFor='card-query-input'
-                >
-                  Search
-                </label>
+                <div className='relative flex min-w-full flex-col items-start gap-2 text-slate-500 focus-within:text-sky-800 md:min-w-[22rem] dark:text-slate-100 dark:focus-within:text-slate-100'>
+                  <label
+                    className='w-full font-bold'
+                    htmlFor='card-query-input'
+                  >
+                    Search
+                  </label>
 
-                <input
-                  className='w-full rounded-lg border-2 border-slate-200 p-2 px-4 dark:border-transparent dark:text-sky-700'
-                  name='card-query-input'
-                  onChange={(event) =>
-                    setQueries((queries) => {
-                      return {
-                        ...queries,
-                        searchText: event.target.value,
-                      };
-                    })
-                  }
-                  placeholder='Storm...'
-                  ref={searchTextInputRef}
-                  type='text'
-                  value={searchText}
-                />
-
-                {isSearchTextPresent && (
-                  <button
-                    className='absolute bottom-2 right-4 rounded px-2 py-0.5 hover:bg-slate-100 dark:text-sky-700'
-                    onClick={() => {
+                  <input
+                    className='w-full rounded-lg border-2 border-slate-200 p-2 px-4 dark:border-transparent dark:text-sky-700'
+                    name='card-query-input'
+                    onChange={(event) =>
                       setQueries((queries) => {
                         return {
                           ...queries,
-                          searchText: '',
+                          searchText: event.target.value,
                         };
-                      });
-                      searchTextInputRef.current.focus();
-                    }}
-                    type='button'
+                      })
+                    }
+                    placeholder='Storm...'
+                    ref={searchTextInputRef}
+                    type='text'
+                    value={searchText}
+                  />
+
+                  {isSearchTextPresent && (
+                    <button
+                      className='absolute bottom-2 right-4 rounded px-2 py-0.5 hover:bg-slate-100 dark:text-sky-700'
+                      onClick={() => {
+                        setQueries((queries) => {
+                          return {
+                            ...queries,
+                            searchText: '',
+                          };
+                        });
+                        searchTextInputRef.current.focus();
+                      }}
+                      type='button'
+                    >
+                      Clear
+                    </button>
+                  )}
+                </div>
+              </div>
+
+              <div className='relative flex min-w-full flex-col items-start gap-2 text-slate-500 focus-within:text-sky-800 hover:text-sky-800 md:min-w-[22rem] dark:text-slate-100 dark:focus-within:text-slate-100'>
+                <label
+                  className='w-full font-bold'
+                  htmlFor='selected-colors'
+                >
+                  Colors
+                </label>
+
+                <ToggleGroup.Root
+                  aria-label='Select the colors to include'
+                  className='flex w-full gap-4 text-slate-500 dark:text-slate-100'
+                  defaultValue={[]}
+                  onValueChange={(values) => {
+                    setQueries((queries) => {
+                      return {
+                        ...queries,
+                        permittedColors: values,
+                      };
+                    });
+
+                    window.scrollTo({
+                      behavior: 'smooth',
+                      left: 0,
+                      top: 0,
+                    });
+                  }}
+                  type='multiple'
+                  value={permittedColors}
+                >
+                  <ToggleGroup.Item
+                    className={`rounded p-2 ${
+                      permittedColors.includes('W')
+                        ? 'bg-sky-800 text-slate-100'
+                        : 'bg-slate-200'
+                    }`}
+                    value='W'
                   >
-                    Clear
-                  </button>
-                )}
+                    White
+                  </ToggleGroup.Item>
+
+                  <ToggleGroup.Item
+                    className={`rounded p-2 ${
+                      permittedColors.includes('U')
+                        ? 'bg-sky-800 text-slate-100'
+                        : 'bg-slate-200'
+                    }`}
+                    value='U'
+                  >
+                    Blue
+                  </ToggleGroup.Item>
+
+                  <ToggleGroup.Item
+                    className={`rounded p-2 ${
+                      permittedColors.includes('B')
+                        ? 'bg-sky-800 text-slate-100'
+                        : 'bg-slate-200'
+                    }`}
+                    value='B'
+                  >
+                    Black
+                  </ToggleGroup.Item>
+
+                  <ToggleGroup.Item
+                    className={`rounded p-2 ${
+                      permittedColors.includes('R')
+                        ? 'bg-sky-800 text-slate-100'
+                        : 'bg-slate-200'
+                    }`}
+                    value='R'
+                  >
+                    Red
+                  </ToggleGroup.Item>
+
+                  <ToggleGroup.Item
+                    className={`rounded p-2 ${
+                      permittedColors.includes('G')
+                        ? 'bg-sky-800 text-slate-100'
+                        : 'bg-slate-200'
+                    }`}
+                    value='G'
+                  >
+                    Green
+                  </ToggleGroup.Item>
+
+                  <ToggleGroup.Item
+                    className={`rounded p-2 ${
+                      permittedColors.includes('Colorless')
+                        ? 'bg-sky-800 text-slate-100'
+                        : 'bg-slate-200'
+                    }`}
+                    value='Colorless'
+                  >
+                    Colorless
+                  </ToggleGroup.Item>
+                </ToggleGroup.Root>
               </div>
             </div>
 
@@ -131,6 +235,12 @@ function CardsQueryModal() {
                     setQueries({
                       permittedColors: [],
                       searchText: '',
+                    });
+
+                    window.scrollTo({
+                      behavior: 'smooth',
+                      left: 0,
+                      top: 0,
                     });
                   }
                 }}
@@ -170,7 +280,7 @@ const OpenQueryOptionsButton = React.forwardRef(function OpenQueryOptionsButton(
       type='button'
       {...props}
     >
-      <MixerVerticalIcon
+      <MixerHorizontalIcon
         className='m-auto text-white dark:text-sky-800'
         height='32px'
         width='32px'
