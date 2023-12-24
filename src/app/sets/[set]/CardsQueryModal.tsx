@@ -9,6 +9,7 @@ import * as ToggleGroup from '@radix-ui/react-toggle-group';
 import * as Tooltip from '@radix-ui/react-tooltip';
 import { Cross2Icon, MixerHorizontalIcon } from '@radix-ui/react-icons';
 import CardsQueryContext from './CardsQueryContext';
+import { scrollToTop } from '@/root/utils';
 
 const openModalTooltipLabel = 'Search within the set';
 const closeModalLabel = 'Close the search options interface';
@@ -24,6 +25,8 @@ function CardsQueryModal() {
   const searchTextInputRef = React.useRef(null);
 
   const isSearchTextPresent = Boolean(searchText);
+
+  React.useEffect(() => scrollToTop, [permittedColors, searchText]);
 
   return (
     <Dialog.Root
@@ -83,14 +86,14 @@ function CardsQueryModal() {
                   <input
                     className='w-full rounded-lg border-2 border-slate-200 p-2 px-4 dark:border-transparent dark:text-sky-700'
                     name='card-query-input'
-                    onChange={(event) =>
+                    onChange={(event) => {
                       setQueries((queries) => {
                         return {
                           ...queries,
                           searchText: event.target.value,
                         };
-                      })
-                    }
+                      });
+                    }}
                     placeholder='Storm...'
                     ref={searchTextInputRef}
                     type='text'
@@ -135,12 +138,6 @@ function CardsQueryModal() {
                         ...queries,
                         permittedColors: values,
                       };
-                    });
-
-                    window.scrollTo({
-                      behavior: 'smooth',
-                      left: 0,
-                      top: 0,
                     });
                   }}
                   type='multiple'
@@ -235,12 +232,6 @@ function CardsQueryModal() {
                     setQueries({
                       permittedColors: [],
                       searchText: '',
-                    });
-
-                    window.scrollTo({
-                      behavior: 'smooth',
-                      left: 0,
-                      top: 0,
                     });
                   }
                 }}
