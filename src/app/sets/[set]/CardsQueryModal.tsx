@@ -56,8 +56,8 @@ function CardsQueryModal() {
           onClick={() => setIsOpen(false)}
         />
 
-        <Dialog.Content className='fixed bottom-0 left-0 right-0 top-0 z-30 m-auto h-dvh w-screen bg-white p-4 text-sky-800 lg:h-3/4 lg:w-[800px] lg:rounded-md lg:p-8 xl:w-2/4 xl:min-w-[800px] dark:bg-slate-800 dark:text-slate-100'>
-          <div className='flex h-full w-full flex-col justify-between'>
+        <Dialog.Content className='fixed bottom-0 left-0 right-0 top-0 z-30 m-auto h-dvh w-screen overflow-y-auto bg-white p-4 text-sky-800 lg:h-3/4 lg:w-[800px] lg:rounded-md lg:p-8 xl:w-2/4 xl:min-w-[800px] dark:bg-slate-800 dark:text-slate-100'>
+          <div className='flex h-full w-full flex-col justify-between gap-8'>
             <div className='flex flex-col gap-8'>
               <div>
                 <Dialog.Title className='w-full text-2xl font-bold lg:text-center'>
@@ -127,7 +127,7 @@ function CardsQueryModal() {
 
                 <ToggleGroup.Root
                   aria-label='Select the colors to include'
-                  className='flex w-full gap-4 text-slate-500 dark:text-slate-100'
+                  className='flex w-full flex-wrap gap-2 text-slate-500 md:gap-4 dark:text-slate-100'
                   defaultValue={[]}
                   onValueChange={(values) => {
                     setQueries((queries) => {
@@ -227,7 +227,7 @@ function CardsQueryModal() {
 
               <button
                 aria-label='Reset the search options'
-                className='w-[calc(100vw-2rem)] rounded-md border-4 border-slate-500 py-2 text-center text-xl font-semibold text-slate-500 hover:border-red-500 hover:text-red-500 lg:w-[var(--Set--width-desktop)] dark:border-slate-400 dark:text-slate-400 dark:hover:border-red-500'
+                className='w-[calc(100vw-2rem)] rounded-md border-4 border-slate-500 py-2 text-center text-xl font-semibold text-slate-500 hover:border-red-500 hover:text-red-500 lg:w-[var(--Set--width-desktop)] landscape:mb-4 md:landscape:mb-0 dark:border-slate-400 dark:text-slate-400 dark:hover:border-red-500'
                 onClick={() => {
                   if (
                     window.confirm('Are you sure you want to reset everything?')
