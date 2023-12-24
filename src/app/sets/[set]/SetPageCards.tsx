@@ -19,8 +19,6 @@ function SetPageCards(props: SetPageCardsType) {
   const { cards } = props;
   const { searchText } = React.useContext(CardsQueryContext);
 
-  // const searchTextInputRef = React.useRef(null);
-
   const isSearchTextPresent = Boolean(searchText);
 
   const filteredCards = isSearchTextPresent
@@ -45,53 +43,6 @@ function SetPageCards(props: SetPageCardsType) {
 
   return (
     <React.Fragment>
-      {/* <div className='relative mx-auto my-8 flex min-w-full flex-col items-start gap-2 text-slate-500 focus-within:text-sky-800 dark:text-slate-100 dark:focus-within:text-slate-100 md:min-w-[22rem]'>
-        <label
-          className='w-full font-bold'
-          htmlFor='card-query-input'
-        >
-          Search
-          {isSearchTextPresent && (
-            <span className='float-right'>Hits: {filteredCards.length}</span>
-          )}
-        </label>
-
-        <input
-          className='w-full rounded-lg border-2 border-slate-200 p-2 px-4 dark:border-transparent dark:text-sky-700'
-          name='card-query-input'
-          onChange={(event) =>
-            setQueries((queries) => {
-              return {
-                ...queries,
-                searchText: event.target.value,
-              };
-            })
-          }
-          placeholder='Storm...'
-          ref={searchTextInputRef}
-          type='text'
-          value={searchText}
-        />
-
-        {isSearchTextPresent && (
-          <button
-            className='absolute bottom-2 right-4 rounded px-2 py-0.5 hover:bg-slate-100 dark:text-sky-700'
-            onClick={() => {
-              setQueries((queries) => {
-                return {
-                  ...queries,
-                  searchText: '',
-                };
-              });
-              searchTextInputRef.current.focus();
-            }}
-            type='button'
-          >
-            Clear
-          </button>
-        )}
-      </div> */}
-
       <div className='m-auto mt-4 grid h-min w-full grid-cols-1 place-content-center gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-8'>
         {filteredCards.map((card, index) => {
           return (
