@@ -10,6 +10,7 @@ type CardsQueryContextType = {
   permittedColors: string[];
   /**
    * The text to search for within each card's name, type, and oracle text. This will search for the full text as is rather than trying to find the presence of the individual words anywhere in the three mentioned fields. For example, if you search for "enters battlefield", it will not match cards with "enters the battlefield" in their oracle text. Eventually, we'll add this functionality, but for now, we'll keep it simple
+   * @example "enters"
    */
   searchText: string;
   /**

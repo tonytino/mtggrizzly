@@ -3,17 +3,7 @@
 // https://www.radix-ui.com/primitives/docs/components/tooltip
 import * as Tooltip from '@radix-ui/react-tooltip';
 import { ThickArrowUpIcon } from '@radix-ui/react-icons';
-
-/**
- * Smoothly scrolls to the top of the page
- */
-function scrollToTop() {
-  window.scrollTo({
-    behavior: 'smooth',
-    left: 0,
-    top: 0,
-  });
-}
+import { scrollToTop } from '@/root/utils';
 
 const label = 'Scroll to top';
 

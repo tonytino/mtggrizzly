@@ -1,9 +1,12 @@
 'use client';
 
 import * as React from 'react';
+import warning from 'warning';
 import { Card } from '@/components';
 import type { Card as CardType } from '@/types';
 import CardsQueryContext from './CardsQueryContext';
+
+const colorsRegex = new RegExp('[WUBRG]');
 
 type SetPageCardsType = {
   /**
@@ -17,81 +20,98 @@ type SetPageCardsType = {
  */
 function SetPageCards(props: SetPageCardsType) {
   const { cards } = props;
-  const { searchText } = React.useContext(CardsQueryContext);
+  const { permittedColors, searchText } = React.useContext(CardsQueryContext);
 
-  // const searchTextInputRef = React.useRef(null);
+  const isSearchTextPresent = Boolean(searchText?.length);
+  const arePermittedColorsPresent = Boolean(permittedColors?.length);
 
-  const isSearchTextPresent = Boolean(searchText);
+  const areFiltersPresent = [
+    isSearchTextPresent,
+    arePermittedColorsPresent,
+  ].some(Boolean);
 
-  const filteredCards = isSearchTextPresent
+  const filteredCards = areFiltersPresent
     ? cards.filter((card) => {
-        const hasMultipleFaces = Boolean(card?.card_faces?.length);
-        const aspectsToCheck = hasMultipleFaces
-          ? [
-              card.card_faces[0].oracle_text,
-              card.card_faces[0].name,
-              card.card_faces[0].type_line,
-              card.card_faces[1].oracle_text,
-              card.card_faces[1].name,
-              card.card_faces[1].type_line,
-            ]
-          : [card.oracle_text, card.name, card.type_line];
+        try {
+          const hasMultipleFaces = Boolean(card?.card_faces?.length);
 
-        return aspectsToCheck.some((aspect) =>
-          aspect.toLowerCase().includes(searchText.toLowerCase())
-        );
+          /**
+           * Check if the card passes the search text
+           */
+
+          if (isSearchTextPresent) {
+            const searchTextAspects = hasMultipleFaces
+              ? [
+                  card.card_faces[0].oracle_text,
+                  card.card_faces[0].name,
+                  card.card_faces[0].type_line,
+                  card.card_faces[1].oracle_text,
+                  card.card_faces[1].name,
+                  card.card_faces[1].type_line,
+                ]
+              : [card.oracle_text, card.name, card.type_line];
+
+            const matchesSearchText = searchTextAspects.some((aspect) =>
+              aspect.toLowerCase().includes(searchText.toLowerCase())
+            );
+
+            if (!matchesSearchText) {
+              return false;
+            }
+          }
+
+          /**
+           * Check if the card passes the permitted colors
+           */
+
+          if (arePermittedColorsPresent) {
+            const manaCost = hasMultipleFaces
+              ? card.card_faces[0].mana_cost.concat(
+                  card.card_faces[1].mana_cost
+                )
+              : card.mana_cost;
+
+            const areAnyCardColorsIncludedInTheQuery = permittedColors.some(
+              (permittedColor) => {
+                if (permittedColor === 'Colorless') {
+                  const areAnyColorsPresent = colorsRegex.test(manaCost);
+
+                  return !areAnyColorsPresent;
+                } else {
+                  return manaCost.includes(permittedColor);
+                }
+              }
+            );
+
+            if (!areAnyCardColorsIncludedInTheQuery) {
+              return false;
+            }
+          }
+
+          /**
+           * If we've made it this far, the card did not fail any of the checks
+           */
+
+          return true;
+        } catch (error) {
+          warning(
+            false,
+            `
+📢 An error was encountered while filtering the cards:
+🔥    ${error}
+
+💡 To see the offending card, please visit:
+🌎    ${card.uri}
+`
+          );
+
+          return false;
+        }
       })
     : cards;
 
   return (
     <React.Fragment>
-      {/* <div className='relative mx-auto my-8 flex min-w-full flex-col items-start gap-2 text-slate-500 focus-within:text-sky-800 dark:text-slate-100 dark:focus-within:text-slate-100 md:min-w-[22rem]'>
-        <label
-          className='w-full font-bold'
-          htmlFor='card-query-input'
-        >
-          Search
-          {isSearchTextPresent && (
-            <span className='float-right'>Hits: {filteredCards.length}</span>
-          )}
-        </label>
-
-        <input
-          className='w-full rounded-lg border-2 border-slate-200 p-2 px-4 dark:border-transparent dark:text-sky-700'
-          name='card-query-input'
-          onChange={(event) =>
-            setQueries((queries) => {
-              return {
-                ...queries,
-                searchText: event.target.value,
-              };
-            })
-          }
-          placeholder='Storm...'
-          ref={searchTextInputRef}
-          type='text'
-          value={searchText}
-        />
-
-        {isSearchTextPresent && (
-          <button
-            className='absolute bottom-2 right-4 rounded px-2 py-0.5 hover:bg-slate-100 dark:text-sky-700'
-            onClick={() => {
-              setQueries((queries) => {
-                return {
-                  ...queries,
-                  searchText: '',
-                };
-              });
-              searchTextInputRef.current.focus();
-            }}
-            type='button'
-          >
-            Clear
-          </button>
-        )}
-      </div> */}
-
       <div className='m-auto mt-4 grid h-min w-full grid-cols-1 place-content-center gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-8'>
         {filteredCards.map((card, index) => {
           return (
