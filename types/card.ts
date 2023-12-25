@@ -95,6 +95,10 @@ const CARD_TYPES = {
   TRIBAL: 'Tribal',
 } as const;
 
+/**
+ * The card type of a spell, e.g. "Creature"
+ * @example "Creature"
+ */
 export type CardType = keyof typeof CARD_TYPES;
 
 /**

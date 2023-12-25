@@ -1,6 +1,7 @@
 'use client';
 
 import * as React from 'react';
+import { CardType } from '@/types/card';
 
 const PERMITTED_COLORS = {
   W: 'W',
@@ -14,6 +15,11 @@ const PERMITTED_COLORS = {
 type PermittedColors = keyof typeof PERMITTED_COLORS;
 
 type CardsQueryContextType = {
+  /**
+   * Ther card types permitted to be in a type line of a card, e.g. ["Instant", "Sorcery"]
+   * @example ["Instant", "Sorcery"]
+   */
+  permittedCardTypes: CardType[];
   /**
    * The colors (including colorless) permitted to be in the cost of a card. If the permitted colors includes white and blue, all cards with exclusively white or blue in their cost, or both, will be matched. Example: ["W","U"]
    * @example ["W","U"]

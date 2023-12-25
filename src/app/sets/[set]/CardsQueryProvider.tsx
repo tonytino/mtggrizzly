@@ -11,6 +11,7 @@ function CardsQueryProvider(props: { children: React.ReactNode }) {
   const { children } = props;
 
   const [queries, setQueries] = React.useState({
+    permittedCardTypes: [],
     permittedColors: [],
     searchText: '',
   });
