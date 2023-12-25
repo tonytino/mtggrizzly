@@ -20,13 +20,16 @@ type SetPageCardsType = {
  */
 function SetPageCards(props: SetPageCardsType) {
   const { cards } = props;
-  const { permittedColors, searchText } = React.useContext(CardsQueryContext);
+  const { permittedCardTypes, permittedColors, searchText } =
+    React.useContext(CardsQueryContext);
 
   const isSearchTextPresent = Boolean(searchText?.length);
+  const arePermittedCardTypesPresent = Boolean(permittedCardTypes?.length);
   const arePermittedColorsPresent = Boolean(permittedColors?.length);
 
   const areFiltersPresent = [
     isSearchTextPresent,
+    arePermittedCardTypesPresent,
     arePermittedColorsPresent,
   ].some(Boolean);
 
@@ -56,6 +59,28 @@ function SetPageCards(props: SetPageCardsType) {
             );
 
             if (!matchesSearchText) {
+              return false;
+            }
+          }
+
+          /**
+           * Check if the card passes the permitted card types
+           */
+
+          if (arePermittedCardTypesPresent) {
+            const typeLine = hasMultipleFaces
+              ? card.card_faces[0].type_line.concat(
+                  card.card_faces[1].type_line
+                )
+              : card.type_line;
+
+            const arePermittedCardTypesInTheTypeLine = permittedCardTypes.some(
+              (permittedCardType) => {
+                return typeLine.includes(permittedCardType);
+              }
+            );
+
+            if (!arePermittedCardTypesInTheTypeLine) {
               return false;
             }
           }
