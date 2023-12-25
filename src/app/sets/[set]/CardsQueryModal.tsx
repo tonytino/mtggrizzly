@@ -138,6 +138,47 @@ function CardsQueryModal() {
               <div className='relative flex min-w-full flex-col items-start gap-2 text-slate-500 focus-within:text-sky-800 md:min-w-[22rem] dark:text-slate-100 dark:focus-within:text-slate-100'>
                 <label
                   className='w-full font-bold'
+                  htmlFor='selected-card-types'
+                >
+                  Card Types
+                </label>
+
+                <ToggleGroup.Root
+                  aria-label='Select the card types to include'
+                  className='flex w-full flex-wrap gap-2 text-slate-600 focus-within:text-slate-600 md:gap-4'
+                  defaultValue={[]}
+                  onValueChange={(values) => {
+                    setQueries((queries) => {
+                      return {
+                        ...queries,
+                        permittedCardTypes: values,
+                      };
+                    });
+                  }}
+                  type='multiple'
+                  value={permittedCardTypes}
+                >
+                  {cardTypes.map((cardType) => {
+                    return (
+                      <ToggleGroup.Item
+                        className={`rounded p-2 ${
+                          permittedCardTypes.includes(cardType as CardType)
+                            ? 'bg-sky-800 text-slate-100'
+                            : 'bg-slate-200'
+                        }`}
+                        key={cardType}
+                        value={cardType}
+                      >
+                        {cardType}
+                      </ToggleGroup.Item>
+                    );
+                  })}
+                </ToggleGroup.Root>
+              </div>
+
+              <div className='relative flex min-w-full flex-col items-start gap-2 text-slate-500 focus-within:text-sky-800 md:min-w-[22rem] dark:text-slate-100 dark:focus-within:text-slate-100'>
+                <label
+                  className='w-full font-bold'
                   htmlFor='selected-colors'
                 >
                   Colors
@@ -223,47 +264,6 @@ function CardsQueryModal() {
                   >
                     Colorless
                   </ToggleGroup.Item>
-                </ToggleGroup.Root>
-              </div>
-
-              <div className='relative flex min-w-full flex-col items-start gap-2 text-slate-500 focus-within:text-sky-800 md:min-w-[22rem] dark:text-slate-100 dark:focus-within:text-slate-100'>
-                <label
-                  className='w-full font-bold'
-                  htmlFor='selected-card-types'
-                >
-                  Card Types
-                </label>
-
-                <ToggleGroup.Root
-                  aria-label='Select the card types to include'
-                  className='flex w-full flex-wrap gap-2 text-slate-600 focus-within:text-slate-600 md:gap-4'
-                  defaultValue={[]}
-                  onValueChange={(values) => {
-                    setQueries((queries) => {
-                      return {
-                        ...queries,
-                        permittedCardTypes: values,
-                      };
-                    });
-                  }}
-                  type='multiple'
-                  value={permittedCardTypes}
-                >
-                  {cardTypes.map((cardType) => {
-                    return (
-                      <ToggleGroup.Item
-                        className={`rounded p-2 ${
-                          permittedCardTypes.includes(cardType as CardType)
-                            ? 'bg-sky-800 text-slate-100'
-                            : 'bg-slate-200'
-                        }`}
-                        key={cardType}
-                        value={cardType}
-                      >
-                        {cardType}
-                      </ToggleGroup.Item>
-                    );
-                  })}
                 </ToggleGroup.Root>
               </div>
             </div>
