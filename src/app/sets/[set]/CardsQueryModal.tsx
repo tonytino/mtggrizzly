@@ -10,9 +10,21 @@ import * as Tooltip from '@radix-ui/react-tooltip';
 import { Cross2Icon, MixerHorizontalIcon } from '@radix-ui/react-icons';
 import CardsQueryContext from './CardsQueryContext';
 import { scrollToTop } from '@/root/utils';
+import type { CardType } from '@/types/card';
 
 const openModalTooltipLabel = 'Search within the set';
 const closeModalLabel = 'Close the search options interface';
+const cardTypes = [
+  'Artifact',
+  'Battle',
+  'Creature',
+  'Enchantment',
+  'Instant',
+  'Land',
+  'Planeswalker',
+  'Sorcery',
+  'Tribal',
+];
 
 /**
  * A modal that contains various means by which to query the cards of a set
@@ -20,13 +32,16 @@ const closeModalLabel = 'Close the search options interface';
 function CardsQueryModal() {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  const { permittedColors, searchText, setQueries } =
+  const { permittedCardTypes, permittedColors, searchText, setQueries } =
     React.useContext(CardsQueryContext);
   const searchTextInputRef = React.useRef(null);
 
   const isSearchTextPresent = Boolean(searchText);
 
-  React.useEffect(() => scrollToTop, [permittedColors, searchText]);
+  React.useEffect(
+    () => scrollToTop,
+    [permittedCardTypes, permittedColors, searchText]
+  );
 
   return (
     <Dialog.Root
@@ -208,6 +223,47 @@ function CardsQueryModal() {
                   >
                     Colorless
                   </ToggleGroup.Item>
+                </ToggleGroup.Root>
+              </div>
+
+              <div className='relative flex min-w-full flex-col items-start gap-2 text-slate-500 focus-within:text-sky-800 md:min-w-[22rem] dark:text-slate-100 dark:focus-within:text-slate-100'>
+                <label
+                  className='w-full font-bold'
+                  htmlFor='selected-card-types'
+                >
+                  Card Types
+                </label>
+
+                <ToggleGroup.Root
+                  aria-label='Select the card types to include'
+                  className='flex w-full flex-wrap gap-2 text-slate-600 focus-within:text-slate-600 md:gap-4'
+                  defaultValue={[]}
+                  onValueChange={(values) => {
+                    setQueries((queries) => {
+                      return {
+                        ...queries,
+                        permittedCardTypes: values,
+                      };
+                    });
+                  }}
+                  type='multiple'
+                  value={permittedCardTypes}
+                >
+                  {cardTypes.map((cardType) => {
+                    return (
+                      <ToggleGroup.Item
+                        className={`rounded p-2 ${
+                          permittedCardTypes.includes(cardType as CardType)
+                            ? 'bg-sky-800 text-slate-100'
+                            : 'bg-slate-200'
+                        }`}
+                        key={cardType}
+                        value={cardType}
+                      >
+                        {cardType}
+                      </ToggleGroup.Item>
+                    );
+                  })}
                 </ToggleGroup.Root>
               </div>
             </div>
