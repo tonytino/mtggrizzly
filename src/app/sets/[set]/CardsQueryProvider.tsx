@@ -3,6 +3,12 @@
 import * as React from 'react';
 import CardsQueryContext from './CardsQueryContext';
 
+const DEFAULT_STATE = {
+  permittedCardTypes: [],
+  permittedColors: [],
+  searchText: '',
+};
+
 /**
  * This component exposes the CardsQueryContext to its children and manages the
  * state of the context
@@ -10,14 +16,14 @@ import CardsQueryContext from './CardsQueryContext';
 function CardsQueryProvider(props: { children: React.ReactNode }) {
   const { children } = props;
 
-  const [queries, setQueries] = React.useState({
-    permittedCardTypes: [],
-    permittedColors: [],
-    searchText: '',
-  });
+  const [queries, setQueries] = React.useState(DEFAULT_STATE);
+
+  const clearQueries = React.useCallback(() => setQueries(DEFAULT_STATE), []);
 
   return (
-    <CardsQueryContext.Provider value={{ ...queries, setQueries }}>
+    <CardsQueryContext.Provider
+      value={{ ...queries, clearQueries, setQueries }}
+    >
       {children}
     </CardsQueryContext.Provider>
   );

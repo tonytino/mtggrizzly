@@ -32,8 +32,13 @@ const cardTypes = [
 function CardsQueryModal() {
   const [isOpen, setIsOpen] = React.useState(false);
 
-  const { permittedCardTypes, permittedColors, searchText, setQueries } =
-    React.useContext(CardsQueryContext);
+  const {
+    clearQueries,
+    permittedCardTypes,
+    permittedColors,
+    searchText,
+    setQueries,
+  } = React.useContext(CardsQueryContext);
   const searchTextInputRef = React.useRef(null);
 
   const isSearchTextPresent = Boolean(searchText);
@@ -285,10 +290,7 @@ function CardsQueryModal() {
                   if (
                     window.confirm('Are you sure you want to reset everything?')
                   ) {
-                    setQueries({
-                      permittedColors: [],
-                      searchText: '',
-                    });
+                    clearQueries();
                   }
                 }}
                 type='button'

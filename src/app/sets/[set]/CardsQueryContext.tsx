@@ -16,6 +16,10 @@ type PermittedColors = keyof typeof PERMITTED_COLORS;
 
 type CardsQueryContextType = {
   /**
+   * The function to clear the query options, resetting them to their default state
+   */
+  clearQueries: () => void;
+  /**
    * Ther card types permitted to be in a type line of a card, e.g. ["Instant", "Sorcery"]
    * @example ["Instant", "Sorcery"]
    */
