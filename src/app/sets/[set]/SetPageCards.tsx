@@ -135,6 +135,14 @@ function SetPageCards(props: SetPageCardsType) {
       })
     : cards;
 
+  if (!filteredCards.length) {
+    return (
+      <p className='my-auto py-12 text-center text-xl text-sky-800 dark:text-slate-100'>
+        No cards match the current query params.
+      </p>
+    );
+  }
+
   return (
     <React.Fragment>
       <div className='m-auto mt-4 grid h-min w-full grid-cols-1 place-content-center gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-8'>
