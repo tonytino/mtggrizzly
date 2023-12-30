@@ -20,7 +20,7 @@ type CardsQueryContextType = {
    */
   clearQueries: () => void;
   /**
-   * Ther card types permitted to be in a type line of a card, e.g. ["Instant", "Sorcery"]
+   * The card types permitted to be in a type line of a card, e.g. ["Instant", "Sorcery"]
    * @example ["Instant", "Sorcery"]
    */
   permittedCardTypes: CardType[];
