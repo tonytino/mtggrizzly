@@ -2,6 +2,8 @@
 import * as React from 'react';
 // https://github.com/radix-ui/icons/blob/master/packages/radix-icons/src/SymbolIcon.tsx
 import { SymbolIcon } from '@radix-ui/react-icons';
+// https://www.radix-ui.com/primitives/docs/components/tooltip
+import * as Tooltip from '@radix-ui/react-tooltip';
 import type { Card } from '@/types';
 
 const noop = () => {};
@@ -84,14 +86,14 @@ export function Card(props: CardProps) {
     });
   };
 
+  const showAltFaceLabel = isMultiFaceCard
+    ? `See the ${isFrontFace ? 'back' : 'front'} side of the card`
+    : undefined;
+
   return (
     <div className='flex h-[453] min-h-[453] w-[325] min-w-[325] flex-col items-center justify-between text-center'>
       <ElementType
-        aria-label={
-          isMultiFaceCard
-            ? `See the ${isFrontFace ? 'back' : 'front'} side of the card`
-            : undefined
-        }
+        aria-label={showAltFaceLabel}
         className={`group relative mx-auto rounded-lg border-4 border-transparent ${
           isMultiFaceCard
             ? 'cursor-pointer hover:border-sky-600'
@@ -123,16 +125,28 @@ export function Card(props: CardProps) {
         )}
 
         {isMultiFaceCard && (
-          <div
-            aria-label='Transform card'
-            className='absolute right-8 top-36 flex h-16 w-16 items-center justify-center rounded-full bg-black bg-opacity-40'
-          >
-            <SymbolIcon
-              className='text-slate-100'
-              height='40px'
-              width='40px'
-            />
-          </div>
+          <Tooltip.Root>
+            <Tooltip.Trigger asChild>
+              <div
+                aria-label='Transform card'
+                className='absolute right-8 top-36 flex h-16 w-16 items-center justify-center rounded-full bg-black bg-opacity-40'
+                role='tooltip'
+              >
+                <SymbolIcon
+                  className='text-slate-100'
+                  height='40px'
+                  width='40px'
+                />
+              </div>
+            </Tooltip.Trigger>
+
+            <Tooltip.Content
+              aria-label={showAltFaceLabel}
+              className='mb-2 rounded bg-sky-800 p-2 text-sm text-slate-100 shadow-sm dark:bg-slate-50 dark:text-sky-800'
+            >
+              {showAltFaceLabel}
+            </Tooltip.Content>
+          </Tooltip.Root>
         )}
       </ElementType>
 

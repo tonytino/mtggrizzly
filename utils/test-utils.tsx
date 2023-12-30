@@ -7,6 +7,7 @@ import * as React from 'react';
 import { render, RenderOptions } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom';
+import Providers from '@/src/app/Providers';
 
 // import { ThemeProvider } from 'my-ui-lib';
 // import { TranslationProvider } from 'my-i18n-lib';
@@ -17,7 +18,7 @@ const AllTheProviders = ({ children }: { children: React.ReactNode }) => {
     <>
       {/* <ThemeProvider theme='light'> */}
       {/* <TranslationProvider messages={defaultStrings}> */}
-      {children}
+      <Providers>{children}</Providers>
       {/* </TranslationProvider> */}
       {/* </ThemeProvider> */}
     </>
@@ -30,4 +31,4 @@ const renderWithProviders = (
 ) => render(ui, { wrapper: AllTheProviders, ...options });
 
 export * from '@testing-library/react';
-export { React, renderWithProviders, userEvent };
+export { React, renderWithProviders as render, userEvent };
