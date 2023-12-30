@@ -107,7 +107,7 @@ function CardsQueryModal() {
                 </label>
 
                 <input
-                  className='w-full rounded-lg border-2 border-slate-200 p-2 px-4 dark:border-transparent dark:text-sky-700'
+                  className='w-[calc(100%-0.5rem] ml-2 rounded-lg border-2 border-slate-200 p-2 px-4 dark:border-transparent dark:text-sky-700'
                   name='card-query-input'
                   onChange={(event) => {
                     setQueries((queries) => {
@@ -152,7 +152,7 @@ function CardsQueryModal() {
 
                 <ToggleGroup.Root
                   aria-label='Select the card types to include'
-                  className='flex w-full flex-wrap gap-2 text-slate-600 focus-within:text-slate-600 md:gap-4'
+                  className='flex w-full flex-wrap gap-2 pl-2 text-slate-600 focus-within:text-slate-600 md:gap-4'
                   defaultValue={[]}
                   onValueChange={(values) => {
                     setQueries((queries) => {
@@ -193,7 +193,7 @@ function CardsQueryModal() {
 
                 <ToggleGroup.Root
                   aria-label='Select the colors to include'
-                  className='flex w-full flex-wrap gap-2 text-slate-600 focus-within:text-slate-600 md:gap-4'
+                  className='flex w-full flex-wrap gap-2 pl-2 text-slate-600 focus-within:text-slate-600 md:gap-4'
                   defaultValue={[]}
                   onValueChange={(values) => {
                     setQueries((queries) => {
