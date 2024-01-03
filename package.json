@@ -14,11 +14,12 @@
     "start": "next start",
     "test": "npm run test:eslint && npm run test:css && npm run test:prettier && npm run test:types && npm run test:code",
     "test:code": "npx jest",
+    "test:code:watch": "npx jest --watch",
+    "test:code:watch:changed": "npx jest --watch --only-changed",
     "test:css": "echo 'test:css is not yet configured'",
     "test:eslint": "npx eslint .",
     "test:prettier": "npx prettier --check .",
-    "test:types": "npx tsc --project ./tsconfig.json --noEmit",
-    "test:watch": "npx jest --watch"
+    "test:types": "npx tsc --project ./tsconfig.json --noEmit"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.5",
