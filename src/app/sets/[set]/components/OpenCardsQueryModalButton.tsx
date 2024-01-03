@@ -26,11 +26,13 @@ type OpenCardsQueryModalButtonType = {
 export function OpenCardsQueryModalButton(
   props: OpenCardsQueryModalButtonType
 ) {
+  const { onClick } = props;
+
   return (
     <Tooltip.Root>
       <Tooltip.Trigger asChild>
         <Dialog.Trigger asChild>
-          <DialogTriggerButton onClick={props.onClick} />
+          <DialogTriggerButton onClick={onClick} />
         </Dialog.Trigger>
       </Tooltip.Trigger>
 
@@ -62,11 +64,13 @@ const DialogTriggerButton = React.forwardRef(function DialogTriggerButton(
   props: DialogTriggerButtonType,
   forwardedRef
 ) {
+  const { onClick } = props;
+
   return (
     <button
       aria-label={buttonLabel}
       className='fixed bottom-8 right-8 h-20 w-20 rounded-full bg-sky-800 text-slate-100 shadow-xl dark:bg-slate-50 dark:text-sky-800'
-      onClick={props.onClick}
+      onClick={onClick}
       ref={forwardedRef}
       type='button'
       {...props}
