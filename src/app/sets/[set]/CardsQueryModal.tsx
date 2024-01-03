@@ -11,14 +11,12 @@ import * as React from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
 // https://www.radix-ui.com/primitives/docs/components/toggle-group
 import * as ToggleGroup from '@radix-ui/react-toggle-group';
-// https://www.radix-ui.com/primitives/docs/components/tooltip
-import * as Tooltip from '@radix-ui/react-tooltip';
-import { Cross2Icon, MixerHorizontalIcon } from '@radix-ui/react-icons';
+import { Cross2Icon } from '@radix-ui/react-icons';
 import CardsQueryContext from './CardsQueryContext';
 import { scrollToTop } from '@/root/utils';
 import type { CardType } from '@/types/card';
+import { OpenCardsQueryModalButton } from './components';
 
-const openModalTooltipLabel = 'Search within the set';
 const closeModalLabel = 'Close the search options interface';
 const cardTypes = [
   'Artifact',
@@ -64,24 +62,7 @@ function CardsQueryModal() {
       modal
       open={isOpen}
     >
-      <Tooltip.Root>
-        <Tooltip.Trigger asChild>
-          <Dialog.Trigger asChild>
-            <OpenQueryOptionsButton onClick={() => setIsOpen(true)} />
-          </Dialog.Trigger>
-        </Tooltip.Trigger>
-
-        <Tooltip.Content
-          align='start'
-          alignOffset={22}
-          aria-label={openModalTooltipLabel}
-          className='mb-2 rounded bg-sky-800 p-2 text-sm text-slate-100 shadow-xl dark:bg-slate-50 dark:text-sky-800'
-          side='left'
-          sideOffset={12}
-        >
-          {openModalTooltipLabel}
-        </Tooltip.Content>
-      </Tooltip.Root>
+      <OpenCardsQueryModalButton onClick={() => setIsOpen(true)} />
 
       <Dialog.Portal>
         <Dialog.Overlay
@@ -378,39 +359,6 @@ const CloseQueryOptionsIcon = React.forwardRef(function CloseQueryOptionsIcon(
       {...props}
     >
       <Cross2Icon
-        height='32px'
-        width='32px'
-      />
-    </button>
-  );
-});
-
-type OpenQueryOptionsButtonType = {
-  /**
-   * Function that sets the query options modal to open
-   */
-  onClick: () => void;
-  /**
-   * The forwarded ref for [Radix](https://www.radix-ui.com/primitives/docs/guides/composition#your-component-must-forward-ref)
-   */
-  ref: React.ForwardedRef<HTMLButtonElement>;
-};
-
-const OpenQueryOptionsButton = React.forwardRef(function OpenQueryOptionsButton(
-  props: OpenQueryOptionsButtonType,
-  forwardedRef
-) {
-  return (
-    <button
-      aria-label='Open the query options'
-      className='fixed bottom-8 right-8 h-20 w-20 rounded-full bg-sky-800 text-slate-100 shadow-xl dark:bg-slate-50 dark:text-sky-800'
-      onClick={props.onClick}
-      ref={forwardedRef}
-      type='button'
-      {...props}
-    >
-      <MixerHorizontalIcon
-        className='m-auto text-white dark:text-sky-800'
         height='32px'
         width='32px'
       />
