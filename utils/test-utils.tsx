@@ -5,6 +5,9 @@
 
 import * as React from 'react';
 import { render, RenderOptions } from '@testing-library/react';
+/**
+ * https://testing-library.com/docs/user-event/intro
+ */
 import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom';
 import Providers from '@/src/app/Providers';
