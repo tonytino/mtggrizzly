@@ -5,6 +5,16 @@ import * as React from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
 import { Cross2Icon } from '@radix-ui/react-icons';
 
+/**
+ * Exported for testing purposes only
+ */
+export const modalDescription =
+  'Use the options below to search for matching cards';
+/**
+ * Exported for testing purposes only
+ */
+export const modalTitle = 'Search the Set';
+
 type CardsQueryModalHeaderType = {
   /**
    * The label to use for the (icon) button that closes `<CardsQueryModal />`
@@ -25,7 +35,7 @@ export function CardsQueryModalHeader(props: CardsQueryModalHeaderType) {
   return (
     <div className='relative'>
       <Dialog.Title className='w-full text-2xl font-bold lg:text-center'>
-        Search the Set
+        {modalTitle}
       </Dialog.Title>
 
       <Dialog.Close asChild>
@@ -36,7 +46,7 @@ export function CardsQueryModalHeader(props: CardsQueryModalHeaderType) {
       </Dialog.Close>
 
       <Dialog.Description className='py-4 text-sm md:py-6 md:text-base'>
-        Use the options below to search for matching cards
+        {modalDescription}
       </Dialog.Description>
     </div>
   );
