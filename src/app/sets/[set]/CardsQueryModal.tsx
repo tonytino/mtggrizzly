@@ -90,7 +90,10 @@ function CardsQueryModal() {
           onClick={onClose}
         />
 
-        <Dialog.Content className='fixed bottom-0 left-0 right-0 top-0 z-30 m-auto h-dvh w-screen overflow-y-auto bg-white p-4 text-sky-800 lg:h-3/4 lg:w-[800px] lg:rounded-md lg:p-8 xl:w-2/4 xl:min-w-[800px] dark:bg-slate-800 dark:text-slate-100'>
+        <Dialog.Content
+          className='fixed bottom-0 left-0 right-0 top-0 z-30 m-auto h-dvh w-screen overflow-y-auto bg-white p-4 text-sky-800 lg:h-3/4 lg:w-[800px] lg:rounded-md lg:p-8 xl:w-2/4 xl:min-w-[800px] dark:bg-slate-800 dark:text-slate-100'
+          onEscapeKeyDown={onClose}
+        >
           <div className='flex h-full w-full flex-col justify-between'>
             <CardsQueryModalHeader onClose={onClose} />
 
