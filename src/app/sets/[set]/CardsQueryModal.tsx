@@ -11,11 +11,10 @@ import * as React from 'react';
 import * as Dialog from '@radix-ui/react-dialog';
 // https://www.radix-ui.com/primitives/docs/components/toggle-group
 import * as ToggleGroup from '@radix-ui/react-toggle-group';
-import { Cross2Icon } from '@radix-ui/react-icons';
 import CardsQueryContext from './CardsQueryContext';
 import { scrollToTop } from '@/root/utils';
 import type { CardType } from '@/types/card';
-import { OpenCardsQueryModalButton } from './components';
+import { CardsQueryModalHeader, OpenCardsQueryModalButton } from './components';
 
 const closeModalLabel = 'Close the search options interface';
 const cardTypes = [
@@ -76,7 +75,10 @@ function CardsQueryModal() {
           onEscapeKeyDown={onClose}
         >
           <div className='flex h-full w-full flex-col justify-between'>
-            <CardsQueryModalHeader onClose={onClose} />
+            <CardsQueryModalHeader
+              closeModalLabel={closeModalLabel}
+              onClose={onClose}
+            />
 
             <div
               className='flex flex-grow flex-col gap-8 overflow-y-scroll pb-2 pr-2'
@@ -270,31 +272,6 @@ function CardsQueryModal() {
   );
 }
 
-type CardsQueryModalHeaderType = {
-  /**
-   * Function that sets the query options modal to closed
-   */
-  onClose: () => void;
-};
-
-function CardsQueryModalHeader(props: CardsQueryModalHeaderType) {
-  return (
-    <div className='relative'>
-      <Dialog.Title className='w-full text-2xl font-bold lg:text-center'>
-        Search the Set
-      </Dialog.Title>
-
-      <Dialog.Close asChild>
-        <CloseQueryOptionsIcon onClick={props.onClose} />
-      </Dialog.Close>
-
-      <Dialog.Description className='py-4 text-sm md:py-6 md:text-base'>
-        Use the options below to search for matching cards
-      </Dialog.Description>
-    </div>
-  );
-}
-
 type CardsQueryModalFooterType = {
   /**
    * Function that sets the query options modal to closed
@@ -333,37 +310,5 @@ function CardsQueryModalFooter(props: CardsQueryModalFooterType) {
     </div>
   );
 }
-
-type CloseQueryOptionsIconType = {
-  /**
-   * Function that sets the query options modal to closed
-   */
-  onClick: () => void;
-  /**
-   * The forwarded ref for [Radix](https://www.radix-ui.com/primitives/docs/guides/composition#your-component-must-forward-ref)
-   */
-  ref: React.ForwardedRef<HTMLButtonElement>;
-};
-
-const CloseQueryOptionsIcon = React.forwardRef(function CloseQueryOptionsIcon(
-  props: CloseQueryOptionsIconType,
-  forwardedRef
-) {
-  return (
-    <button
-      aria-label={closeModalLabel}
-      className='absolute right-0 top-0'
-      onClick={props.onClick}
-      ref={forwardedRef}
-      type='button'
-      {...props}
-    >
-      <Cross2Icon
-        height='32px'
-        width='32px'
-      />
-    </button>
-  );
-});
 
 export default CardsQueryModal;
