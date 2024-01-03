@@ -60,10 +60,10 @@ type DialogTriggerButtonType = OpenCardsQueryModalButtonType & {
 /**
  * Renders a button that supports forwarded refs for [Radix](https://www.radix-ui.com/primitives/docs/guides/composition#your-component-must-forward-ref)'s `<Dialog.Trigger />`
  */
-const DialogTriggerButton = React.forwardRef(function DialogTriggerButton(
-  props: DialogTriggerButtonType,
-  forwardedRef
-) {
+const DialogTriggerButton = React.forwardRef<
+  HTMLButtonElement,
+  DialogTriggerButtonType
+>(function DialogTriggerButton(props: DialogTriggerButtonType, ref) {
   const { onClick } = props;
 
   return (
@@ -71,9 +71,8 @@ const DialogTriggerButton = React.forwardRef(function DialogTriggerButton(
       aria-label={buttonLabel}
       className='fixed bottom-8 right-8 h-20 w-20 rounded-full bg-sky-800 text-slate-100 shadow-xl dark:bg-slate-50 dark:text-sky-800'
       onClick={onClick}
-      ref={forwardedRef}
+      ref={ref}
       type='button'
-      {...props}
     >
       <MixerHorizontalIcon
         className='m-auto text-white dark:text-sky-800'
