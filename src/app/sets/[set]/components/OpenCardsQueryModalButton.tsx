@@ -3,11 +3,15 @@
 import * as React from 'react';
 // https://www.radix-ui.com/primitives/docs/components/dialog
 import * as Dialog from '@radix-ui/react-dialog';
-// https://www.radix-ui.com/primitives/docs/components/toggle-group
+// https://www.radix-ui.com/primitives/docs/components/tooltip
 import * as Tooltip from '@radix-ui/react-tooltip';
 import { MixerHorizontalIcon } from '@radix-ui/react-icons';
 
-const openModalTooltipLabel = 'Search within the set';
+/**
+ * Exported for testing purposes only
+ */
+export const buttonLabel = 'Open the query options';
+const buttonTooltipLabel = 'Search within the set';
 
 type OpenCardsQueryModalButtonType = {
   /**
@@ -33,12 +37,12 @@ export function OpenCardsQueryModalButton(
       <Tooltip.Content
         align='start'
         alignOffset={22}
-        aria-label={openModalTooltipLabel}
+        aria-label={buttonTooltipLabel}
         className='mb-2 rounded bg-sky-800 p-2 text-sm text-slate-100 shadow-xl dark:bg-slate-50 dark:text-sky-800'
         side='left'
         sideOffset={12}
       >
-        {openModalTooltipLabel}
+        {buttonTooltipLabel}
       </Tooltip.Content>
     </Tooltip.Root>
   );
@@ -60,7 +64,7 @@ const DialogTriggerButton = React.forwardRef(function DialogTriggerButton(
 ) {
   return (
     <button
-      aria-label='Open the query options'
+      aria-label={buttonLabel}
       className='fixed bottom-8 right-8 h-20 w-20 rounded-full bg-sky-800 text-slate-100 shadow-xl dark:bg-slate-50 dark:text-sky-800'
       onClick={props.onClick}
       ref={forwardedRef}
