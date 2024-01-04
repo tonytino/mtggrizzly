@@ -18,11 +18,11 @@ function CardsQueryProvider(props: { children: React.ReactNode }) {
 
   const [queries, setQueries] = React.useState(DEFAULT_STATE);
 
-  const clearQueries = React.useCallback(() => setQueries(DEFAULT_STATE), []);
+  const resetQueries = React.useCallback(() => setQueries(DEFAULT_STATE), []);
 
   return (
     <CardsQueryContext.Provider
-      value={{ ...queries, clearQueries, setQueries }}
+      value={{ ...queries, resetQueries, setQueries }}
     >
       {children}
     </CardsQueryContext.Provider>

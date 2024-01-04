@@ -27,6 +27,8 @@ describe('<OpenCardsQueryModalButton />', () => {
         </Dialog.Root>
       );
 
+      expect(onClickFn).not.toHaveBeenCalled();
+
       await userEvent.click(screen.getByLabelText(buttonLabel));
 
       expect(onClickFn).toHaveBeenCalled();

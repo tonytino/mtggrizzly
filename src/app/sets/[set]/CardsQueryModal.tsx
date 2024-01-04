@@ -40,9 +40,9 @@ function CardsQueryModal() {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const {
-    clearQueries,
     permittedCardTypes,
     permittedColors,
+    resetQueries,
     searchText,
     setQueries,
   } = React.useContext(CardsQueryContext);
@@ -266,9 +266,8 @@ function CardsQueryModal() {
             </div>
 
             <CardsQueryModalFooter
-              closeModalLabel={closeModalLabel}
-              onClear={() => clearQueries()}
               onClose={onClose}
+              onReset={() => resetQueries()}
             />
           </div>
         </Dialog.Content>

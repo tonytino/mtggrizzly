@@ -61,6 +61,8 @@ describe('<CardsQueryModalHeader />', () => {
         </Dialog.Root>
       );
 
+      expect(onCloseFn).not.toHaveBeenCalled();
+
       await userEvent.click(screen.getByLabelText(closeModalLabel));
 
       expect(onCloseFn).toHaveBeenCalled();
