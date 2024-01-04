@@ -10,6 +10,10 @@ export const clearButtonText = 'Clear';
 /**
  * Exported for testing purposes only
  */
+export const placeholderText = 'Storm...';
+/**
+ * Exported for testing purposes only
+ */
 export const searchLabel = 'Search';
 
 /**
@@ -31,6 +35,7 @@ export function SearchFilter() {
 
       <input
         className='w-[calc(100%-0.5rem] ml-2 rounded-lg border-2 border-slate-200 p-2 px-4 dark:border-transparent dark:text-sky-700'
+        id='card-query-input'
         name='card-query-input'
         onChange={(event) => {
           setQueries((queries) => {
@@ -40,7 +45,7 @@ export function SearchFilter() {
             };
           });
         }}
-        placeholder='Storm...'
+        placeholder={placeholderText}
         ref={searchTextInputRef}
         type='text'
         value={searchText}

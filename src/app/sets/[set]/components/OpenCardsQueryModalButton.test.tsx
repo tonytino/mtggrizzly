@@ -3,8 +3,8 @@ import * as Dialog from '@radix-ui/react-dialog';
 import { React, render, screen, userEvent } from 'test-utils';
 import { CardsQueryProviderMock } from '@/src/app/sets/[set]/CardsQueryProvider';
 import {
-  OpenCardsQueryModalButton,
   buttonLabel,
+  OpenCardsQueryModalButton,
 } from './OpenCardsQueryModalButton';
 
 const openModal = jest.fn();
