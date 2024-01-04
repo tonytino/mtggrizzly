@@ -37,12 +37,11 @@ const cardTypes = [
  * A modal that contains various means by which to query the cards of a set
  */
 function CardsQueryModal() {
-  const [isOpen, setIsOpen] = React.useState(false);
-
   const {
+    closeModal,
+    isModalOpen,
     permittedCardTypes,
     permittedColors,
-    resetQueries,
     searchText,
     setQueries,
   } = React.useContext(CardsQueryContext);
@@ -58,31 +57,26 @@ function CardsQueryModal() {
     [permittedCardTypes, permittedColors, searchText]
   );
 
-  const onClose = React.useCallback(() => setIsOpen(false), []);
-
   return (
     <Dialog.Root
       modal
-      open={isOpen}
+      open={isModalOpen}
     >
-      <OpenCardsQueryModalButton onClick={() => setIsOpen(true)} />
+      <OpenCardsQueryModalButton />
 
       <Dialog.Portal>
         <Dialog.Overlay
           aria-label={closeModalLabel}
           className='fixed bottom-0 left-0 right-0 top-0 z-20 h-full w-full cursor-pointer bg-slate-900 opacity-75'
-          onClick={onClose}
+          onClick={closeModal}
         />
 
         <Dialog.Content
           className='fixed bottom-0 left-0 right-0 top-0 z-30 m-auto h-dvh w-screen overflow-y-auto bg-white p-4 text-sky-800 lg:h-3/4 lg:w-[800px] lg:rounded-md lg:p-8 xl:w-2/4 xl:min-w-[800px] dark:bg-slate-800 dark:text-slate-100'
-          onEscapeKeyDown={onClose}
+          onEscapeKeyDown={closeModal}
         >
           <div className='flex h-full w-full flex-col justify-between'>
-            <CardsQueryModalHeader
-              closeModalLabel={closeModalLabel}
-              onClose={onClose}
-            />
+            <CardsQueryModalHeader closeModalLabel={closeModalLabel} />
 
             <div
               className='flex flex-grow flex-col gap-8 overflow-y-scroll pb-2 pr-2'
@@ -265,10 +259,7 @@ function CardsQueryModal() {
               </div>
             </div>
 
-            <CardsQueryModalFooter
-              onClose={onClose}
-              onReset={() => resetQueries()}
-            />
+            <CardsQueryModalFooter />
           </div>
         </Dialog.Content>
       </Dialog.Portal>

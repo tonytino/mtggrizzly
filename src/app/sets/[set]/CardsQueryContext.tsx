@@ -14,7 +14,19 @@ const PERMITTED_COLORS = {
 
 type PermittedColors = keyof typeof PERMITTED_COLORS;
 
-type CardsQueryContextType = {
+export type CardsQueryContextType = {
+  /**
+   * The function to invoke to close the modal
+   */
+  closeModal: () => void;
+  /**
+   * Indicates whether the `<CardsQueryModal />` is currently open
+   */
+  isModalOpen: boolean;
+  /**
+   * The function to invoke to open the modal
+   */
+  openModal: () => void;
   /**
    * The card types permitted to be in a type line of a card, e.g. ["Instant", "Sorcery"]
    * @example ["Instant", "Sorcery"]

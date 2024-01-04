@@ -6,6 +6,7 @@ import * as Dialog from '@radix-ui/react-dialog';
 // https://www.radix-ui.com/primitives/docs/components/tooltip
 import * as Tooltip from '@radix-ui/react-tooltip';
 import { MixerHorizontalIcon } from '@radix-ui/react-icons';
+import CardsQueryContext from '@/src/app/sets/[set]/CardsQueryContext';
 
 /**
  * Exported for testing purposes only
@@ -13,26 +14,15 @@ import { MixerHorizontalIcon } from '@radix-ui/react-icons';
 export const buttonLabel = 'Open the query options';
 const buttonTooltipLabel = 'Search within the set';
 
-type OpenCardsQueryModalButtonType = {
-  /**
-   * Function that sets the status of `<CardsQueryModal />` to "open"
-   */
-  onClick: () => void;
-};
-
 /**
  * Opens the `<CardsQueryModal />`
  */
-export function OpenCardsQueryModalButton(
-  props: OpenCardsQueryModalButtonType
-) {
-  const { onClick } = props;
-
+export function OpenCardsQueryModalButton() {
   return (
     <Tooltip.Root>
       <Tooltip.Trigger asChild>
         <Dialog.Trigger asChild>
-          <DialogTriggerButton onClick={onClick} />
+          <DialogTriggerButton />
         </Dialog.Trigger>
       </Tooltip.Trigger>
 
@@ -50,7 +40,7 @@ export function OpenCardsQueryModalButton(
   );
 }
 
-type DialogTriggerButtonType = OpenCardsQueryModalButtonType & {
+type DialogTriggerButtonType = {
   /**
    * The forwarded ref
    */
@@ -64,13 +54,13 @@ const DialogTriggerButton = React.forwardRef<
   HTMLButtonElement,
   DialogTriggerButtonType
 >(function DialogTriggerButton(props: DialogTriggerButtonType, ref) {
-  const { onClick } = props;
+  const { openModal } = React.useContext(CardsQueryContext);
 
   return (
     <button
       aria-label={buttonLabel}
       className='fixed bottom-8 right-8 h-20 w-20 rounded-full bg-sky-800 text-slate-100 shadow-xl dark:bg-slate-50 dark:text-sky-800'
-      onClick={onClick}
+      onClick={openModal}
       ref={ref}
       type='button'
     >

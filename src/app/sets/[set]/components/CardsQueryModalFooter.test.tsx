@@ -1,14 +1,15 @@
 // https://www.radix-ui.com/primitives/docs/components/dialog
 import * as Dialog from '@radix-ui/react-dialog';
 import { React, render, screen, userEvent } from 'test-utils';
+import { CardsQueryProviderMock } from '@/src/app/sets/[set]/CardsQueryProvider';
 import {
   CardsQueryModalFooter,
   closeButtonText,
   resetButtonText,
 } from './CardsQueryModalFooter';
 
-const onCloseFn = jest.fn();
-const onResetFn = jest.fn();
+const closeModal = jest.fn();
+const resetQueries = jest.fn();
 const windowConfirm = window.confirm;
 
 describe('<CardsQueryModalFooter />', () => {
@@ -20,12 +21,16 @@ describe('<CardsQueryModalFooter />', () => {
   describe('features', () => {
     test('the close button is rendered', () => {
       render(
-        <Dialog.Root>
-          <CardsQueryModalFooter
-            onClose={onCloseFn}
-            onReset={onResetFn}
-          />
-        </Dialog.Root>
+        <CardsQueryProviderMock
+          contextValues={{
+            closeModal,
+            resetQueries,
+          }}
+        >
+          <Dialog.Root>
+            <CardsQueryModalFooter />
+          </Dialog.Root>
+        </CardsQueryProviderMock>
       );
 
       expect(
@@ -35,12 +40,16 @@ describe('<CardsQueryModalFooter />', () => {
 
     test('the reset button is rendered', () => {
       render(
-        <Dialog.Root>
-          <CardsQueryModalFooter
-            onClose={onCloseFn}
-            onReset={onResetFn}
-          />
-        </Dialog.Root>
+        <CardsQueryProviderMock
+          contextValues={{
+            closeModal,
+            resetQueries,
+          }}
+        >
+          <Dialog.Root>
+            <CardsQueryModalFooter />
+          </Dialog.Root>
+        </CardsQueryProviderMock>
       );
 
       expect(
@@ -48,71 +57,154 @@ describe('<CardsQueryModalFooter />', () => {
       ).toBeInTheDocument();
     });
 
-    test('prop:onReset is invoked when the reset button is clicked and confirmed', async () => {
-      const windowConfirmMock = jest.fn(() => true);
-      window.confirm = windowConfirmMock;
+    describe('when the close button', () => {
+      describe('is clicked', () => {
+        test('the modal is closed', async () => {
+          render(
+            <CardsQueryProviderMock
+              contextValues={{
+                closeModal,
+                resetQueries,
+              }}
+            >
+              <Dialog.Root>
+                <CardsQueryModalFooter />
+              </Dialog.Root>
+            </CardsQueryProviderMock>
+          );
 
-      render(
-        <Dialog.Root>
-          <CardsQueryModalFooter
-            onClose={onCloseFn}
-            onReset={onResetFn}
-          />
-        </Dialog.Root>
-      );
+          expect(closeModal).not.toHaveBeenCalled();
 
-      expect(windowConfirmMock).not.toHaveBeenCalled();
-      expect(onResetFn).not.toHaveBeenCalled();
+          await userEvent.click(
+            screen.getByRole('button', { name: closeButtonText })
+          );
 
-      await userEvent.click(
-        screen.getByRole('button', { name: resetButtonText })
-      );
+          expect(closeModal).toHaveBeenCalled();
+        });
+      });
 
-      expect(windowConfirmMock).toHaveBeenCalled();
-      expect(onResetFn).toHaveBeenCalled();
+      describe('is keypressed', () => {
+        test('the modal is closed', async () => {
+          render(
+            <CardsQueryProviderMock
+              contextValues={{
+                closeModal,
+                resetQueries,
+              }}
+            >
+              <Dialog.Root>
+                <CardsQueryModalFooter />
+              </Dialog.Root>
+            </CardsQueryProviderMock>
+          );
+
+          expect(closeModal).not.toHaveBeenCalled();
+
+          await userEvent.type(
+            screen.getByRole('button', { name: closeButtonText }),
+            ' '
+          );
+
+          expect(closeModal).toHaveBeenCalled();
+        });
+      });
     });
 
-    test('prop:onReset is NOT invoked when the reset button is clicked and cancelled', async () => {
-      const windowConfirmMock = jest.fn(() => false);
-      window.confirm = windowConfirmMock;
+    describe('when the reset button', () => {
+      describe('is clicked', () => {
+        describe('and the action is confirmed', () => {
+          test('the queries are reset', async () => {
+            const windowConfirmMock = jest.fn(() => true);
+            window.confirm = windowConfirmMock;
 
-      render(
-        <Dialog.Root>
-          <CardsQueryModalFooter
-            onClose={onCloseFn}
-            onReset={onResetFn}
-          />
-        </Dialog.Root>
-      );
+            render(
+              <CardsQueryProviderMock
+                contextValues={{
+                  closeModal,
+                  resetQueries,
+                }}
+              >
+                <Dialog.Root>
+                  <CardsQueryModalFooter />
+                </Dialog.Root>
+              </CardsQueryProviderMock>
+            );
 
-      expect(windowConfirmMock).not.toHaveBeenCalled();
-      expect(onResetFn).not.toHaveBeenCalled();
+            expect(windowConfirmMock).not.toHaveBeenCalled();
+            expect(resetQueries).not.toHaveBeenCalled();
 
-      await userEvent.click(
-        screen.getByRole('button', { name: resetButtonText })
-      );
+            await userEvent.click(
+              screen.getByRole('button', { name: resetButtonText })
+            );
 
-      expect(windowConfirmMock).toHaveBeenCalled();
-      expect(onResetFn).not.toHaveBeenCalled();
-    });
+            expect(windowConfirmMock).toHaveBeenCalled();
+            expect(resetQueries).toHaveBeenCalled();
+          });
+        });
 
-    test('prop:onClose is invoked when the close button is clicked', async () => {
-      render(
-        <Dialog.Root>
-          <CardsQueryModalFooter
-            onClose={onCloseFn}
-            onReset={onResetFn}
-          />
-        </Dialog.Root>
-      );
+        describe('and the action is cancelled', () => {
+          test('the queries are NOT reset', async () => {
+            const windowConfirmMock = jest.fn(() => false);
+            window.confirm = windowConfirmMock;
 
-      expect(onCloseFn).not.toHaveBeenCalled();
+            render(
+              <CardsQueryProviderMock
+                contextValues={{
+                  closeModal,
+                  resetQueries,
+                }}
+              >
+                <Dialog.Root>
+                  <CardsQueryModalFooter />
+                </Dialog.Root>
+              </CardsQueryProviderMock>
+            );
 
-      await userEvent.click(
-        screen.getByRole('button', { name: closeButtonText })
-      );
+            expect(windowConfirmMock).not.toHaveBeenCalled();
+            expect(resetQueries).not.toHaveBeenCalled();
 
-      expect(onCloseFn).toHaveBeenCalled();
+            await userEvent.click(
+              screen.getByRole('button', { name: resetButtonText })
+            );
+
+            expect(windowConfirmMock).toHaveBeenCalled();
+            expect(resetQueries).not.toHaveBeenCalled();
+          });
+        });
+      });
+
+      describe('is keypressed', () => {
+        describe('and the action is confirmed', () => {
+          test('the queries are reset', async () => {
+            const windowConfirmMock = jest.fn(() => true);
+            window.confirm = windowConfirmMock;
+
+            render(
+              <CardsQueryProviderMock
+                contextValues={{
+                  closeModal,
+                  resetQueries,
+                }}
+              >
+                <Dialog.Root>
+                  <CardsQueryModalFooter />
+                </Dialog.Root>
+              </CardsQueryProviderMock>
+            );
+
+            expect(windowConfirmMock).not.toHaveBeenCalled();
+            expect(resetQueries).not.toHaveBeenCalled();
+
+            await userEvent.type(
+              screen.getByRole('button', { name: resetButtonText }),
+              ' '
+            );
+
+            expect(windowConfirmMock).toHaveBeenCalled();
+            expect(resetQueries).toHaveBeenCalled();
+          });
+        });
+      });
     });
   });
 });
