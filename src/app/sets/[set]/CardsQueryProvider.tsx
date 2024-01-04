@@ -18,7 +18,7 @@ type CardsQueryProviderType = {
 };
 
 /**
- * This component exposes the CardsQueryContext to its children and manages the state of the context
+ * This component exposes the `CardsQueryContext` to its children and manages the state of the context
  */
 function CardsQueryProvider(props: CardsQueryProviderType) {
   const { children } = props;
