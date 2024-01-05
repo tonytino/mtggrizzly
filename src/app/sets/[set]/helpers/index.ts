@@ -1,0 +1,1 @@
+export { isMultifaceCard } from './isMultifaceCard';
