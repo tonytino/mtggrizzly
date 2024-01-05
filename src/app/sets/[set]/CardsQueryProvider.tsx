@@ -30,21 +30,21 @@ function CardsQueryProvider(props: CardsQueryProviderType) {
   const openModal = React.useCallback(() => setIsModalOpen(true), []);
   const resetQueries = React.useCallback(() => setQueries(DEFAULT_STATE), []);
   const setPermittedCardTypes = React.useCallback(
-    (cardTypes) =>
+    (permittedCardTypes) =>
       setQueries((queries) => {
         return {
           ...queries,
-          cardTypes,
+          permittedCardTypes,
         };
       }),
     []
   );
   const setPermittedColors = React.useCallback(
-    (colors) =>
+    (permittedColors) =>
       setQueries((queries) => {
         return {
           ...queries,
-          colors,
+          permittedColors,
         };
       }),
     []

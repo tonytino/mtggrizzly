@@ -5,7 +5,7 @@ import { ColorsFilter, colors, colorsLabel } from './ColorsFilter';
 const colorLabels = Object.keys(colors);
 const colorLabel = colorLabels[0];
 const colorValue = colors[colorLabel];
-const setQueries = jest.fn();
+const setPermittedColors = jest.fn();
 
 describe('<ColorsFilter />', () => {
   afterEach(() => {
@@ -17,7 +17,7 @@ describe('<ColorsFilter />', () => {
       render(
         <CardsQueryProviderMock
           contextValues={{
-            setQueries,
+            setPermittedColors,
           }}
         >
           <ColorsFilter />
@@ -40,7 +40,7 @@ describe('<ColorsFilter />', () => {
             <CardsQueryProviderMock
               contextValues={{
                 permittedColors: [colorValue],
-                setQueries,
+                setPermittedColors,
               }}
             >
               <ColorsFilter />
@@ -60,7 +60,7 @@ describe('<ColorsFilter />', () => {
             <CardsQueryProviderMock
               contextValues={{
                 permittedColors: [],
-                setQueries,
+                setPermittedColors,
               }}
             >
               <ColorsFilter />
@@ -76,42 +76,22 @@ describe('<ColorsFilter />', () => {
     });
 
     describe('when the user clicks a color', () => {
-      test('setQueries of CardsQueryContext is invoked', async () => {
+      test('setPermittedColors of CardsQueryContext is invoked', async () => {
         render(
           <CardsQueryProviderMock
             contextValues={{
-              setQueries,
+              setPermittedColors,
             }}
           >
             <ColorsFilter />
           </CardsQueryProviderMock>
         );
 
-        expect(setQueries).not.toHaveBeenCalled();
+        expect(setPermittedColors).not.toHaveBeenCalled();
 
-        await userEvent.click(screen.getByText(colorLabels[0]));
+        await userEvent.click(screen.getByText(colorLabel));
 
-        expect(setQueries).toHaveBeenCalled();
-      });
-    });
-
-    describe('when the user keypresses a color', () => {
-      test('setQueries of CardsQueryContext is invoked', async () => {
-        render(
-          <CardsQueryProviderMock
-            contextValues={{
-              setQueries,
-            }}
-          >
-            <ColorsFilter />
-          </CardsQueryProviderMock>
-        );
-
-        expect(setQueries).not.toHaveBeenCalled();
-
-        await userEvent.type(screen.getByText(colorLabels[0]), ' ');
-
-        expect(setQueries).toHaveBeenCalled();
+        expect(setPermittedColors).toHaveBeenCalledWith([colorValue]);
       });
     });
   });

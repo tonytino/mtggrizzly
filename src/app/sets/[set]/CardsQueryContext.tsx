@@ -12,7 +12,7 @@ const PERMITTED_COLORS = {
   Colorless: 'Colorless',
 } as const;
 
-type PermittedColors = keyof typeof PERMITTED_COLORS;
+export type PermittedColors = keyof typeof PERMITTED_COLORS;
 
 export type CardsQueryContextType = {
   /**
@@ -48,20 +48,14 @@ export type CardsQueryContextType = {
   searchText: string;
   /**
    * Updates the card types query option
-   * @example
-   * setPermittedCardTypes(['Land'])
    */
   setPermittedCardTypes: (cardTypes: CardType[]) => void;
   /**
    * Updates the colors query option
-   * @example
-   * setPermittedColors(['R'])
    */
   setPermittedColors: (colors: PermittedColors[]) => void;
   /**
    * Updates the search text query option
-   * @example
-   * setSearchText('Storm')
    */
   setSearchText: (string) => void;
   /**

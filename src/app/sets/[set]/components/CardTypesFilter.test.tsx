@@ -1,10 +1,10 @@
 import { React, render, screen, userEvent } from 'test-utils';
+import { CardType } from '@/types/card';
 import { CardsQueryProviderMock } from '@/src/app/sets/[set]/CardsQueryProvider';
 import { cardTypes, cardTypesLabel, CardTypesFilter } from './CardTypesFilter';
-import { CardType } from '@/types/card';
 
 const cardType = cardTypes[0] as CardType;
-const setQueries = jest.fn();
+const setPermittedCardTypes = jest.fn();
 
 describe('<CardTypesFilter />', () => {
   afterEach(() => {
@@ -16,7 +16,7 @@ describe('<CardTypesFilter />', () => {
       render(
         <CardsQueryProviderMock
           contextValues={{
-            setQueries,
+            setPermittedCardTypes,
           }}
         >
           <CardTypesFilter />
@@ -39,7 +39,7 @@ describe('<CardTypesFilter />', () => {
             <CardsQueryProviderMock
               contextValues={{
                 permittedCardTypes: [cardType],
-                setQueries,
+                setPermittedCardTypes,
               }}
             >
               <CardTypesFilter />
@@ -59,7 +59,7 @@ describe('<CardTypesFilter />', () => {
             <CardsQueryProviderMock
               contextValues={{
                 permittedCardTypes: [],
-                setQueries,
+                setPermittedCardTypes,
               }}
             >
               <CardTypesFilter />
@@ -77,42 +77,22 @@ describe('<CardTypesFilter />', () => {
     });
 
     describe('when the user clicks a card type', () => {
-      test('setQueries of CardsQueryContext is invoked', async () => {
+      test('setPermittedCardTypes of CardsQueryContext is invoked', async () => {
         render(
           <CardsQueryProviderMock
             contextValues={{
-              setQueries,
+              setPermittedCardTypes,
             }}
           >
             <CardTypesFilter />
           </CardsQueryProviderMock>
         );
 
-        expect(setQueries).not.toHaveBeenCalled();
+        expect(setPermittedCardTypes).not.toHaveBeenCalled();
 
         await userEvent.click(screen.getByText(cardType));
 
-        expect(setQueries).toHaveBeenCalled();
-      });
-    });
-
-    describe('when the user keypresses a card type', () => {
-      test('setQueries of CardsQueryContext is invoked', async () => {
-        render(
-          <CardsQueryProviderMock
-            contextValues={{
-              setQueries,
-            }}
-          >
-            <CardTypesFilter />
-          </CardsQueryProviderMock>
-        );
-
-        expect(setQueries).not.toHaveBeenCalled();
-
-        await userEvent.type(screen.getByText(cardType), ' ');
-
-        expect(setQueries).toHaveBeenCalled();
+        expect(setPermittedCardTypes).toHaveBeenCalledWith([cardType]);
       });
     });
   });

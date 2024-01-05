@@ -29,7 +29,7 @@ export const cardTypesLabel = 'Card Types';
  * Renders toggles for each card type that update the `permittedCardTypes` value of `CardsQueryContext`
  */
 export function CardTypesFilter() {
-  const { permittedCardTypes, setQueries } =
+  const { permittedCardTypes, setPermittedCardTypes } =
     React.useContext(CardsQueryContext);
 
   return (
@@ -45,14 +45,7 @@ export function CardTypesFilter() {
         aria-label='Select the card types to include'
         className='flex w-full flex-wrap gap-2 pl-2 text-slate-600 focus-within:text-slate-600 md:gap-4'
         defaultValue={[]}
-        onValueChange={(values) => {
-          setQueries((queries) => {
-            return {
-              ...queries,
-              permittedCardTypes: values,
-            };
-          });
-        }}
+        onValueChange={(values) => setPermittedCardTypes(values as CardType[])}
         type='multiple'
         value={permittedCardTypes}
       >

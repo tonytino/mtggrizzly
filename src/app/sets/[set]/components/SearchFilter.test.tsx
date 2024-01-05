@@ -7,7 +7,7 @@ import {
   searchLabel,
 } from './SearchFilter';
 
-const setQueries = jest.fn();
+const setSearchText = jest.fn();
 
 describe('<SearchFilter />', () => {
   afterEach(() => {
@@ -19,7 +19,7 @@ describe('<SearchFilter />', () => {
       render(
         <CardsQueryProviderMock
           contextValues={{
-            setQueries,
+            setSearchText,
           }}
         >
           <SearchFilter />
@@ -31,33 +31,33 @@ describe('<SearchFilter />', () => {
     });
 
     describe('when the user types', () => {
-      test('setQueries of CardsQueryContext is invoked', async () => {
+      test('setSearchText of CardsQueryContext is invoked', async () => {
         render(
           <CardsQueryProviderMock
             contextValues={{
-              setQueries,
+              setSearchText,
             }}
           >
             <SearchFilter />
           </CardsQueryProviderMock>
         );
 
-        expect(setQueries).not.toHaveBeenCalled();
+        expect(setSearchText).not.toHaveBeenCalled();
 
-        await userEvent.type(screen.getByLabelText(searchLabel), 'Storm');
+        await userEvent.type(screen.getByLabelText(searchLabel), 'S');
 
-        expect(setQueries).toHaveBeenCalled();
+        expect(setSearchText).toHaveBeenCalledWith('S');
       });
     });
 
     describe('when searchText exists within CardsQueryContext', () => {
       describe('when the user clicks the input clear button', () => {
-        test('setQueries of CardsQueryContext is invoked', async () => {
+        test('setSearchText of CardsQueryContext is invoked and the search bar is focused', async () => {
           render(
             <CardsQueryProviderMock
               contextValues={{
                 searchText: 'Storm',
-                setQueries,
+                setSearchText,
               }}
             >
               <SearchFilter />
@@ -68,38 +68,13 @@ describe('<SearchFilter />', () => {
             name: clearButtonText,
           });
 
-          expect(setQueries).not.toHaveBeenCalled();
+          expect(setSearchText).not.toHaveBeenCalled();
           expect(clearButton).toBeInTheDocument();
 
           await userEvent.click(clearButton);
 
-          expect(setQueries).toHaveBeenCalled();
-        });
-      });
-
-      describe('when the user keypresses the input clear button', () => {
-        test('setQueries of CardsQueryContext is invoked', async () => {
-          render(
-            <CardsQueryProviderMock
-              contextValues={{
-                searchText: 'Storm',
-                setQueries,
-              }}
-            >
-              <SearchFilter />
-            </CardsQueryProviderMock>
-          );
-
-          const clearButton = screen.getByRole('button', {
-            name: clearButtonText,
-          });
-
-          expect(setQueries).not.toHaveBeenCalled();
-          expect(clearButton).toBeInTheDocument();
-
-          await userEvent.type(clearButton, ' ');
-
-          expect(setQueries).toHaveBeenCalled();
+          expect(setSearchText).toHaveBeenCalledWith('');
+          expect(screen.getByLabelText(searchLabel)).toHaveFocus();
         });
       });
     });
@@ -110,7 +85,6 @@ describe('<SearchFilter />', () => {
           <CardsQueryProviderMock
             contextValues={{
               searchText: '',
-              setQueries,
             }}
           >
             <SearchFilter />

@@ -20,7 +20,7 @@ export const searchLabel = 'Search';
  * Renders a search input that updates the `searchText` value of `CardsQueryContext`
  */
 export function SearchFilter() {
-  const { searchText, setQueries } = React.useContext(CardsQueryContext);
+  const { searchText, setSearchText } = React.useContext(CardsQueryContext);
   const searchTextInputRef = React.useRef(null);
   const isSearchTextPresent = Boolean(searchText);
 
@@ -37,14 +37,7 @@ export function SearchFilter() {
         className='w-[calc(100%-0.5rem] ml-2 rounded-lg border-2 border-slate-200 p-2 px-4 dark:border-transparent dark:text-sky-700'
         id='card-query-input'
         name='card-query-input'
-        onChange={(event) => {
-          setQueries((queries) => {
-            return {
-              ...queries,
-              searchText: event.target.value,
-            };
-          });
-        }}
+        onChange={(event) => setSearchText(event.target.value)}
         placeholder={placeholderText}
         ref={searchTextInputRef}
         type='text'
@@ -55,12 +48,7 @@ export function SearchFilter() {
         <button
           className='absolute bottom-2 right-4 rounded px-2 py-0.5 hover:bg-slate-100 dark:text-sky-700'
           onClick={() => {
-            setQueries((queries) => {
-              return {
-                ...queries,
-                searchText: '',
-              };
-            });
+            setSearchText('');
             searchTextInputRef.current.focus();
           }}
           type='button'
