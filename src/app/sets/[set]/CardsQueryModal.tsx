@@ -13,8 +13,8 @@ import * as Dialog from '@radix-ui/react-dialog';
 import * as ToggleGroup from '@radix-ui/react-toggle-group';
 import CardsQueryContext from './CardsQueryContext';
 import { scrollToTop } from '@/root/utils';
-import type { CardType } from '@/types/card';
 import {
+  CardTypesFilter,
   CardsQueryModalFooter,
   CardsQueryModalHeader,
   OpenCardsQueryModalButton,
@@ -22,17 +22,6 @@ import {
 } from './components';
 
 const closeModalLabel = 'Close the search options interface';
-const cardTypes = [
-  'Artifact',
-  'Battle',
-  'Creature',
-  'Enchantment',
-  'Instant',
-  'Land',
-  'Planeswalker',
-  'Sorcery',
-  'Tribal',
-];
 
 /**
  * A modal that contains various means by which to query the cards of a set
@@ -82,46 +71,7 @@ function CardsQueryModal() {
             >
               <SearchFilter />
 
-              <div className='flex flex-col gap-2 text-slate-500 focus-within:text-sky-800 dark:text-slate-100 dark:focus-within:text-slate-100'>
-                <label
-                  className='font-bold'
-                  htmlFor='selected-card-types'
-                >
-                  Card Types
-                </label>
-
-                <ToggleGroup.Root
-                  aria-label='Select the card types to include'
-                  className='flex w-full flex-wrap gap-2 pl-2 text-slate-600 focus-within:text-slate-600 md:gap-4'
-                  defaultValue={[]}
-                  onValueChange={(values) => {
-                    setQueries((queries) => {
-                      return {
-                        ...queries,
-                        permittedCardTypes: values,
-                      };
-                    });
-                  }}
-                  type='multiple'
-                  value={permittedCardTypes}
-                >
-                  {cardTypes.map((cardType) => {
-                    return (
-                      <ToggleGroup.Item
-                        className={`rounded p-2 ${
-                          permittedCardTypes.includes(cardType as CardType)
-                            ? 'bg-sky-800 text-slate-100'
-                            : 'bg-slate-200'
-                        }`}
-                        key={cardType}
-                        value={cardType}
-                      >
-                        {cardType}
-                      </ToggleGroup.Item>
-                    );
-                  })}
-                </ToggleGroup.Root>
-              </div>
+              <CardTypesFilter />
 
               <div className='flex flex-col gap-2 text-slate-500 focus-within:text-sky-800 dark:text-slate-100 dark:focus-within:text-slate-100'>
                 <label
