@@ -6,10 +6,10 @@ import * as Dialog from '@radix-ui/react-dialog';
 import CardsQueryContext from './CardsQueryContext';
 import { scrollToTop } from '@/root/utils';
 import {
-  CardTypesFilter,
-  ColorsFilter,
   CardsQueryModalFooter,
   CardsQueryModalHeader,
+  CardTypesFilter,
+  ColorsFilter,
   OpenCardsQueryModalButton,
   SearchFilter,
 } from './components';
@@ -57,22 +57,28 @@ function CardsQueryModal() {
           <div className='flex h-full w-full flex-col justify-between'>
             <CardsQueryModalHeader closeModalLabel={closeModalLabel} />
 
-            <div
-              className='flex flex-grow flex-col gap-8 overflow-y-scroll pb-2 pr-2'
-              id='query-controls'
-            >
-              <SearchFilter />
-
-              <CardTypesFilter />
-
-              <ColorsFilter />
-            </div>
+            <QueryControls />
 
             <CardsQueryModalFooter />
           </div>
         </Dialog.Content>
       </Dialog.Portal>
     </Dialog.Root>
+  );
+}
+
+/**
+ * All of the controls available to filter through the set
+ */
+function QueryControls() {
+  return (
+    <div className='flex flex-grow flex-col gap-8 overflow-y-scroll pb-2 pr-2'>
+      <SearchFilter />
+
+      <CardTypesFilter />
+
+      <ColorsFilter />
+    </div>
   );
 }
 
