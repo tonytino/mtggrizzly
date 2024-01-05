@@ -32,12 +32,7 @@ export function ColorsFilter() {
 
   return (
     <div className='flex flex-col gap-2 text-slate-500 focus-within:text-sky-800 dark:text-slate-100 dark:focus-within:text-slate-100'>
-      <label
-        className='font-bold'
-        htmlFor='selected-colors'
-      >
-        {colorsLabel}
-      </label>
+      <label className='font-bold'>{colorsLabel}</label>
 
       <ToggleGroup.Root
         aria-label='Select the colors to include'

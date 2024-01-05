@@ -34,12 +34,7 @@ export function CardTypesFilter() {
 
   return (
     <div className='flex flex-col gap-2 text-slate-500 focus-within:text-sky-800 dark:text-slate-100 dark:focus-within:text-slate-100'>
-      <label
-        className='font-bold'
-        htmlFor='selected-card-types'
-      >
-        {cardTypesLabel}
-      </label>
+      <label className='font-bold'>{cardTypesLabel}</label>
 
       <ToggleGroup.Root
         aria-label='Select the card types to include'
