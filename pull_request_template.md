@@ -14,3 +14,4 @@ _Replace this line with a succinct description of the changes you're making._
 - [ ] Did you document your code?
 - [ ] Did you add types, where appropriate?
 - [ ] Did you consider adding tests, where appropriate?
+- [ ] Did you check for any deps that could be upgraded safely?

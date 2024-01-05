@@ -75,7 +75,7 @@ export type Card = {
    * The string found within the type line of a spell, e.g. "Enchantment – Aura"
    * @example "Artifact — Equipment"
    */
-  type_line: CardType;
+  type_line: string;
   uri: string;
   variation: boolean;
 };
@@ -84,15 +84,15 @@ export type Card = {
  * Information about card types can be found here: https://mtg.fandom.com/wiki/Card_type
  */
 const CARD_TYPES = {
-  ARTIFACT: 'Artifact',
-  BATTLE: 'Battle',
-  CREATURE: 'Creature',
-  ENCHANTMENT: 'Enchantment',
-  INSTANT: 'Instant',
-  LAND: 'Land',
-  PLANESWALKER: 'Planeswalker',
-  SORCERY: 'Sorcery',
-  TRIBAL: 'Tribal',
+  Artifact: 'Artifact',
+  Battle: 'Battle',
+  Creature: 'Creature',
+  Enchantment: 'Enchantment',
+  Instant: 'Instant',
+  Land: 'Land',
+  Planeswalker: 'Planeswalker',
+  Sorcery: 'Sorcery',
+  Tribal: 'Tribal',
 } as const;
 
 /**
@@ -116,7 +116,7 @@ export type CardFace = {
    * The string found within the type line of a spell, e.g. "Artifact — Equipment"
    * @example "Artifact — Equipment"
    */
-  type_line: CardType;
+  type_line: string;
   oracle_text: string;
   colors?: string[];
   power: string;

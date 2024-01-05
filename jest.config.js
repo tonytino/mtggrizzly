@@ -15,6 +15,7 @@ const customJestConfig = {
     './scripts',
     './types',
     './utils',
+    './*Provider*',
   ],
   coverageProvider: 'v8',
   coverageThreshold: {
