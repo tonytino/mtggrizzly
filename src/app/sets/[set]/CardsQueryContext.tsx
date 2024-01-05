@@ -16,7 +16,7 @@ type PermittedColors = keyof typeof PERMITTED_COLORS;
 
 export type CardsQueryContextType = {
   /**
-   * The function to invoke to close the modal
+   * Closes the modal
    */
   closeModal: () => void;
   /**
@@ -24,7 +24,7 @@ export type CardsQueryContextType = {
    */
   isModalOpen: boolean;
   /**
-   * The function to invoke to open the modal
+   * Opens the modal
    */
   openModal: () => void;
   /**
@@ -38,7 +38,7 @@ export type CardsQueryContextType = {
    */
   permittedColors: PermittedColors[];
   /**
-   * The function to reset the query options to their default state
+   * Resets the query options to their default state
    */
   resetQueries: () => void;
   /**
@@ -47,7 +47,32 @@ export type CardsQueryContextType = {
    */
   searchText: string;
   /**
-   * The function to invoke to update the query options
+   * Updates the card types query option
+   * @example
+   * setPermittedCardTypes(['Land'])
+   */
+  setPermittedCardTypes: (cardTypes: CardType[]) => void;
+  /**
+   * Updates the colors query option
+   * @example
+   * setPermittedColors(['R'])
+   */
+  setPermittedColors: (colors: PermittedColors[]) => void;
+  /**
+   * Updates the search text query option
+   * @example
+   * setSearchText('Storm')
+   */
+  setSearchText: (string) => void;
+  /**
+   * Updates the query options
+   * @example
+   * setQueries((queries) => {
+        return {
+          ...queries,
+          searchText,
+        };
+      }),
    */
   setQueries: (_: unknown) => void;
 };

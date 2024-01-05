@@ -29,6 +29,36 @@ function CardsQueryProvider(props: CardsQueryProviderType) {
   const closeModal = React.useCallback(() => setIsModalOpen(false), []);
   const openModal = React.useCallback(() => setIsModalOpen(true), []);
   const resetQueries = React.useCallback(() => setQueries(DEFAULT_STATE), []);
+  const setPermittedCardTypes = React.useCallback(
+    (cardTypes) =>
+      setQueries((queries) => {
+        return {
+          ...queries,
+          cardTypes,
+        };
+      }),
+    []
+  );
+  const setPermittedColors = React.useCallback(
+    (colors) =>
+      setQueries((queries) => {
+        return {
+          ...queries,
+          colors,
+        };
+      }),
+    []
+  );
+  const setSearchText = React.useCallback(
+    (searchText) =>
+      setQueries((queries) => {
+        return {
+          ...queries,
+          searchText,
+        };
+      }),
+    []
+  );
 
   return (
     <CardsQueryContext.Provider
@@ -38,7 +68,10 @@ function CardsQueryProvider(props: CardsQueryProviderType) {
         isModalOpen,
         openModal,
         resetQueries,
+        setPermittedCardTypes,
+        setPermittedColors,
         setQueries,
+        setSearchText,
       }}
     >
       {children}
@@ -67,6 +100,9 @@ export function CardsQueryProviderMock(props: CardsQueryProviderMockType) {
     permittedColors = DEFAULT_STATE.permittedColors,
     resetQueries = noop,
     searchText = DEFAULT_STATE.searchText,
+    setPermittedCardTypes = noop,
+    setPermittedColors = noop,
+    setSearchText = noop,
     setQueries = noop,
   } = contextValues ?? {};
 
@@ -80,7 +116,10 @@ export function CardsQueryProviderMock(props: CardsQueryProviderMockType) {
         permittedColors,
         resetQueries,
         searchText,
+        setPermittedCardTypes,
+        setPermittedColors,
         setQueries,
+        setSearchText,
       }}
     >
       {children}
