@@ -12,7 +12,7 @@ import CardsQueryContext, {
  */
 export const colors = {
   White: 'W',
-  Blue: 'B',
+  Blue: 'U',
   Black: 'B',
   Red: 'R',
   Green: 'G',
