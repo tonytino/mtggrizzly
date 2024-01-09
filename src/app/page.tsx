@@ -48,7 +48,10 @@ async function HomePage() {
       </section>
 
       <div>
-        <div className='m-auto grid h-min grid-cols-1 gap-8 py-8 md:grid-cols-2 xl:grid-cols-3'>
+        <div
+          className='m-auto grid h-min grid-cols-1 gap-8 py-8 md:grid-cols-2 xl:grid-cols-3'
+          data-testid='Most Recent Sets'
+        >
           {setsToShow.map((set, index) => {
             if (index > 8) return;
 
