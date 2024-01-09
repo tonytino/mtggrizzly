@@ -59,16 +59,31 @@ import sets from '@/src/app/api/sets/sets.json';
 import { React, render, screen, userEvent } from 'test-utils';
 ```
 
+**Please avoid relative imports that require traversing directories.** Some examples:
+
+```tsx
+// 👎
+import CardsQueryContext from './../CardsQueryContext';
+import CardsQueryContext from './components/CardsQueryContext';
+import { SearchFilter } from './components/SearchFilter';
+
+// 👍
+import CardsQueryContext from './CardsQueryContext';
+import CardsQueryContext from '@/src/app/sets/[set]/CardsQueryContext';
+import { SearchFilter } from './components';
+```
+
 ### READMEs
 
 There are READMEs throughout the codebase to help document important information close to where it matters.
 
 Below are links to all of the READMEs:
 
-- [Scripts README](./scripts/README.md)
-- [App README](./src/app/README.md)
 - [API README](./src/app/api/README.md)
+- [App README](./src/app/README.md)
 - [Components README](./src/components/README.md)
+- [Cypress README](./cypress/README.md)
+- [Scripts README](./scripts/README.md)
 - [Types README](./types/README.md)
 - [Utils README](./utils/README.md)
 
@@ -77,6 +92,14 @@ Below are links to all of the READMEs:
 1. Check out the [Project Board] or [Project Issues] for available tasks
 2. Check out the [Project Notes](https://github.com/tonytino/mtggrizzly#notes)
 3. Open a pull request with your changes and references the issue you're working on (e.g. "Resolves #01234")
+
+### Testing
+
+- Test features first and foremost; this is the bare minimum coverage expected
+- Do not test functionality already tested for us, e.g. if we're using a package we know has good test coverage, don't waste your time verifying it does what we expect
+- Familiarize yourself with the [common mistakes made when using @testing-library](https://kentcdodds.com/blog/common-mistakes-with-react-testing-library)
+- Produce structured test suite outputs using `describe` (see existing tests for examples)
+- We leverage both cypress and jest for testing purposes
 
 <!-- LINK REFERENCES -->
 

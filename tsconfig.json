@@ -10,11 +10,6 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "noEmit": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
     "paths": {
       "@/components": ["src/components/"],
       "@/components/*": ["src/components/*"],
@@ -24,17 +19,23 @@
       "@/types/*": ["types/*"],
       "test-utils": ["./utils/test-utils"]
     },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": false,
-    "target": "es5"
+    "target": "es5",
+    // "types": ["cypress", "@testing-library/cypress"]
   },
+  "exclude": ["./cypress.config.ts", "cypress", "node_modules"],
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/app/page.tsx"
-  ],
-  "exclude": ["node_modules"]
+  ]
 }
