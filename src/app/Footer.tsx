@@ -10,6 +10,7 @@ function Footer() {
   return (
     <footer
       className='mx-auto bg-slate-100 text-xs text-slate-800 dark:bg-slate-900 dark:text-slate-100'
+      data-testid='Footer'
       style={{
         padding: '1rem max(calc((100vw - var(--max-w-screen-xl))/2), 1rem)',
       }}
