@@ -15,6 +15,7 @@ function Header() {
         <nav className='mx-auto flex h-16 w-full items-baseline justify-between py-4 xl:max-w-screen-xl'>
           <Link
             className='text-3xl font-bold text-sky-800 dark:text-slate-100'
+            data-testid='Home Page Link'
             href='/'
           >
             MTG Grizzly
