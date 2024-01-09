@@ -1,6 +1,7 @@
 {
   "name": "mtggrizzly",
   "version": "0.1.0",
+  "moduleResolution": "node",
   "private": true,
   "scripts": {
     "build": "next build",
@@ -16,6 +17,8 @@
     "test:code": "npx jest",
     "test:code:watch": "npx jest --watch",
     "test:code:watch:changed": "npx jest --watch --only-changed",
+    "test:cypress:ci": "echo 'not yet implemented'",
+    "test:cypress:ui": "npx cypress open",
     "test:css": "echo 'test:css is not yet configured'",
     "test:eslint": "npx eslint .",
     "test:prettier": "npx prettier --check .",
@@ -41,6 +44,7 @@
     "warning": "^4.0.3"
   },
   "devDependencies": {
+    "@testing-library/cypress": "^10.0.1",
     "@testing-library/jest-dom": "^6.2.0",
     "@testing-library/react": "^14.1.2",
     "@testing-library/user-event": "^14.5.2",
