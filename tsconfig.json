@@ -27,8 +27,7 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": false,
-    "target": "es5",
-    // "types": ["cypress", "@testing-library/cypress"]
+    "target": "es5"
   },
   "exclude": ["./cypress.config.ts", "cypress", "node_modules"],
   "include": [

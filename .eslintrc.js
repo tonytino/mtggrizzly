@@ -29,7 +29,7 @@ const eslintConfig = {
   },
   overrides: [
     {
-      files: './scripts/*',
+      files: ['./scripts/*', './jest.config.js'],
       rules: {
         '@typescript-eslint/no-var-requires': 'off',
       },
