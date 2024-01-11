@@ -18,7 +18,7 @@
     "test:jest": "npx jest",
     "test:jest:watch": "npx jest --watch",
     "test:jest:watch:changed": "npx jest --watch --only-changed",
-    "test:cypress:ci": "npx cypress run",
+    "test:cypress:ci": "npx cypress run --config screenshotOnRunFailure=false",
     "test:cypress:headless": "npx cypress run",
     "test:cypress:ui": "npx cypress open",
     "test:css": "echo 'test:css is not yet configured'",
