@@ -91,7 +91,10 @@ export function Card(props: CardProps) {
     : undefined;
 
   return (
-    <div className='flex h-[453] min-h-[453] w-[325] min-w-[325] flex-col items-center justify-between text-center'>
+    <div
+      className='flex h-[453] min-h-[453] w-[325] min-w-[325] flex-col items-center justify-between text-center'
+      data-testid='Card'
+    >
       <ElementType
         aria-label={showAltFaceLabel}
         className={`group relative mx-auto rounded-lg border-4 border-transparent ${

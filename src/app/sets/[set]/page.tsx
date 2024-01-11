@@ -15,7 +15,9 @@ const SEARCH_API = 'https://api.scryfall.com/cards/search';
 async function getSet(setCode: string): Promise<DraftSet> {
   const setDetails = sets.find((set) => set.code === setCode);
 
-  const query = `set:${setCode}+is:booster`;
+  /** MKM is too new and requires this exception for now */
+  const boosterOnly = setCode === 'mkm' ? '' : '+is:booster';
+  const query = `set:${setCode}${boosterOnly}`;
 
   let requestUrl = `${SEARCH_API}?order=review&q=${query}`;
   let hasMore = true;
