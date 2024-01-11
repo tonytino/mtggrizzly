@@ -9,7 +9,10 @@ async function SetsPage() {
   const setsToShow = sets.filter((set) => set.show);
 
   return (
-    <div className='m-auto grid h-min grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3'>
+    <div
+      className='m-auto grid h-min grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3'
+      data-testid='All Sets'
+    >
       {setsToShow.map((set) => {
         return (
           <Set
