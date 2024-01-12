@@ -1,7 +1,6 @@
 {
   "name": "mtggrizzly",
   "version": "0.1.0",
-  "moduleResolution": "node",
   "private": true,
   "scripts": {
     "build": "next build",
