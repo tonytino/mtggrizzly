@@ -8,6 +8,10 @@ on:
   pull_request:
     branches: [main]
 
+env:
+  # https://github.com/cypress-io/cypress/issues/27731#issuecomment-1884893217
+  TS_NODE_COMPILER: 1
+
 jobs:
   build:
     name: Run Cypress Test Script
@@ -21,4 +25,4 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           build: npm run build
-          start: npm start
+          start: npm run start
