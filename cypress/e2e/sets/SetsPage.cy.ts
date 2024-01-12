@@ -7,7 +7,7 @@ describe('<SetsPage />', () => {
 
   it('presents all supported sets', () => {
     cy.findByTestId('All Sets').within(() => {
-      cy.findAllByRole('link').should('have.length', 140);
+      cy.findAllByRole('link').should('have.length', 141);
     });
   });
 
