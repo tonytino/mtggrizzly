@@ -1,3 +1,5 @@
+# https://docs.cypress.io/guides/continuous-integration/github-actions
+# https://github.com/marketplace/actions/cypress-io
 name: CI - Test Code::Cypress
 
 on:
@@ -11,6 +13,12 @@ jobs:
     name: Run Cypress Test Script
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4 # https://github.com/actions/checkout
-      - run: npm ci
-      - run: npm run test:cypress:ci
+      - name: Checkout
+        uses: actions/checkout@v4
+      # Install npm dependencies, cache them correctly
+      # and run all Cypress tests
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          build: npm run build
+          start: npm start
