@@ -2,7 +2,7 @@ import { LOCAL_BASE_URL } from '@/root/cypress/constants';
 
 describe('<SetsPage />', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:3000/sets');
+    cy.visit('/sets');
   });
 
   it('presents all supported sets', () => {

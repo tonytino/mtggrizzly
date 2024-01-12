@@ -1,8 +1,6 @@
-import { LOCAL_BASE_URL } from '@/root/cypress/constants';
-
 describe('<SetPage />', () => {
   beforeEach(() => {
-    cy.visit(`${LOCAL_BASE_URL}/sets/mom`);
+    cy.visit('/sets/mom');
   });
 
   it('renders', () => {

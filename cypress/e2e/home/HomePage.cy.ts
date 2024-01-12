@@ -2,7 +2,7 @@ import { LOCAL_BASE_URL } from '@/root/cypress/constants';
 
 describe('<HomePage />', () => {
   beforeEach(() => {
-    cy.visit(LOCAL_BASE_URL);
+    cy.visit('');
   });
 
   it('renders', () => {
