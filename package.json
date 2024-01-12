@@ -18,7 +18,6 @@
     "test:jest": "npx jest",
     "test:jest:watch": "npx jest --watch",
     "test:jest:watch:changed": "npx jest --watch --only-changed",
-    "test:cypress:ci": "TS_NODE_COMPILER=1 npx cypress run --config screenshotOnRunFailure=false",
     "test:cypress:headless": "TS_NODE_COMPILER=1 npx cypress run",
     "test:cypress:ui": "TS_NODE_COMPILER=1 npx cypress open",
     "test:css": "echo 'test:css is not yet configured'",
