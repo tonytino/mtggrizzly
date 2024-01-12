@@ -4,13 +4,13 @@
 
 ### WARNING
 
-Due to an on-going issue with the latest versions of cypress and next.js, you will need to temporarily modify the [`tsconfig.json`] file before starting up the cypress ui.
+Due to an on-going issue with the latest versions of [cypress](https://github.com/cypress-io/cypress/issues/27731) and [next.js](https://github.com/vercel/next.js/pull/59268), [we need to apply the following env var](https://github.com/cypress-io/cypress/issues/27731#issuecomment-1884893217) to commands involving `cypress`:
 
-1. Open [`tsconfig.json`]
-2. Modify the value of `compilerOptions.moduleResolution` to be `node`
-3. When you're done with your cypress needs, **revert** the change made in step 2
+```bash
+TS_NODE_COMPILER=1 npx cypress open
+```
 
-⚠️ **DO NOT COMMIT THE CHANGE TO [`TSCONFIG.JSON`]!**
+_Once this issue is resolved, we should drop this from the script commands in [`../package.json`](./../package.json#L6)._
 
 ### Opening the Cypress UI
 
