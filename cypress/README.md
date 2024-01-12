@@ -29,3 +29,7 @@ npm run test:cypress:ui
 <!-- REFS -->
 
 [`tsconfig.json`]: ./../tsconfig.json#L11
+
+## Resources
+
+- [Cypress' best practices](https://docs.cypress.io/guides/references/best-practices)

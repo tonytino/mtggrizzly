@@ -98,6 +98,7 @@ Below are links to all of the READMEs:
 - Test features first and foremost; this is the bare minimum coverage expected
 - Do not test functionality already tested for us, e.g. if we're using a package we know has good test coverage, don't waste your time verifying it does what we expect
 - Familiarize yourself with the [common mistakes made when using @testing-library](https://kentcdodds.com/blog/common-mistakes-with-react-testing-library)
+- Familiarize yourself with [Cypress' best practices](https://docs.cypress.io/guides/references/best-practices)
 - Produce structured test suite outputs using `describe` (see existing tests for examples)
 - We leverage both cypress and jest for testing purposes
 
