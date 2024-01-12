@@ -9,7 +9,7 @@
     "clean:prettier": "npx prettier --write .",
     "dev": "next dev",
     "lint": "next lint",
-    "pr:create": "gh pr create --web --fill",
+    "pr:create": "gh pr create --web",
     "prepare": "husky install",
     "start": "next start",
     "test": "npm run test:eslint && \nnpm run test:css && \nnpm run test:prettier && \nnpm run test:types && \nnpm run test:types:cypress && \nnpm run test:code",
