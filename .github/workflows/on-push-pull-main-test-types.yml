@@ -14,3 +14,4 @@ jobs:
       - uses: actions/checkout@v4 # https://github.com/actions/checkout
       - run: npm ci
       - run: npm run test:types
+      - run: npm run test:types:cypress
