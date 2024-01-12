@@ -1,0 +1,26 @@
+# https://docs.cypress.io/guides/continuous-integration/github-actions
+# https://github.com/marketplace/actions/cypress-io
+name: CI - Test Code::Cypress
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+env:
+  # https://github.com/cypress-io/cypress/issues/27731#issuecomment-1884893217
+  TS_NODE_COMPILER: 1
+
+jobs:
+  build:
+    name: Run Cypress Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Run Cypress Tests
+        uses: cypress-io/github-action@v6
+        with:
+          build: npm run build
+          start: npm run start

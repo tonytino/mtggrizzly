@@ -1,4 +1,4 @@
-name: CI - Test ESLint
+name: CI - Test Code::Jest
 
 on:
   push:
@@ -8,9 +8,9 @@ on:
 
 jobs:
   build:
-    name: Run ESlint Test Script
+    name: Run Jest Test Script
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4 # https://github.com/actions/checkout
       - run: npm ci
-      - run: npm run test:eslint
+      - run: npm run test:jest

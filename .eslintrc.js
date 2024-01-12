@@ -23,11 +23,25 @@ const eslintConfig = {
       'error',
       { absence: false, presence: true },
     ],
-    '@typescript-eslint/no-var-requires': 'off',
     // While a great feature, the nature of this app would make it too
     // expensive financially to leverage this throughout
     '@next/next/no-img-element': 'off',
   },
+  overrides: [
+    {
+      files: ['./scripts/*', './jest.config.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
+    {
+      files: '*.cy.ts',
+      rules: {
+        'testing-library/await-async-queries': 'off',
+        'testing-library/prefer-screen-queries': 'off',
+      },
+    },
+  ],
 };
 
 module.exports = eslintConfig;

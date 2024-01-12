@@ -32,6 +32,7 @@ export function Set(props: SetProps) {
 
   return (
     <Link
+      aria-label={name}
       className='relative flex h-[var(--Set--height-mobile)] w-[var(--Set--width-mobile)] cursor-pointer flex-col items-end justify-between overflow-hidden rounded bg-neutral-300 text-center shadow-md lg:h-[var(--Set--height-desktop)] lg:w-[var(--Set--width-desktop)] dark:bg-neutral-400'
       href={routeForSet}
       key={code}

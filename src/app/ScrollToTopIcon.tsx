@@ -16,6 +16,7 @@ function ScrollToTopIcon() {
       <Tooltip.Trigger asChild>
         <ThickArrowUpIcon
           className='mt-[3px] cursor-pointer text-sky-800 hover:text-sky-600 dark:text-sky-400 dark:hover:text-sky-300'
+          data-testid={label}
           height='36px'
           onClick={() => scrollToTop()}
           onKeyDown={(event) => {

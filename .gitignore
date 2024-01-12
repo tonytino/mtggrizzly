@@ -125,3 +125,6 @@ storybook-static/
 
 # other
 notes.md
+
+# cypress
+cypress/screenshots/
