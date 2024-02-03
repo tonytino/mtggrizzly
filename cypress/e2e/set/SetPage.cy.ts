@@ -50,17 +50,28 @@ describe('<SetPage />', () => {
     cy.findAllByTestId('Card').should('have.length', 24);
   });
 
+  it('successfully filters cards based on rarity', () => {
+    cy.findByRole('button', { name: 'Open the query options' }).click();
+
+    cy.findByText('Mythic').click();
+    cy.findByRole('button', { name: 'Close' }).click();
+
+    cy.findAllByTestId('Card').should('have.length', 20);
+  });
+
   it('successfully filters cards based on multiple parameters', () => {
     cy.findByRole('button', { name: 'Open the query options' }).click();
 
     cy.findByText('Search').type('target');
 
     cy.findByText('Artifact').click();
-    cy.findByText('Battle').click();
 
     cy.findByText('Colorless').click();
+
+    cy.findByText('Mythic').click();
+
     cy.findByRole('button', { name: 'Close' }).click();
 
-    cy.findAllByTestId('Card').should('have.length', 5);
+    cy.findAllByTestId('Card').should('have.length', 1);
   });
 });
