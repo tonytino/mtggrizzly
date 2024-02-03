@@ -10,6 +10,7 @@ import {
   CardsQueryModalHeader,
   CardTypesFilter,
   ColorsFilter,
+  RarityFilter,
   OpenCardsQueryModalButton,
   SearchFilter,
 } from './components';
@@ -25,6 +26,7 @@ function CardsQueryModal() {
     isModalOpen,
     permittedCardTypes,
     permittedColors,
+    permittedRarities,
     searchText,
   } = React.useContext(CardsQueryContext);
 
@@ -33,7 +35,7 @@ function CardsQueryModal() {
    */
   React.useEffect(
     () => scrollToTop,
-    [permittedCardTypes, permittedColors, searchText]
+    [permittedCardTypes, permittedColors, permittedRarities, searchText]
   );
 
   return (
@@ -78,6 +80,8 @@ function QueryControls() {
       <CardTypesFilter />
 
       <ColorsFilter />
+
+      <RarityFilter />
     </div>
   );
 }

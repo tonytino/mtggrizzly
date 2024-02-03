@@ -7,6 +7,7 @@ import CardsQueryContext, { CardsQueryContextType } from './CardsQueryContext';
 const DEFAULT_STATE = {
   permittedCardTypes: [],
   permittedColors: [],
+  permittedRarities: [],
   searchText: '',
 };
 
@@ -49,6 +50,16 @@ function CardsQueryProvider(props: CardsQueryProviderType) {
       }),
     []
   );
+  const setPermittedRarities = React.useCallback(
+    (permittedRarities) =>
+      setQueries((queries) => {
+        return {
+          ...queries,
+          permittedRarities,
+        };
+      }),
+    []
+  );
   const setSearchText = React.useCallback(
     (searchText) =>
       setQueries((queries) => {
@@ -70,6 +81,7 @@ function CardsQueryProvider(props: CardsQueryProviderType) {
         resetQueries,
         setPermittedCardTypes,
         setPermittedColors,
+        setPermittedRarities,
         setQueries,
         setSearchText,
       }}
@@ -98,10 +110,12 @@ export function CardsQueryProviderMock(props: CardsQueryProviderMockType) {
     openModal = noop,
     permittedCardTypes = DEFAULT_STATE.permittedCardTypes,
     permittedColors = DEFAULT_STATE.permittedColors,
+    permittedRarities = DEFAULT_STATE.permittedRarities,
     resetQueries = noop,
     searchText = DEFAULT_STATE.searchText,
     setPermittedCardTypes = noop,
     setPermittedColors = noop,
+    setPermittedRarities = noop,
     setSearchText = noop,
     setQueries = noop,
   } = contextValues ?? {};
@@ -114,10 +128,12 @@ export function CardsQueryProviderMock(props: CardsQueryProviderMockType) {
         openModal,
         permittedCardTypes,
         permittedColors,
+        permittedRarities,
         resetQueries,
         searchText,
         setPermittedCardTypes,
         setPermittedColors,
+        setPermittedRarities,
         setQueries,
         setSearchText,
       }}

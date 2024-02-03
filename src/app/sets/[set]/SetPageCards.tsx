@@ -8,6 +8,7 @@ import CardsQueryContext from './CardsQueryContext';
 import {
   validateCardPassesCardTypesFilter,
   validateCardPassesColorsFilter,
+  validateCardPassesRarityFilter,
   validateCardPassesSearchTextFilter,
 } from './helpers';
 
@@ -23,16 +24,18 @@ type SetPageCardsType = {
  */
 function SetPageCards(props: SetPageCardsType) {
   const { cards } = props;
-  const { permittedCardTypes, permittedColors, searchText } =
+  const { permittedCardTypes, permittedColors, permittedRarities, searchText } =
     React.useContext(CardsQueryContext);
 
   const isSearchTextPresent = Boolean(searchText?.length);
   const arePermittedCardTypesPresent = Boolean(permittedCardTypes?.length);
   const arePermittedColorsPresent = Boolean(permittedColors?.length);
+  const arePermittedRaritiesPresent = Boolean(permittedRarities?.length);
   const areFiltersPresent = [
     isSearchTextPresent,
     arePermittedCardTypesPresent,
     arePermittedColorsPresent,
+    arePermittedRaritiesPresent,
   ].some(Boolean);
 
   const filteredCards = areFiltersPresent
@@ -52,6 +55,12 @@ function SetPageCards(props: SetPageCardsType) {
 
           if (arePermittedColorsPresent) {
             if (!validateCardPassesColorsFilter(card, permittedColors)) {
+              return false;
+            }
+          }
+
+          if (arePermittedRaritiesPresent) {
+            if (!validateCardPassesRarityFilter(card, permittedRarities)) {
               return false;
             }
           }
