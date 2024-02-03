@@ -12,7 +12,16 @@ const PERMITTED_COLORS = {
   Colorless: 'Colorless',
 } as const;
 
+const PERMITTED_RARITIES = {
+  common: 'common',
+  uncommon: 'uncommon',
+  rare: 'rare',
+  mythic: 'mythic',
+} as const;
+
 export type PermittedColors = keyof typeof PERMITTED_COLORS;
+
+export type PermittedRarities = keyof typeof PERMITTED_RARITIES;
 
 export type CardsQueryContextType = {
   /**
@@ -38,6 +47,11 @@ export type CardsQueryContextType = {
    */
   permittedColors: PermittedColors[];
   /**
+   * The card rarities permitted
+   * @example 'mythic'
+   */
+  permittedRarities: PermittedRarities[];
+  /**
    * Resets the query options to their default state
    */
   resetQueries: () => void;
@@ -54,6 +68,10 @@ export type CardsQueryContextType = {
    * Updates the colors query option
    */
   setPermittedColors: (colors: PermittedColors[]) => void;
+  /**
+   * Updates the rarities query option
+   */
+  setPermittedRarities: (colors: PermittedRarities[]) => void;
   /**
    * Updates the search text query option
    */
